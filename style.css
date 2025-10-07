@@ -1,7 +1,11 @@
 html {
-    font-size: 22px;
+    font-size: 20px;
   }
    body {
-    background-color: #191c2d;
-    color: whitesmoke;
+    background-color: #260d49;
+    color: #FFF1F1;
+    font-family: 'Courier New', Courier, monospace;
+    a {
+color: #E9B3FB
+    }
   }
