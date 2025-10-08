@@ -9,3 +9,9 @@ html {
 color: #E9B3FB
     }
   }
+   a:visited{
+    color: aqua;
+  }
+  A:hover{
+    color: #FFF1F1;
+  }
