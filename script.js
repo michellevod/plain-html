@@ -1,14 +1,24 @@
 console.log
 let theLink = document.getElementById("link1");
-let theDiv = document.getElementById("Div1");
 
-function klickReaction() {
+let theDiv = document.getElementById("div1");
+let theDiv2 = document.getElementById("div2");
 
-theLink.innerHTML = "Neuer Text Wow";
-theLink.style.color = "red";
-theLink.style.backgroundColor = "#cec";
+function klickReactiongruen() {
+
+theDiv.style.color = "blue";
+theDiv.style.backgroundColor = "#cec";
 
 }
-// Eventlistener für 2 Links 
-document.getElementById("link1)").addEventListener("click", klickReaction)
+
+function klickReactionpink() {
+
+theDiv2.style.color = "white";
+theDiv2.style.backgroundColor = "pink";
+
+}
+// Eventlistener für 1 Link 
+document.getElementById("link1").addEventListener("click", klickReactiongruen);
+document.getElementById("link2").addEventListener("click", klickReactionpink);
+
 

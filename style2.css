@@ -2,8 +2,8 @@ html {
     font-size: 20px;
   }
    body {
-    background-color: #260d49;
-    color: #FFF1F1;
+    background-color: white;
+    color: black;
     font-family: 'Courier New', Courier, monospace;
     a {
 color: #E9B3FB
@@ -15,3 +15,21 @@ color: #E9B3FB
   A:hover{
     color: #FFF1F1;
   }
+
+  .label {
+background-color: #111;
+display: flex;
+border-radius: 50px;
+height: 26px;
+width: 50px;
+  }
+
+
+.fa-moon{
+color: blue;
+
+}
+
+.fa-sun{
+  color: yellow;
+}
