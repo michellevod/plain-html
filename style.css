@@ -2,18 +2,17 @@ html {
     font-size: 20px;
   }
    body {
-    background-color: #260d49;
-    color: #FFF1F1;
+    background-color: white;
+    color: black;
     font-family: 'Courier New', Courier, monospace;
-    a {
-color: #E9B3FB
-    }
+    a { color: #E9B3FB}
+   }
+   
+a { color: #E9B3FB }
+
+a:visited{
+    color: palevioletred;
   }
-  a:visited{
-    color: aqua;
-  }
-  
-  A:hover{
+a:hover{
     color: #FFF1F1;
   }
-  
