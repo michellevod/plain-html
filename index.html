@@ -14,16 +14,26 @@
 
 </head>
 <body>
+  <header>
   <h1>My website, that has information all about moi.</h1>
+<nav aria-label="primary-navigation">
+  <ol>
+    <li>
+        <a href = "#" id = "link1" >Erster Link</a>
+        <div id = "div1" >Text 1</div>
+       
+    </li>
+    <li>
+        <a href = "#" id = "link2" >Zweiter Link</a>
+        <div id = "div2" >Text 2</div>
+    </li>
+  </ol>
+</nav>
 
-  <hr>
-<!-- Klickreaction addeventlistenerzeugs -->
-<a href = "#" id = "link1" >Try me out</a>
-<a href = "#" id = "link2" >Zweiter Link</a>
-<div id = "div1" >Text 1</div>
-<div id = "div2" >Text 2</div>
+</header>
 
 <hr>
+<main>
 <section id="html">
   <h2>This is me learning HTML</h2>
   <p>This is the html part</p>
@@ -44,14 +54,16 @@
     <br>its... <em>fine?</em>
   </p>
 
-  <h3>Subtopics - even smaller topics.</h3>
+  <h4>Subtopics - even smaller topics.</h4>
   <p>Such a cool page, right?.</p>
 </section>
 
  <hr>
-<section id="Turtles">
+<article id="Turtles">
   <h2>Turtles, am i right?.</h2>
   <p>This is a turtle in the beautiful blue ocean.</p>
+  <section>
+    <h3>zu deutsch: Schildkroeten.</h3>
   <figure>
    <img src="images/Bild1.jpg" 
         alt="Turtle in se water" 
@@ -62,7 +74,9 @@
           A picture (cute) of a turtle.
         </figcaption>
   </figure>
-  <h4>baby turtles awww</h4>
+  </section>
+  <section>
+  <h3>baby turtles awww</h3>
     <p>Let me tell you how:
      <br>&nbsp;....i learned more about web dev.
      <br>&nbsp;&nbsp;... i plan on learning a lot.
@@ -72,11 +86,27 @@
     </abbr>
     </p>
 
- <h4>The grass is INDEED green!</h4>
+    <aside>
+      <details>
+        <summary> What kind of <mark>job</mark> do turtles have?</summary>
+        <p>Ninja</p>
+      </details>
+      <details>
+        <summary>What time do turtles wake up at?</summary>
+        <p>
+          probably <mark><time datetime="06:00">6am</time> </mark>
+          and they sleep for <time datetime="PT3H"> 10 hours.</time>
+        </p>
+    </details>
+    </aside>
+
+</section>
+ <h5>The grass is INDEED green!</h5>
   <p>Let me tell you how: <br>....i learned more about web dev.</p>
-  </section>
+  </article>
+
 <hr>
-<section id="Bridge">
+  <section id="Bridge">
 <h4>Bridge</h4>
 <p>this is going to be a section about bridges.</p>
   <figure>
@@ -90,44 +120,55 @@
            </figcaption>
     </figure>
 
-</section>
+  </section>
 
+  <section id="Grocery">
+      <h3>My favourite Grocery Store:</h3>
+      <address>
+    Lidl <br>
+    Hasselstraße, Düsseldorf-District 9 <br>
+    40597, Düsseldorf
+      </address>
 
+    <h3>Other Grocery Stores that I would go to, if LIDL is unavailable:</h3>
+    <p>These are okay, further down the line i will mention the ones i would NEVER go to</p>
+    <ol>
+      <li> Aldi 
+      <li> Rewe
+      <li>Edeka</li>
+    </ol>
+    <h3>Grocery Stores that I will not willingly go to:</h3>
+    <ul>
+    <li>Netto</li>
+    <li>Penny</li>
+    <li><strong>Norma</strong></li>
+    </ul>
+      <hr>
+    <h3>Grocery Stores that have RED Logos</h3>
+    <dl>
+      <dt>Rewe</dt>
+      <dd>Rotes Logo mit <strong>weißer Schrift!</strong> </dd>
 
-<!-- Note to myself: Lidl is the best grocery store... it really is!-->
-  <h3>My favourite Grocery Store:</h3>
-  <address>
-Lidl <br>
-Hasselstraße, Düsseldorf-District 9 <br>
-40597, Düsseldorf
-  </address>
+      <dt>Penny</dt>
+      <dd>Wenn man mal darüber nachdenkt, ist es das selbe Logo wie das vom <s>Rewe</s>..
+          </dd>
+    </dl>
+  </section>
+  
+  <!-- divider, no semantic meaning, block element, they dont change or add any value to your code, only used to apply styles with css maybe -->
+<div> </div>
+<span></span>
 
-<h3>Other Grocery Stores that I would go to, if LIDL is unavailable:</h3>
-<p>These are okay, further down the line i will mention the ones i would NEVER go to</p>
-<ol>
-  <li> Aldi 
-  <li> Rewe
-  <li>Edeka</li>
-</ol>
-<h3>Grocery Stores that I will not willingly go to:</h3>
-<ul>
-<li>Netto</li>
-<li>Penny</li>
-<li><strong>Norma</strong></li>
-</ul>
-  <hr>
-<h3>Grocery Stores that have RED Logos</h3>
-<dl>
-  <dt>Rewe</dt>
-  <dd>Rotes Logo mit <strong>weißer Schrift!</strong> </dd>
+</main>
 
-  <dt>Penny</dt>
-  <dd>Wenn man mal darüber nachdenkt, ist es das selbe Logo wie das vom <s>Rewe</s>..
-      </dd>
-</dl>
-
+<hr>
+<footer>
+  <p> 
   &lt;&lt;&lt; &copy; <a href="about.html">Michelle Nestler</a> &gt;&gt;&gt;
+  </p>
 
- 
+ </footer>
+
 </body>
 </html>
+
