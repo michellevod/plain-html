@@ -1,18 +1,42 @@
 html {
-    font-size: 20px;
-  }
-   body {
-    background-color: white;
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
-    a { color: #E9B3FB}
-   }
-   
-a { color: #E9B3FB }
+  font-size: 20px;
+}
 
-a:visited{
-    color: palevioletred;
-  }
-a:hover{
-    color: #FFF1F1;
-  }
+body {
+  background-color: white;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+  color: #E9B3FB;
+}
+
+a:visited {
+  color: palevioletred;
+}
+
+a:hover {
+  color: #FFF1F1;
+}
+
+/* Table styling with different font */
+table {
+  font-family:fantasy;
+  border-collapse: collapse;
+  border: 1px solid #2f68c4;
+}
+
+tr, th, td, caption {
+  border: 1px solid #2f68c4;
+  padding: 0.5rem;
+}
+thead {
+  color: blue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+tbody {
+  color: white;
+  background-color: rgb(53, 47, 47);
+}
