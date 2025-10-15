@@ -1,32 +1,85 @@
+* {
+box-sizing: border-box;
+}
+
 html {
     font-size: 20px;
   }
-   body {
+body {
     background-color: white;
     color: black;
     font-family: 'Courier New', Courier, monospace;
-    a {
-color: #E9B3FB
-    }
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background 0.2s linear;
   }
-   a:visited{
-    color: aqua;
+  /* darkmode */
+body.dark {
+  background-color: #292c35;
+  color: white;
   }
-  A:hover{
+/* darkmode */
+/* darkmodelinks */
+
+body.dark a {
+  color: #FFA500; /* Orange */
+}
+
+body.dark a:visited {
+  color: yellow;
+}
+
+body.dark a:hover {
+  color: aquamarine;
+}
+/* darmode links */
+a { color: #E9B3FB }
+
+a:visited{
+    color: palevioletred;
+  }
+a:hover{
     color: #FFF1F1;
   }
 
-  .label {
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
 background-color: #111;
-display: flex;
 border-radius: 50px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+position: relative;
+padding: 2px;
 height: 26px;
 width: 50px;
   }
 
+.ball {
+    background-color: #fff;
+    position: absolute;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transition:transform 0.2s linear;
+
+  }
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
 
 .fa-moon{
-color: blue;
+color: yellow;
+
 
 }
 
