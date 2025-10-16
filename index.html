@@ -17,6 +17,16 @@
   <header>
   <h1>My website, that has information all about moi.</h1>
 <nav aria-label="primary-navigation">
+  <section>
+    <h2>Log In</h2>
+    <label for="logIn">username:</label>
+    <input type="text" name="logIn" id="logIn">
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" placeholder="**********" required>
+  </section>
+
+  <hr>
+
   <ol>
     <li>
         <a href = "#" id = "link1" >Erster Link</a>
@@ -26,6 +36,9 @@
     <li>
         <a href = "#" id = "link2" >Zweiter Link</a>
         <div id = "div2" >Text 2</div>
+    </li>
+    <li>
+        <a href = "#contact" >Contact Me</a>
     </li>
   </ol>
 </nav>
@@ -223,9 +236,129 @@
   </section>
   
   <!-- divider, no semantic meaning, block element, they dont change or add any value to your code, only used to apply styles with css maybe -->
-<div> </div>
-<span></span>
+  <!-- <div> </div> -->
+  <!-- <span></span> -->
 
+  <hr>
+  <article id="contact">
+
+    <h2>Contact Me</h2>
+    <p>Please do NOT contact me, actually :/</p>
+      
+    <form action="https://httpbin.org/get" method="get">
+
+      <fieldset>
+        <legend> Personal Info</legend>
+      <label for="firstName">First Name:</label>
+      <input type="text" name="firstName" id="firstName" placeholder="First Name"
+      autocomplete="on" required autofocus>
+      <p>
+      <label for="lastName">Last Name:</label>
+      <input type="text" name="lastName" id="lastName" placeholder="Last Name"
+      autocomplete="on">
+      </p>
+      <p>
+      <label for="phone">Phone Number</label>
+      <input type="tel" name="phone" id="phone" placeholder="1234567890"
+      autocomplete="on" pattern="[0-9]{10}" required maxlength="10">
+      </p>
+      <p>
+      <label for="decade">Favorite Decade</label>
+      <input type="number" name="decade" id="decade"
+      min="1950" max="2050"
+      step="10" value="1980">
+      </p>
+      <!-- OPTION GROUP -->
+       <p>
+        <label for="coffee">favorite coffee</label>
+        <select name="coffee" id="coffee">
+          <optgroup label="coffee">
+            <option value="regular coffee">regular coffee</option>
+            <option value="decaf coffee">decaf coffee</option>
+            <option value="iced coffee" selected >iced coffee</option>
+          </optgroup>
+          <optgroup label="tea">
+            <option value="greenTea">Green Tea</option>
+            <option value="blackTea">Black Tea</option>
+            <option value="earlGrey">Earl Grey</option>
+          </optgroup>
+          <option value="other">Other</option>
+        </select>
+      </p> 
+      <!-- OPTION GROUP -->
+      <!-- OPTION + SHIFT + A COMMENT ALL HIGHLIGHTED -->
+
+       <!-- DATALIST -->
+     <!--   <p>
+        <label for="coffee">favorite coffee</label>
+        <input type="text" name="coffee" id="coffee" list="coffee-list">
+          <datalist id="coffee-list">
+            <option value="regular coffee">regular coffee</option>
+            <option value="decaf coffee">decaf coffee</option>
+            <option value="iced coffee" selected >iced coffee</option>
+          </datalist>
+          
+        </p>
+      <p>
+      <label for="eMail">E-Mail</label>
+      <input type="text" name="eMail" id="eMail"placeholder="noContact@Mail.com"
+      autocomplete="on">
+     </p> -->
+<!-- DATALIST -->
+</fieldset>
+<br>
+<fieldset>
+  <legend>What is your favorite food?</legend>
+  <p>
+    <input type="radio" name="food" id="sushi">
+    <label for="sushi">Sushi</label>
+  </p>
+  <p>
+    <input type="radio" name="food" id="tacos">
+    <label for="tacos">Tacos</label>
+  <p>
+    <input type="radio" name="food" id="pasta">
+    <label for="pasta">Pasta</label>
+   </p>
+  <p>
+    <input type="radio" name="food" id="Rice">
+   <label for="Rice">Rice</label>
+  </p>
+</fieldset>
+
+<fieldset>
+  <legend>Do you have pets?</legend>
+  <p>
+    <input type="checkbox" name="pets" id="dog" value="dog">
+    <label for="dog">Dog</label>
+    <p>
+    <input type="checkbox" name="pets" id="cat" value="cat">
+    <label for="cat">Cat</label>
+    </p>
+    <p>
+    <input type="checkbox" name="pets" id="fish" value="fish">
+    <label for="fish">Fish</label>
+    <input type="checkbox" name="pets" id="other" value="other">
+    <label for="other">Other</label>
+  </p>
+</fieldset>
+
+<fieldset>
+<legend>Send me a note!</legend>
+<label for="message">Your message.</label>
+<br>
+<textarea name="message" id="message" cols="30" rows="10" placeholder="please write your message."></textarea>
+<p>
+
+<button type="submit">Submit</button>
+<button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+<button type="reset">Reset</button>
+</p>
+</fieldset>
+
+    </form>
+
+  </article>
 </main>
 
 <hr>
