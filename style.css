@@ -1,9 +1,18 @@
+@font-face {
+  font-family: Roboto;
+  src: url(/fonts/RobotoCondensed-Regular.ttf);
+}
+@font-face {
+  font-family: RubikBlack;
+  src: url(fonts/Rubik-Black.ttf);
+}
+
 html {
   font-size: 20px;
 }
 
 body {
-  background-color: white;
+  background-color: rgb(231, 231, 231);
   color: black;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -39,4 +48,34 @@ thead {
 tbody {
   color: white;
   background-color: rgb(53, 47, 47);
+}
+/* simON Freitags Aufgabe */
+
+/* White Nav */
+.navbar2 {
+  font-family: Roboto;
+  color: black;
+  background-color: white;
+}
+/* Yellow Box */
+.yellowBox {
+  background-color: #FFFF00;
+  
+}
+.titlePurple {
+font-family: RubikBlack;
+  color: white;
+}
+.titlePurple span {
+  background-color: #8F1CD6;
+}
+
+#simHead {
+  font-family: Roboto;
+}
+.fa-check {
+  color: #8F1CD6;
+}
+.fa-ul {
+ font-family: Roboto;
 }
