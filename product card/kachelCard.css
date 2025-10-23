@@ -1,0 +1,84 @@
+/* FONTS */
+@font-face {
+    font-family: Vodafone;
+    src: url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneRg.eot);
+    src: url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneRg.woff2) format("woff2"),url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneRg.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+ 
+@font-face {
+    font-family: Vodafone;
+    src: url(https://www.vodafone.de/simplicity/assets/css/fonts/vodafonergbd-webfont.eot);
+    src: url(https://www.vodafone.de/simplicity/assets/css/fonts/vodafonergbd-webfont.woff2) format("woff2"),url(https://www.vodafone.de/simplicity/assets/css/fonts/vodafonergbd-webfont.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+ 
+@font-face {
+    font-family: Vodafone;
+    src: url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneLt.eot);
+    src: url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneLt.woff2) format("woff2"),url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneLt.woff) format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap
+}
+* {
+    font-family: Vodafone, sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+
+.white-Card {
+    border: black;
+    width: min-content;
+    margin-top: 110px;
+    padding: 20px;
+    background:white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(187, 187, 187);
+}
+
+h2.headline-Card {
+    font-size: 30px;
+}
+.card-Image {
+     display: flex;
+     justify-content: center;
+     max-height:310px;
+     max-width: 600px;
+     border-radius: 10px;
+     
+}
+.card-List {
+list-style-type: style type inside;
+line-height: 40px;
+}
+.price-Numbers {
+    font-size: 48px;
+    font-family: Vodafone;
+}
+
+.euro-Price {
+    font-size: 30px;
+}
+.price-Desc {
+font-size: 20px;
+}
+
+a {
+    color: #bd0000;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Vodafone;
+}
+
