@@ -1,299 +1,343 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Michelle Nestler" >
-  <meta name="description" content="This page is my first real attempt at learning html. 
-  Im learning so much yippie!">
-<title> Michelle's First Web Page</title>
-<!-- font awesome link -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="icon" href="images/heart.jpg" type="image/x-icon">
-<link rel="stylesheet" href="style.css" type="text/css">
-<!-- JAVASCRIPT Tag -->
-<script src="script.js" defer></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Michelle Nestler" />
+    <meta
+      name="description"
+      content="This page is my first real attempt at learning html. 
+  Im learning so much yippie!"
+    />
+    <title>Michelle's First Web Page</title>
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="icon" href="images/heart.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <!-- JAVASCRIPT Tag -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>My website, that has information all about me.</h1>
+      <nav aria-label="primary-navigation">
+        <section>
+          <h2>Log In</h2>
+          <label for="logIn">username:</label>
+          <input type="text" name="logIn" id="logIn" />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="**********"
+            required
+          />
+        </section>
 
-</head>
-<body>
-  <header>
-  <h1>My website, that has information all about me.</h1>
-<nav aria-label="primary-navigation">
-  <section>
-    <h2>Log In</h2>
-    <label for="logIn">username:</label>
-    <input type="text" name="logIn" id="logIn">
-    <label for="password">Password:</label>
-    <input type="password" name="password" id="password" placeholder="**********" required>
-  </section>
+        <hr />
 
-  <hr>
+        <ul>
+          <li>
+            <a href="about.html" id="link1">About</a>
+            <div id="div1">about</div>
+          </li>
+          <li>
+            <a href="flexbox/flexbox.html" id="link2">Flexbox 21.10</a>
+            <div id="div2">Kleine Spielereien</div>
+          </li>
 
-  <ul>
-    <li>
-        <a href = "#" id = "link1" >Erster Link</a>
-        <div id = "div1" >Text 1</div>
-       
-    </li>
-    <li>
-        <a href = "#" id = "link2" >Zweiter Link</a>
-        <div id = "div2" >Text 2</div>
-    </li>
-    <li>
-        <a href = "#contact" >Contact Me</a>
-    </li>
-    <li> <a href= "simon.html">simON Nachbauen </a>
-    </li>
-  </ul>
-</nav>
+          <li><a href="simON-Screen/simon.html">simON Nachbauen </a></li>
+          <li>
+            <a href="./22.10 - JSArray/js2210.html"
+              >Javascript Array Workshop + CSS Anfänge
+            </a>
+          </li>
+          <li>
+            <a href="product card/kachelCard.html">Product Card nachbauen</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-</header>
-
-<hr>
-<main>
-<section id="html">
-  <h2>This is me learning HTML</h2>
-  <p>This is the html part</p>
-  <figure>
-    <figcaption>
-      This is the html 5 logo.
-    </figcaption>
-    <p>
-      <code>&lt;h1&gt;Hello World! &lt;h1&GT;</code>
-    </p>
-      <img src="images/htmllogo.png" alt="htmllogo" 
-           title="Hoverhoverhoverhover"
-           width="500" height="500">
-  </figure>
-  <p>The colour of the sky is a very interesting topic to talk about:
-    <br>its <strong>bright.</strong>
-    <br>its <abbr title="is it really light without the sun?"> light</abbr>
-    <br>its... <em>fine?</em>
-  </p>
-
-  <h4>Subtopics - even smaller topics.</h4>
-  <p>Such a cool page, right?.</p>
-</section>
-
- <hr>
-<article id="Turtles">
-  <h2>Turtles, am i right?.</h2>
-  <p>This is a turtle in the beautiful blue ocean.</p>
-  <section>
-    <h3>zu deutsch: Schildkroeten.</h3>
-  <figure>
-   <img src="images/Bild1.jpg" 
-        alt="Turtle in se water" 
-        title="turtleturtleturtle" 
-        width="400" height="225"
-        loading="lazy">
-        <figcaption>
-          A picture (cute) of a turtle.
-        </figcaption>
-  </figure>
-  </section>
-  <section>
-  <h3>baby turtles awww</h3>
-    <p>Let me tell you how:
-     <br>&nbsp;....i learned more about web dev.
-     <br>&nbsp;&nbsp;... i plan on learning a lot.
-     <br> i use resources from <abbr 
-      title="Mozilla Developer Network">
-     <a href="https://developer.mozilla.org/">MDN</a>
-    </abbr>
-    </p>
-
-    <aside>
-      <details>
-        <summary> What kind of <mark>job</mark> do turtles have?</summary>
-        <p>Ninja</p>
-      </details>
-      <details>
-        <summary>What time do turtles wake up at?</summary>
+    <hr />
+    <main>
+      <section id="html">
+        <h2>This is me learning HTML</h2>
+        <p>This is the html part</p>
+        <figure>
+          <figcaption>This is the html 5 logo.</figcaption>
+          <p>
+            <code>&lt;h1&gt;Hello World! &lt;h1&GT;</code>
+          </p>
+          <img
+            src="images/htmllogo.png"
+            alt="htmllogo"
+            title="Hoverhoverhoverhover"
+            width="500"
+            height="500"
+          />
+        </figure>
         <p>
-          probably <mark><time datetime="06:00">6am</time> </mark>
-          and they sleep for <time datetime="PT3H"> 10 hours.</time>
+          The colour of the sky is a very interesting topic to talk about:
+          <br />its <strong>bright.</strong> <br />its
+          <abbr title="is it really light without the sun?"> light</abbr>
+          <br />its... <em>fine?</em>
         </p>
-    </details>
-    </aside>
-<br>
-  <table>
-    <caption>Turtle's schedule</caption>
-    <thead>
-    <tr>
-      <th>&nbsp;</th>
-      <th scope="col">Time</th>
-      <th scope="col">Activity</th>
-      <th>Other</th>
-    </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">Morning</th>
-        <td>
-          <time datetime="06:00">6am</time>-<time datetime="11:00">11am</time>
-        </td>
-        <td>
-          Turtle Sleepinggggggggggggggggggggggg
-        </td>
-       <td>Dreaming</td>
-      </tr>
-      <tr>
-        <th scope="row">Break</th>
-        <td>
-          <time datetime="11:00">11am</time>-<time datetime="21:00">9pm</time>
-        </td>
-        <td>
-          Turtle Awake
-        </td>
-        <td>Not dreaming</td>
-      </tr>
-      <tr>
-        <th scope="row">afternoon</th>
-        <td>
-          <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time>
-        </td>
-        <td>
-          Turtle Limbo
-        </td>
-        <td>who knows</td>
-      </tr>
-      <tr>
-        <th scope="row">evening</th>
-        <td rowspan="2">Funtimes</td>
-        <td>
-          Secret Times
-        </td>
-        <td>
-          Ninja Turtle
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">night</th>
-        <td>
-          Freetime
-        </td>
-        <td>
-          Pizza Time
-        </td>
-      </tr>
-     </tbody>
-     <tfoot>
-      <tr>
-        <td colspan= "4">The turtles love their schedule like this!</td>
-      </tr>
-     </tfoot>
-  </table>
-</section>
- <h5>The grass is INDEED green!</h5>
-  <p>Let me tell you how: <br>....i learned more about web dev.</p>
-  </article>
 
-<hr>
-  <section id="Bridge">
-<h4>Bridge</h4>
-<p>this is going to be a section about bridges.</p>
-  <figure>
-    <img src="images/Bild2.jpg" 
-         alt="Bridge" 
-         title="hahahahahahahaha" 
-         width="300" height="200" 
-         loading="lazy">
-           <figcaption>
-              This is a picute of a (tiny) bridge.
-           </figcaption>
-    </figure>
+        <h4>Subtopics - even smaller topics.</h4>
+        <p>Such a cool page, right?.</p>
+      </section>
 
-  </section>
+      <hr />
+      <article id="Turtles">
+        <h2>Turtles, am i right?.</h2>
+        <p>This is a turtle in the beautiful blue ocean.</p>
+        <section>
+          <h3>zu deutsch: Schildkroeten.</h3>
+          <figure>
+            <img
+              src="images/Bild1.jpg"
+              alt="Turtle in se water"
+              title="turtleturtleturtle"
+              width="400"
+              height="225"
+              loading="lazy"
+            />
+            <figcaption>A picture (cute) of a turtle.</figcaption>
+          </figure>
+        </section>
+        <section>
+          <h3>baby turtles awww</h3>
+          <p>
+            Let me tell you how: <br />&nbsp;....i learned more about web dev.
+            <br />&nbsp;&nbsp;... i plan on learning a lot. <br />
+            i use resources from
+            <abbr title="Mozilla Developer Network">
+              <a href="https://developer.mozilla.org/">MDN</a>
+            </abbr>
+          </p>
 
-  <section id="Grocery">
-      <h3>My favourite Grocery Store:</h3>
-      <address>
-    Lidl <br>
-    Hasselstraße, Düsseldorf-District 9 <br>
-    40597, Düsseldorf
-      </address>
+          <aside>
+            <details>
+              <summary>What kind of <mark>job</mark> do turtles have?</summary>
+              <p>Ninja</p>
+            </details>
+            <details>
+              <summary>What time do turtles wake up at?</summary>
+              <p>
+                probably <mark><time datetime="06:00">6am</time> </mark> and
+                they sleep for <time datetime="PT3H"> 10 hours.</time>
+              </p>
+            </details>
+          </aside>
+          <br />
+          <table>
+            <caption>
+              Turtle's schedule
+            </caption>
+            <thead>
+              <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+                <th>Other</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Morning</th>
+                <td>
+                  <time datetime="06:00">6am</time>-<time datetime="11:00"
+                    >11am</time
+                  >
+                </td>
+                <td>Turtle Sleepinggggggggggggggggggggggg</td>
+                <td>Dreaming</td>
+              </tr>
+              <tr>
+                <th scope="row">Break</th>
+                <td>
+                  <time datetime="11:00">11am</time>-<time datetime="21:00"
+                    >9pm</time
+                  >
+                </td>
+                <td>Turtle Awake</td>
+                <td>Not dreaming</td>
+              </tr>
+              <tr>
+                <th scope="row">afternoon</th>
+                <td>
+                  <time datetime="12:00">12pm</time>-<time datetime="17:00"
+                    >5pm</time
+                  >
+                </td>
+                <td>Turtle Limbo</td>
+                <td>who knows</td>
+              </tr>
+              <tr>
+                <th scope="row">evening</th>
+                <td rowspan="2">Funtimes</td>
+                <td>Secret Times</td>
+                <td>Ninja Turtle</td>
+              </tr>
+              <tr>
+                <th scope="row">night</th>
+                <td>Freetime</td>
+                <td>Pizza Time</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4">The turtles love their schedule like this!</td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+        <h5>The grass is INDEED green!</h5>
+        <p>Let me tell you how: <br />....i learned more about web dev.</p>
+      </article>
 
-    <h3>Other Grocery Stores that I would go to, if LIDL is unavailable:</h3>
-    <p>These are okay, further down the line i will mention the ones i would NEVER go to</p>
-    <ol>
-      <li> Aldi 
-      <li> Rewe
-      <li>Edeka</li>
-    </ol>
-    <h3>Grocery Stores that I will not willingly go to:</h3>
-    <ul>
-    <li>Netto</li>
-    <li>Penny</li>
-    <li><strong>Norma</strong></li>
-    </ul>
-      <hr>
-    <h3>Grocery Stores that have RED Logos</h3>
-    <dl>
-      <dt>Rewe</dt>
-      <dd>Rotes Logo mit <strong>weißer Schrift!</strong> </dd>
+      <hr />
+      <section id="Bridge">
+        <h4>Bridge</h4>
+        <p>this is going to be a section about bridges.</p>
+        <figure>
+          <img
+            src="images/Bild2.jpg"
+            alt="Bridge"
+            title="hahahahahahahaha"
+            width="300"
+            height="200"
+            loading="lazy"
+          />
+          <figcaption>This is a picute of a (tiny) bridge.</figcaption>
+        </figure>
+      </section>
 
-      <dt>Penny</dt>
-      <dd>Wenn man mal darüber nachdenkt, ist es das selbe Logo wie das vom <s>Rewe</s>..
+      <section id="Grocery">
+        <h3>My favourite Grocery Store:</h3>
+        <address>
+          Lidl <br />
+          Hasselstraße, Düsseldorf-District 9 <br />
+          40597, Düsseldorf
+        </address>
+
+        <h3>
+          Other Grocery Stores that I would go to, if LIDL is unavailable:
+        </h3>
+        <p>
+          These are okay, further down the line i will mention the ones i would
+          NEVER go to
+        </p>
+        <ol>
+          <li>Aldi</li>
+          <li>Rewe</li>
+          <li>Edeka</li>
+        </ol>
+        <h3>Grocery Stores that I will not willingly go to:</h3>
+        <ul>
+          <li>Netto</li>
+          <li>Penny</li>
+          <li><strong>Norma</strong></li>
+        </ul>
+        <hr />
+        <h3>Grocery Stores that have RED Logos</h3>
+        <dl>
+          <dt>Rewe</dt>
+          <dd>Rotes Logo mit <strong>weißer Schrift!</strong></dd>
+
+          <dt>Penny</dt>
+          <dd>
+            Wenn man mal darüber nachdenkt, ist es das selbe Logo wie das vom
+            <s>Rewe</s>..
           </dd>
-    </dl>
-  </section>
-  
-  <!-- divider, no semantic meaning, block element, they dont change or add any value to your code, only used to apply styles with css maybe -->
-  <!-- <div> </div> -->
-  <!-- <span></span> -->
+        </dl>
+      </section>
 
-  <hr>
-  <article id="contact">
+      <!-- divider, no semantic meaning, block element, they dont change or add any value to your code, only used to apply styles with css maybe -->
+      <!-- <div> </div> -->
+      <!-- <span></span> -->
 
-    <h2>Contact Me</h2>
-    <p>Please do NOT contact me, actually :/</p>
-      
-    <form action="https://httpbin.org/get" method="get">
+      <hr />
+      <article id="contact">
+        <h2>Contact Me</h2>
+        <p>Please do NOT contact me, actually :/</p>
 
-      <fieldset>
-        <legend> Personal Info</legend>
-      <label for="firstName">First Name:</label>
-      <input type="text" name="firstName" id="firstName" placeholder="First Name"
-      autocomplete="on" required autofocus>
-      <p>
-      <label for="lastName">Last Name:</label>
-      <input type="text" name="lastName" id="lastName" placeholder="Last Name"
-      autocomplete="on">
-      </p>
-      <p>
-      <label for="phone">Phone Number</label>
-      <input type="tel" name="phone" id="phone" placeholder="1234567890"
-      autocomplete="on" pattern="[0-9]{10}" required maxlength="10">
-      </p>
-      <p>
-      <label for="decade">Favorite Decade</label>
-      <input type="number" name="decade" id="decade"
-      min="1950" max="2050"
-      step="10" value="1980">
-      </p>
-      <!-- OPTION GROUP -->
-       <p>
-        <label for="coffee">favorite coffee</label>
-        <select name="coffee" id="coffee">
-          <optgroup label="coffee">
-            <option value="regular coffee">regular coffee</option>
-            <option value="decaf coffee">decaf coffee</option>
-            <option value="iced coffee" selected >iced coffee</option>
-          </optgroup>
-          <optgroup label="tea">
-            <option value="greenTea">Green Tea</option>
-            <option value="blackTea">Black Tea</option>
-            <option value="earlGrey">Earl Grey</option>
-          </optgroup>
-          <option value="other">Other</option>
-        </select>
-      </p> 
-      <!-- OPTION GROUP -->
-      <!-- OPTION + SHIFT + A COMMENT ALL HIGHLIGHTED -->
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Personal Info</legend>
+            <label for="firstName">First Name:</label>
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="First Name"
+              autocomplete="on"
+            />
+            <p>
+              <label for="lastName">Last Name:</label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Last Name"
+                autocomplete="on"
+              />
+            </p>
+            <p>
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="1234567890"
+                autocomplete="on"
+                pattern="[0-9]{10}"
+                required
+                maxlength="10"
+              />
+            </p>
+            <p>
+              <label for="decade">Favorite Decade</label>
+              <input
+                type="number"
+                name="decade"
+                id="decade"
+                min="1950"
+                max="2050"
+                step="10"
+                value="1980"
+              />
+            </p>
+            <!-- OPTION GROUP -->
+            <p>
+              <label for="coffee">favorite coffee</label>
+              <select name="coffee" id="coffee">
+                <optgroup label="coffee">
+                  <option value="regular coffee">regular coffee</option>
+                  <option value="decaf coffee">decaf coffee</option>
+                  <option value="iced coffee" selected>iced coffee</option>
+                </optgroup>
+                <optgroup label="tea">
+                  <option value="greenTea">Green Tea</option>
+                  <option value="blackTea">Black Tea</option>
+                  <option value="earlGrey">Earl Grey</option>
+                </optgroup>
+                <option value="other">Other</option>
+              </select>
+            </p>
+            <!-- OPTION GROUP -->
+            <!-- OPTION + SHIFT + A COMMENT ALL HIGHLIGHTED -->
 
-       <!-- DATALIST -->
-     <!--   <p>
+            <!-- DATALIST -->
+            <!--   <p>
         <label for="coffee">favorite coffee</label>
         <input type="text" name="coffee" id="coffee" list="coffee-list">
           <datalist id="coffee-list">
@@ -308,73 +352,83 @@
       <input type="text" name="eMail" id="eMail"placeholder="noContact@Mail.com"
       autocomplete="on">
      </p> -->
-<!-- DATALIST -->
-</fieldset>
-<br>
-<fieldset>
-  <legend>What is your favorite food?</legend>
-  <p>
-    <input type="radio" name="food" id="sushi">
-    <label for="sushi">Sushi</label>
-  </p>
-  <p>
-    <input type="radio" name="food" id="tacos">
-    <label for="tacos">Tacos</label>
-  <p>
-    <input type="radio" name="food" id="pasta">
-    <label for="pasta">Pasta</label>
-   </p>
-  <p>
-    <input type="radio" name="food" id="Rice">
-   <label for="Rice">Rice</label>
-  </p>
-</fieldset>
+            <!-- DATALIST -->
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>What is your favorite food?</legend>
+            <p>
+              <input type="radio" name="food" id="sushi" />
+              <label for="sushi">Sushi</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="tacos" />
+              <label for="tacos">Tacos</label>
+            </p>
 
-<fieldset>
-  <legend>Do you have pets?</legend>
-  <p>
-    <input type="checkbox" name="pets" id="dog" value="dog">
-    <label for="dog">Dog</label>
-    <p>
-    <input type="checkbox" name="pets" id="cat" value="cat">
-    <label for="cat">Cat</label>
-    </p>
-    <p>
-    <input type="checkbox" name="pets" id="fish" value="fish">
-    <label for="fish">Fish</label>
-    <input type="checkbox" name="pets" id="other" value="other">
-    <label for="other">Other</label>
-  </p>
-</fieldset>
+            <p>
+              <input type="radio" name="food" id="pasta" />
+              <label for="pasta">Pasta</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="Rice" />
+              <label for="Rice">Rice</label>
+            </p>
+          </fieldset>
 
-<fieldset>
-<legend>Send me a note!</legend>
-<label for="message">Your message.</label>
-<br>
-<textarea name="message" id="message" cols="30" rows="10" placeholder="please write your message."></textarea>
-<p>
+          <fieldset>
+            <legend>Do you have pets?</legend>
+            <p>
+              <input type="checkbox" name="pets" id="dog" value="dog" />
+              <label for="dog">Dog</label>
+            </p>
 
-<button type="submit">Submit</button>
-<button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
-<button type="reset">Reset</button>
-</p>
-</fieldset>
+            <p>
+              <input type="checkbox" name="pets" id="cat" value="cat" />
+              <label for="cat">Cat</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="fish" value="fish" />
+              <label for="fish">Fish</label>
+              <input type="checkbox" name="pets" id="other" value="other" />
+              <label for="other">Other</label>
+            </p>
+          </fieldset>
 
-    </form>
+          <fieldset>
+            <legend>Send me a note!</legend>
+            <label for="message">Your message.</label>
+            <br />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="please write your message."
+            ></textarea>
+            <p>
+              <button type="submit">Submit</button>
+              <button
+                type="submit"
+                formaction="https://httpbin.org/post"
+                formmethod="post"
+              >
+                Post
+              </button>
+              <button type="reset">Reset</button>
+            </p>
+          </fieldset>
+        </form>
+      </article>
+      <hr />
+    </main>
 
-  </article>
-<hr>
-
-</main>
-
-<hr>
-<footer>
-  <p> 
-  &lt;&lt;&lt; &copy; <a href="about.html">Michelle Nestler</a> &gt;&gt;&gt;
-  </p>
-
- </footer>
-
-</body>
+    <hr />
+    <footer>
+      <p>
+        &lt;&lt;&lt; &copy;
+        <a href="about.html">Michelle Nestler</a> &gt;&gt;&gt;
+      </p>
+    </footer>
+  </body>
 </html>
-

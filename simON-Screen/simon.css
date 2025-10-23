@@ -132,11 +132,11 @@ table {
 
 @font-face {
   font-family: Roboto;
-  src: url(/fonts/RobotoCondensed-Regular.ttf);
+  src: url(fonts-simON/RobotoCondensed-Regular.ttf);
 }
 @font-face {
   font-family: RubikBlack;
-  src: url(fonts/Rubik-Black.ttf);
+  src: url(fonts-simON/Rubik-Black.ttf);
 }
 
 body {

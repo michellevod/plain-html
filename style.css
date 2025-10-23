@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(255, 255, 255);
   color: black;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -26,11 +26,11 @@ li::marker {
 }
 
 a {
-  color: #E9B3FB;
+  color: #876293;
 }
 
 a:visited {
-  color: palevioletred;
+  color: rgb(0, 0, 0);
 }
 
 a:hover {
