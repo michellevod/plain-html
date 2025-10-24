@@ -33,6 +33,7 @@
 body {
     height: 100vh;
     display: flex;
+    gap: 16px;
     align-items: center;
     justify-content: center;
     background-color: #f2f2f2;
@@ -44,7 +45,16 @@ body {
     margin-top: 5px;
     padding: 20px;
     background:white;
-    border-radius: 8px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgb(187, 187, 187);
+}
+.white-Card2 {
+    border: black;
+    width: min-content;
+    margin-top: 5px;
+    padding: 20px;
+    background:white;
+    border-radius: 6px;
     box-shadow: 0 0 10px rgb(187, 187, 187);
 }
 
@@ -53,23 +63,27 @@ h2.headline-Card {
     font-size: 28px;
     white-space: nowrap;
 }
-/*
-.card-Image {
-     display: flex;
-     justify-content: center;
-     max-height: 310px;
-     max-width: 600px;
-     overflow: hidden;
-     border-radius: 5px;
-}
-  */
-
-
   .card-Mask {
-    height:
-    
+    height: 280px;
+    overflow: hidden;
+    border-radius: 6px;
   }
-
+.card-Image img {
+    width: auto;
+    height: auto;
+    margin-top: -90px;
+    border-radius: 6px;
+}
+  .card-Mask2 {
+    height: 280px;
+    overflow: hidden;
+    border-radius: 6px;
+  }
+.card-Image2 {
+    background-image: url(img/GigaTV-Sound-Box-dc-h-496x476-dt.jpg);
+    background-position: center;
+    border-radius: 6px;
+}
 .card-List {
 
 line-height: 35px;
@@ -91,7 +105,7 @@ font-size: 18px;
 }
 .price-Desc {
 font-size: 20px;
-margin-top: 10px auto;
+margin-top: 10px;
 margin-bottom: 20px;
 }
 .external-Link {
