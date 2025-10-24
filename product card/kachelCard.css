@@ -41,7 +41,7 @@ body {
 .white-Card {
     border: black;
     width: min-content;
-    margin-top: 110px;
+    margin-top: 5px;
     padding: 20px;
     background:white;
     border-radius: 8px;
@@ -49,32 +49,54 @@ body {
 }
 
 h2.headline-Card {
-    font-size: 30px;
+    margin: 20px 0;
+    font-size: 28px;
+    white-space: nowrap;
 }
+/*
 .card-Image {
      display: flex;
      justify-content: center;
-     max-height:310px;
+     max-height: 310px;
      max-width: 600px;
-     border-radius: 10px;
-     
+     overflow: hidden;
+     border-radius: 5px;
 }
+  */
+
+
+  .card-Mask {
+    height:
+    
+  }
+
 .card-List {
-list-style-type: style type inside;
-line-height: 40px;
+
+line-height: 35px;
+margin-top: 20px ;
+margin-left: 20px;
+padding: 0;
+font-size: 18px;
+}
+
+.price-Numbers, .price-Desc, .euro-Price {
+    margin: 2px;
 }
 .price-Numbers {
     font-size: 48px;
     font-family: Vodafone;
 }
-
 .euro-Price {
     font-size: 30px;
 }
 .price-Desc {
 font-size: 20px;
+margin-top: 10px auto;
+margin-bottom: 20px;
 }
-
+.external-Link {
+    margin-bottom: 20px;
+}
 a {
     color: #bd0000;
     text-decoration: none;
