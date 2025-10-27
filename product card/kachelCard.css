@@ -128,22 +128,23 @@ a {
     flex-direction: row-reverse;
     align-items: right;
     justify-content: space-between;
-    width: 100%;
+    width: 600px;
     margin-top: 5px;
     padding: 20px;
     background:white;
     border-radius: 6px;
     box-shadow: 0 0 10px rgb(187, 187, 187);
+   
 }
 h2.headline-Card-Small {
     margin: 20px 0;
     font-size: 28px;
     white-space: nowrap;
 }
-.card-Image-Small img {
-  width: 400px;
-  height: 500px;
-  object-fit: cover;
+ .card-Image-Small img {
+    width: 300px;
+    height: 320px;
+    object-fit: cover;
     border-radius: 6px;
 }
 
@@ -153,7 +154,7 @@ h2.headline-Card-Small {
     padding-right: 10px;
     overflow: hidden;
     border-radius: 6px;
-}
+} 
 
 .card-Content-Small {
 padding-right: 32px;
