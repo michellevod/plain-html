@@ -42,6 +42,8 @@ body {
     background-color: #f2f2f2;
 }
 
+
+/* Normal Cards */
 .white-Card, .white-Card2 {
     width: min-content;
     margin-top: 5px;
@@ -89,7 +91,7 @@ font-size: 18px;
 
 .price-Numbers {
     font-size: 48px;
-    font-family: Vodafone;
+   
 }
 .euro-Price {
     font-size: 30px;
@@ -115,7 +117,7 @@ a {
     flex-direction: row-reverse;
     justify-content: space-around;
     width: 600px;
-    margin-top: 5px;
+    gap: 5px;
     padding: 20px;
     background:white;
     border-radius: 6px;
@@ -123,13 +125,13 @@ a {
    
 }
 h2.headline-Card-Small {
-    margin: 20px 0;
+  margin: 16px 0px 12px;
     font-size: 28px;
     white-space: nowrap;
 }
  .card-Image-Small img {
-    width: 300px;
-    height: 320px;
+    width: 200px;
+    height: 230px;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -138,32 +140,38 @@ h2.headline-Card-Small {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 280px;
-    width: 215px;
+    margin: 5px -5px;
+    width: 220px;
+    height: 230px;
     overflow: hidden;
     border-radius: 6px;
 } 
 
 .card-Content-Small {
-padding-right: 32px;
+padding: 0px 12px 0px 0px;
 }
 
 .card-Badge-Small {
 display: inline-flex;
 align-items: center;
-width: 270px;
+font-weight: 700;
+width: 285px;
 height: 28px;
-padding: 6px 18px;
+margin-top: 0px;
+padding: 10px 18px;
 border-radius: 20px;
 background-color: #FECB00;
 }
-
+.price-Main-Small {
+    margin-top: -20px;
+    padding-top: 20px;
+}
 .price-Numbers-Small {
     font-size: 48px;
 }
 
 .price-Desc-Small {
-padding-bottom: 30px;
+gap: 12px;
 font-size: 16px;
 }
 
@@ -171,3 +179,5 @@ font-size: 16px;
 display: block;
 margin-top:  20px;
 }
+
+/* Card-Small 2 */
