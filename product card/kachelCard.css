@@ -118,3 +118,55 @@ a {
     font-family: Vodafone;
 }
 
+/* Card-Small */
+.white-Card-Small {
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+    padding: 20px;
+    background:white;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgb(187, 187, 187);
+}
+h2.headline-Card-Small {
+    margin: 20px 0;
+    font-size: 28px;
+    white-space: nowrap;
+}
+.card-Image-Small {
+  
+}
+
+.card-Mask-Small {
+    height: 300px;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.card-Content-Small {
+
+
+}
+
+.card-Badge-Small {
+
+}
+
+.headline-Card-Small {
+
+}
+
+.card-List-Small {
+
+}
+
+.price-Desc-Small {
+
+}
+
+.external-Link-Small {
+
+}
