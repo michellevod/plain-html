@@ -45,7 +45,7 @@ body {
 
 
 /* Normal Cards */
-.white-Card, .white-Card2,{
+.white-Card , .white-Card2,{
     width: min-content;
     margin-top: 5px;
     padding: 20px;
@@ -55,7 +55,6 @@ body {
 }
 .white-Card-Flex {
     width:600px;
-    margin-top: 5px;
     padding: 20px;
     background:white;
     border-radius: 6px;
@@ -67,10 +66,7 @@ h2.headline-Card {
     font-size: 28px;
     white-space: nowrap;
 }
-h2.headline-Card-Flex {
-    margin: 20px 0;
-    font-size: 28px;
-}
+
 .card-Mask {
     height: 280px;
     overflow: hidden;
@@ -193,6 +189,22 @@ margin-top:  20px;
 }
 
 /* Card-Flex */
+
+.card-Image-Flex img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+}
+.card-Mask-Flex {
+    height: 310px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+h2.headline-Card-Flex {
+    margin: 20px 0;
+    font-size: 28px;
+}
 .card-Badge-Large {
 display: inline-flex;
 align-items: center;
@@ -208,7 +220,7 @@ background-color: #FECB00;
 display: inline-flex;
 }
 .price-Container-flex {
-padding-bottom: 50px;
+padding-bottom: 20px;
 }
 
 .container-DeineAngeboteRechts {
@@ -220,7 +232,6 @@ padding-bottom: 50px;
    display: flex;
    flex-direction: column;
    gap: 32px;
-   padding-top: 5px;
 }
 
 .container-DeineAngebote-HT {
