@@ -22,7 +22,7 @@ min-width: 1200px;
 max-width: 1200px;
 max-height: fit-content;
 padding: 10px;
-margin: 20px 1000px;
+margin: auto;
 box-sizing: border-box;
 box-shadow: 0 0 30px rgb(116, 107, 107);
 }
