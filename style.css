@@ -9,17 +9,34 @@
   src: url(fonts/Rubik-Black.ttf);
 }
 
-
+* {
+  margin: 20px 10px 20px 10px;
+}
 html {
   font-size: 20px;
 }
 
+.page-Box-White {
+background-color: white;
+min-width: 1200px;
+max-width: 1200px;
+max-height: fit-content;
+padding: 10px;
+margin: 20px 1000px;
+box-sizing: border-box;
+box-shadow: 0 0 30px rgb(116, 107, 107);
+}
+
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(243, 218, 236);
   color: black;
   font-family: 'Courier New', Courier, monospace;
 }
-
+ul {
+  display: inline-flex;
+  gap: 4px;
+  flex-direction: column;
+}
 li::marker {
   content: "☆ ";
   font-size: 1.2em;
