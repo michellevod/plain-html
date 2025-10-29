@@ -1,0 +1,60 @@
+
+body {
+    background: gray;
+
+}
+li {
+    list-style-type: none;
+}
+.containerProductCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.iconBook {
+    width: 32px;
+    height: 32px;
+}
+.topNav {
+    display: flex;
+    height: auto;
+    width: min-content;
+    flex-direction: row;
+    background: rgb(167, 155, 175);
+    border: 5px yellow solid;
+}
+
+.productCard {
+    background: white;
+    gap: 20px;
+    border: 5px rgb(0, 255, 76) solid;
+}
+.bookPic {
+    width: 10rem;
+    height: auto;
+    border: 5px red solid;
+}
+.bookName {
+
+}
+.authorName {
+
+}
+.infoBadge {
+background: yellow;
+border: 1px;
+border-radius: 6px ;
+}
+.bookPrice {
+
+}
+.shippingTime {
+
+}
+.bookRating {
+
+}
+.wishListIcon {
+
+}

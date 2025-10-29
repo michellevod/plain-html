@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Book Store</title>
+    <link rel="stylesheet" href="Book.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="topNav">
+        <div class="iconBook">
+          <img class="iconBook" src="img/image.png" alt="BookStoreLogo" />
+        </div>
+        <h1>The Book Book Store</h1>
+        <input type="text" placeholder="Suche.." />
+        <nav>
+          <ul>
+            <li><a href="Book">Bücher</a></li>
+            <li><a href="Englisch">Englische Bücher</a></li>
+            <li><a href="Sale">SALE</a></li>
+            <li><a href="Hörbücher">Hörbücher</a></li>
+            <li><a href="#Bestseller">Bestseller</a></li>
+          </ul>
+        </nav>
+        <section>
+          <p>Einloggen</p>
+          <label for="logIn">username:</label>
+          <input type="text" name="logIn" id="logIn" />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="**********"
+            required
+          />
+        </section>
+      </div>
+    </header>
+
+    <section id="Bestseller">
+      <h2>Bestseller</h2>
+      <!-- BOOK -->
+      <div class="containerProductCards">
+        <div class="productCard">
+          <img
+            class="bookPic"
+            src="img/aftermidnight.png"
+            alt="aftermidnight"
+          />
+          <h4 class="bookName">After Midnight</h4>
+          <p class="authorName">Daniel Simmons</p>
+          <div class="infoBadge">
+            <p><i class="fa-sharp fa-solid fa-user"></i>&nbsp;Placeholder</p>
+          </div>
+          <div class="bookPrice">13,00€</div>
+          <div class="shippingTime">LieferzeitPH</div>
+          <div class="bookRating">(###)</div>
+          <div class="wishListIcon"><i class="fa-regular fa-heart"></i></div>
+        </div>
+        <!-- BOOK -->
+        <div class="productCard">
+          <img class="bookPic" src="img/relicoflight.png" alt="relicoflight" />
+          <h4 class="bookName">Relic of Light</h4>
+          <p class="authorName">Sarah Chislon</p>
+          <div class="infoBadge">
+            <p><i class="fa-sharp fa-solid fa-user"></i>&nbsp;Placeholder</p>
+          </div>
+          <div class="bookPrice">13,00€</div>
+          <div class="shippingTime">LieferzeitPH</div>
+          <div class="bookRating">(###)</div>
+          <div class="wishListIcon"><i class="fa-regular fa-heart"></i></div>
+        </div>
+        <!--BOOK -->
+        <div class="productCard">
+          <img
+            class="bookPic"
+            src="img/mysteryofbrionylodge.png"
+            alt="mysteryofbrionylodge"
+          />
+          <h4 class="bookName">Bookname</h4>
+          <p class="authorName">First Name Last Name</p>
+          <div class="infoBadge">
+            <p><i class="fa-sharp fa-solid fa-user"></i>&nbsp;Placeholder</p>
+          </div>
+          <div class="bookPrice">13,00€</div>
+          <div class="shippingTime">LieferzeitPH</div>
+          <div class="bookRating">(###)</div>
+          <div class="wishListIcon"><i class="fa-regular fa-heart"></i></div>
+        </div>
+        <!-- BOOK -->
+        <div class="productCard">
+          <img
+            class="bookPic"
+            src="img/towerandthewolf.png"
+            alt="towerandthewolf"
+          />
+          <h4 class="bookName">Bookname</h4>
+          <p class="authorName">First Name Last Name</p>
+          <div class="infoBadge">
+            <p><i class="fa-sharp fa-solid fa-user"></i>&nbsp;Placeholder</p>
+          </div>
+          <div class="bookPrice">13,00€</div>
+          <div class="shippingTime">LieferzeitPH</div>
+          <div class="bookRating">(###)</div>
+          <div class="wishListIcon"><i class="fa-regular fa-heart"></i></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
