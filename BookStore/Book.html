@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Book Store</title>
+    <title>The Book Book Store</title>
     <link rel="stylesheet" href="Book.css" />
     <link
       rel="stylesheet"
@@ -12,35 +12,34 @@
   </head>
   <body>
     <header>
-      <div class="topNav">
+      <div class="iconHeadline">
         <div class="iconBook">
-          <img class="iconBook" src="img/image.png" alt="BookStoreLogo" />
+          <div class="iconBorder">
+            <img class="iconBook" src="img/iconBooks.png" alt="BookStoreLogo" />
+          </div>
         </div>
-        <h1>The Book Book Store</h1>
-        <input type="text" placeholder="Suche.." />
-        <nav>
-          <ul>
-            <li><a href="Book">Bücher</a></li>
-            <li><a href="Englisch">Englische Bücher</a></li>
-            <li><a href="Sale">SALE</a></li>
-            <li><a href="Hörbücher">Hörbücher</a></li>
-            <li><a href="#Bestseller">Bestseller</a></li>
-          </ul>
-        </nav>
-        <section>
-          <p>Einloggen</p>
-          <label for="logIn">username:</label>
-          <input type="text" name="logIn" id="logIn" />
-          <label for="password">Password:</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="**********"
-            required
-          />
-        </section>
+        <h1 class="mainHeadline">The Book Book Store</h1>
+        <!-- search icon -->
+        <button class="searchButton">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
       </div>
+      <nav>
+        <ul class="nav__Links">
+          <li><a href="#">Bestseller</a></li>
+          <li><a href="#">Bücher</a></li>
+          <li><a href="#">Englische Bücher</a></li>
+          <li><a href="#">Hörbücher</a></li>
+          <li><a href="#">SALE</a></li>
+        </ul>
+      </nav>
+      <figure>
+        <img
+          class="imageHeader"
+          src="img/boston-public-library-Nnw5_MtO25g-unsplash-min.jpg"
+          alt="Headerimage"
+        />
+      </figure>
     </header>
 
     <section id="Bestseller">
