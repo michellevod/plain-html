@@ -31,6 +31,12 @@ h5 {
 a {
   text-decoration: none;
   color: black;
+  transition: 0.5s;
+}
+a:hover {
+  background-color: rgb(189, 224, 231);
+  border-radius: 10px;
+  padding: 2px;
 }
 li {
   list-style-type: none;
@@ -59,13 +65,14 @@ header {
   height: 65px;
   border-radius: 90%;
   padding: 2px;
+  margin: 10px;
 }
 
 .topTitleBar {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  gap: 80px;
+  gap: 30px;
   padding-top: 30px;
   padding-bottom: 10px;
   position: relative;
@@ -88,24 +95,26 @@ h1.titleWebsite {
 ul.nav__Links {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  justify-content: space-evenly;
+  gap: 6px;
   background-color: rgb(255, 255, 255);
   padding: 10px;
-  width: 430px;
-  font-size: 15px;
+  width: 375px;
+  font-size: 14px;
   font-family: "Darumadrop One", sans-serif;
 }
 #SALE {
   color: red;
 }
 .imageHeader {
-  width: 430px;
+  width: 375px;
   height: auto;
 }
 
 .containerProductCards {
   margin: 10px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   gap: 10px;
@@ -131,7 +140,6 @@ ul.nav__Links {
 }
 .bookName,
 .authorName,
-.infoBadge,
 .bookPrice,
 .shippingTime,
 .bookRating {
@@ -150,9 +158,8 @@ ul.nav__Links {
   background: rgb(201, 241, 245);
   width: 150px;
   height: 20px;
-  position: relative;
-  left: 75px;
   border-radius: 8px;
+  text-align: center;
 }
 .bookPrice {
   font-size: 16px;
@@ -184,12 +191,36 @@ ul.nav__Links {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-/* testing */
-.productCard2 {
-  display: flex;
-  justify-content: center;
-  background-color: cyan;
-  width: 300px;
-  height: 450px;
+
+/* MEDIA QUERIES */
+/* @media (min-width: 376px) {
+  body {
+    background-color: lightgreen;
+    color: red;
+  }
+} */
+@media (min-width: 768px) and (max-width: 1020px) {
+  .containerProductCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: blue;
+  }
+}
+@media (min-width: 1020px) and (max-width: 4000px) {
+  .containerProductCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: rgb(161, 12, 158);
+    margin: 50px;
+  }
+  .infoHeader {
+    width: 100%;
+    height: auto;
+  }
 }
