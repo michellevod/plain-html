@@ -1,44 +1,52 @@
 /* FONTS */
 @font-face {
-    font-family: Vodafone;
-    src: url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneRg.eot);
-    src: url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneRg.woff2) format("woff2"),url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneRg.woff) format("woff");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap
+  font-family: Vodafone;
+  src: url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneRg.eot);
+  src: url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneRg.woff2)
+      format("woff2"),
+    url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneRg.woff)
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
- 
+
 @font-face {
-    font-family: Vodafone;
-    src: url(https://www.vodafone.de/simplicity/assets/css/fonts/vodafonergbd-webfont.eot);
-    src: url(https://www.vodafone.de/simplicity/assets/css/fonts/vodafonergbd-webfont.woff2) format("woff2"),url(https://www.vodafone.de/simplicity/assets/css/fonts/vodafonergbd-webfont.woff) format("woff");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap
+  font-family: Vodafone;
+  src: url(https://www.vodafone.de/simplicity/assets/css/fonts/vodafonergbd-webfont.eot);
+  src: url(https://www.vodafone.de/simplicity/assets/css/fonts/vodafonergbd-webfont.woff2)
+      format("woff2"),
+    url(https://www.vodafone.de/simplicity/assets/css/fonts/vodafonergbd-webfont.woff)
+      format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
- 
+
 @font-face {
-    font-family: Vodafone;
-    src: url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneLt.eot);
-    src: url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneLt.woff2) format("woff2"),url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneLt.woff) format("woff");
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap
+  font-family: Vodafone;
+  src: url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneLt.eot);
+  src: url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneLt.woff2)
+      format("woff2"),
+    url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneLt.woff)
+      format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
 * {
-    font-family: Vodafone, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: Vodafone, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
 body {
-    height: 100vh;
-    display: flex;
-    gap: 16px;
-    background-color: #f2f2f2;
-    margin: 50px;
+  height: 100vh;
+  display: flex;
+  gap: 16px;
+  background-color: #f2f2f2;
+  margin: 50px;
 }
 
 @media screen and (media-feature: value) and (media-feature: value) {
@@ -47,231 +55,236 @@ body {
 /* gridContainer stuff - https://www.w3schools.com/css/css_grid.asp */
 .gridContainer {
   display: grid;
-  grid-template-columns: 50%  50%;
+  grid-template-columns: 50% 50%;
   grid-template-rows: repeat(3, 280px);
   background-color: rgb(229, 229, 229);
-  background:fixed;
+  background: fixed;
   padding: 60px;
   gap: 24px;
 }
 
 /* Normal Cards */
-.white-Card , .white-Card2 {
-    width: min-content;
-    margin-top: 5px;
-    padding: 20px;
-    background:white;
-    border-radius: 6px;
-    box-shadow: 0 0 10px rgb(187, 187, 187);
+.white-Card,
+.white-Card2 {
+  width: min-content;
+  margin-top: 5px;
+  padding: 20px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgb(187, 187, 187);
 }
 .white-Card-Grid {
-    width:600px;
-    padding: 20px;
-    background:white;
-    border-radius: 6px;
-    box-shadow: 0 0 10px rgb(187, 187, 187);
-    grid-row-start: 1;
-    grid-row-end: 3;
+  width: 600px;
+  padding: 20px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgb(187, 187, 187);
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 h2.headline-Card {
-    margin: 20px 0;
-    font-size: 28px;
-    white-space: nowrap;
+  margin: 20px 0;
+  font-size: 28px;
+  white-space: nowrap;
 }
 
 .card-Mask {
-    height: 280px;
-    overflow: hidden;
-    border-radius: 6px;
-  }
+  height: 280px;
+  overflow: hidden;
+  border-radius: 6px;
+}
 .card-Image img {
-    width: auto;
-    height: auto;
-    margin-top: -90px;
-    border-radius: 6px;
+  width: auto;
+  height: auto;
+  margin-top: -90px;
+  border-radius: 6px;
 }
 .card-Mask2 {
-    height: 280px;
-    overflow: hidden;
-    border-radius: 6px;
-  }
+  height: 280px;
+  overflow: hidden;
+  border-radius: 6px;
+}
 .card-Image2 {
-    background-image: url(img/GigaTV-Sound-Box-dc-h-496x476-dt.jpg);
-    background-position: center;
-    border-radius: 6px;
+  background-image: url(img/GigaTV-Sound-Box-dc-h-496x476-dt.jpg);
+  background-position: center;
+  border-radius: 6px;
 }
 .card-List {
-
-line-height: 35px;
-margin-top: 20px ;
-margin-left: 20px;
-padding: 0;
-font-size: 18px;
+  line-height: 35px;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 0;
+  font-size: 18px;
 }
 
 .price-Numbers {
-    font-size: 48px;
-   
+  font-size: 48px;
 }
 .euro-Price {
-    font-size: 30px;
+  font-size: 30px;
 }
 .price-Desc {
-font-size: 20px;
-margin-top: 10px;
-margin-bottom: 20px;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .external-Link {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 a {
-    color: #bd0000;
-    text-decoration: none;
-    font-size: 18px;
+  color: #bd0000;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 /* Card-Small */
 
-.white-Card-Small , .white-Card-Small1 , .white-Card-Small2 , .white-Card-Small3 , .white-Card-Small4 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    width: 600px;
-    gap: 5px;
-    padding: 20px;
-    background:white;
-    border-radius: 6px;
-    box-shadow: 0 0 10px rgb(187, 187, 187);
-   
+.white-Card-Small,
+.white-Card-Small1,
+.white-Card-Small2,
+.white-Card-Small3,
+.white-Card-Small4 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  width: 600px;
+  gap: 5px;
+  padding: 20px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgb(187, 187, 187);
 }
 h2.headline-Card-Small {
   margin: 16px 0px 12px;
-    font-size: 28px;
-    white-space: nowrap;
+  font-size: 28px;
+  white-space: nowrap;
 }
- .card-Image-Small img {
-    width: 200px;
-    height: 230px;
-    object-fit: cover;
-    border-radius: 6px;
+.card-Image-Small img {
+  width: 200px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 6px;
 }
 
 .card-Mask-Small {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px -5px;
-    width: 220px;
-    height: 230px;
-    overflow: hidden;
-    border-radius: 6px;
-} 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px -5px;
+  width: 220px;
+  height: 230px;
+  overflow: hidden;
+  border-radius: 6px;
+}
 
 .card-Content-Small {
-padding: 0px 12px 0px 0px;
+  padding: 0px 12px 0px 0px;
 }
 
 .card-Badge-Small {
-display: inline-flex;
-align-items: center;
-font-weight: 700;
-width: 285px;
-height: 28px;
-margin-top: 0px;
-padding: 10px 18px;
-border-radius: 20px;
-background-color: #FECB00;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  width: 285px;
+  height: 28px;
+  margin-top: 0px;
+  padding: 10px 18px;
+  border-radius: 20px;
+  background-color: #fecb00;
 }
 .price-Main-Small {
-    margin-top: -20px;
-    padding-top: 20px;
+  margin-top: -20px;
+  padding-top: 20px;
 }
 .price-Numbers-Small {
-    font-size: 48px;
+  font-size: 48px;
 }
 
 .price-Desc-Small {
-gap: 12px;
-font-size: 16px;
+  gap: 12px;
+  font-size: 16px;
 }
 
 .external-Link-Small {
-display: block;
-margin-top:  20px;
+  display: block;
+  margin-top: 20px;
 }
 
 /* Card-GRID */
 
 .card-Image-Grid img {
-    width: 100%;
-    height: 100%;
-    border-radius: 6px;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  object-fit: cover;
 }
 .card-Mask-Grid {
-    height: 310px;
-    overflow: hidden;
-    border-radius: 6px;
+  height: 310px;
+  overflow: hidden;
+  border-radius: 6px;
 }
 h2.headline-Card-Grid {
-    margin: 20px 0;
-    font-size: 28px;
+  margin: 20px 0;
+  font-size: 28px;
 }
 .card-Badge-Large {
-display: inline-flex;
-align-items: center;
-font-weight: 700;
-width: 190px;
-height: 28px;
-margin-top: 14px;
-padding: 10px 18px;
-border-radius: 20px;
-background-color: #FECB00;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  width: 190px;
+  height: 28px;
+  margin-top: 14px;
+  padding: 10px 18px;
+  border-radius: 20px;
+  background-color: #fecb00;
 }
 .priceMain-Grid {
-display: inline-flex;
+  display: inline-flex;
 }
 .price-Container-Grid {
-padding-bottom: 20px;
+  padding-bottom: 20px;
 }
-
 
 /*  RESPONSIVE DESIGN */
 @media screen and (max-width: 768px) {
-    body {
-        margin: 20px;
-    }
-    .gridContainer {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: auto;
-        padding: 20px;
-        gap: 14px;
-    }
-    .white-Card-Grid {
-        width: 100%;
-        grid-row: auto;
-    }
-    .white-Card-Small , .white-Card-Small1 , .white-Card-Small2 , .white-Card-Small3 , .white-Card-Small4 {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    .card-Image-Small img {
-        width: 100%;
-        height:auto;
-    }
-    .card-Mask-Small {
-        width: 100%;
-        height: auto;
-    }
-    .card-Content-Small {
-        padding: 12px;
-        text-align: center;
-    }
-    h2.headline-Card-Small {
-        white-space: normal;
-        font-size: 22px;
-    }
+  body {
+    margin: 20px;
+  }
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    padding: 20px;
+    gap: 14px;
+  }
+  .white-Card-Grid {
+    width: 100%;
+    grid-row: auto;
+  }
+  .white-Card-Small,
+  .white-Card-Small1,
+  .white-Card-Small2,
+  .white-Card-Small3,
+  .white-Card-Small4 {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .card-Image-Small img {
+    width: 100%;
+    height: auto;
+  }
+  .card-Mask-Small {
+    width: 100%;
+    height: auto;
+  }
+  .card-Content-Small {
+    padding: 12px;
+    text-align: center;
+  }
+  h2.headline-Card-Small {
+    white-space: normal;
+    font-size: 22px;
+  }
 }
