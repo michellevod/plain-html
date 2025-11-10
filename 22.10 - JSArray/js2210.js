@@ -12,4 +12,10 @@ for (let i = 0; i<songs.length; i++){
 }
 
 document.getElementById("playList2").innerHTML = text;
+// -----------
+var button = document.querySelector('button');
+var box = document.getElementById('changeMe');
 
+button.onlick = function changeColor() {
+    box.style.background = 'red';
+}

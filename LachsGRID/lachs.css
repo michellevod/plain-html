@@ -110,3 +110,16 @@ p {
     max-width: 1000px;
   }
 }
+
+/* @media (max-width: 375px) {
+  .card0,
+  .card1,
+  .card2 .card3,
+  .card4,
+  .grid,
+  .pageContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+} */
