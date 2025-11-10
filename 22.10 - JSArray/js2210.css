@@ -79,8 +79,35 @@ figure {
   align-items: center;
 }
 
+.gridContainerButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+.buttonBoxChange {
+  justify-items: center;
+}
+.buttonBoxToggle {
+  justify-items: center;
+}
+.buttonBoxSwitch {
+  justify-items: center;
+}
 #changeMe {
   background-color: blue;
+  width: 150px;
+  height: 150px;
+}
+
+#toggleMe {
+  background-color: yellow;
+  width: 150px;
+  height: 150px;
+}
+#switchMe {
+  background-color: black;
   width: 150px;
   height: 150px;
 }
