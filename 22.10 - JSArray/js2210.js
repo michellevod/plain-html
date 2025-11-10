@@ -2,7 +2,7 @@ const songs = [
   ' Dynamite - Taio Cruz ',
   ' Atemlos - Helene Fischer',
   ' Birds of a feather - Billie Eilish ',
-  ' Hallo - Susi ',
+  ' Bye - Susi ',
   ' Tschuess - Daniel',
   ' Ciao - Michelle '
 ]
@@ -17,13 +17,14 @@ for (let i = 0; i < songs.length; i++) {
   text +=
     '<span class`songRanked`>' +
     ranking +
-    1 +
-    '.) Song Name: ' +
+    "." +
+    ') Song Name: ' +
     songs[i] +
     '<br>'
 }
 
 document.getElementById('playList2').innerHTML = text
+
 // -----------
 
 var changeBox = document.getElementById('changeMe')
@@ -69,3 +70,6 @@ function switchColor() {
 }
 
 switchButton.onclick = switchColor;
+
+// ---------
+

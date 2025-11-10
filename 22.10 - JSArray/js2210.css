@@ -33,34 +33,57 @@ button {
   display: flex;
 }
 button {
-  background-color: rgb(92, 133, 104);
+  background-color: rgb(255, 255, 255);
   padding: 10px;
   margin: 10px;
 }
 .gridAround {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3,1fr);
+  border: 5px green solid;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
 }
 #intro-Top {
   background-color: rgb(197, 197, 197);
   border-style: ridge;
   border-radius: 10px;
   border-width: 10px;
-  margin: 10px auto;
-  width: 75%;
+  width: 500px;
+  height: 500px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
+.rankingBox {
+  background-color: rgb(80, 81, 82);
+  border: 10px white ridge;
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
 
+}
+#playList2 {
+  display: flex;
+  color: orange;
+  padding: 20px;
+  justify-content: center;
+  align-items:center;
+}
 #playList {
   margin: 10px;
+  color: aqua;
 }
 figure {
   display: inline-block;
   text-align: center;
+}
+figure img {
+  width: 15vw;
+  height: auto;
 }
 .figCaptionContainer {
   text-align: center;
@@ -71,8 +94,8 @@ figure {
   border-style: ridge;
   border-radius: 10px;
   border-width: 10px;
-  margin: 10px auto;
-  width: 75%;
+  width: 500px;
+  height: 500px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -81,10 +104,13 @@ figure {
 
 .gridContainerButtons {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
+  justify-content: center;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 10px;
   justify-items: center;
   align-items: center;
+  border: 5px red solid;
+  margin: 50px;
 }
 .buttonBoxChange {
   justify-items: center;
