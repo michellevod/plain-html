@@ -1,11 +1,9 @@
-/* FONTS */
+/* ====== FONTS ====== */
 @font-face {
   font-family: Vodafone;
   src: url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneRg.eot);
-  src: url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneRg.woff2)
-      format("woff2"),
-    url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneRg.woff)
-      format("woff");
+  src: url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneRg.woff2) format("woff2"),
+       url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneRg.woff) format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -14,10 +12,8 @@
 @font-face {
   font-family: Vodafone;
   src: url(https://www.vodafone.de/simplicity/assets/css/fonts/vodafonergbd-webfont.eot);
-  src: url(https://www.vodafone.de/simplicity/assets/css/fonts/vodafonergbd-webfont.woff2)
-      format("woff2"),
-    url(https://www.vodafone.de/simplicity/assets/css/fonts/vodafonergbd-webfont.woff)
-      format("woff");
+  src: url(https://www.vodafone.de/simplicity/assets/css/fonts/vodafonergbd-webfont.woff2) format("woff2"),
+       url(https://www.vodafone.de/simplicity/assets/css/fonts/vodafonergbd-webfont.woff) format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -26,14 +22,14 @@
 @font-face {
   font-family: Vodafone;
   src: url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneLt.eot);
-  src: url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneLt.woff2)
-      format("woff2"),
-    url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneLt.woff)
-      format("woff");
+  src: url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneLt.woff2) format("woff2"),
+       url(https://www.vodafone.de/simplicity/assets/css/fonts/VodafoneLt.woff) format("woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
+
+/* ====== GLOBALS ====== */
 * {
   font-family: Vodafone, sans-serif;
   margin: 0;
@@ -42,124 +38,77 @@
 }
 
 body {
-  height: 100vh;
-  display: flex;
-  gap: 16px;
   background-color: #f2f2f2;
-  margin: 50px;
 }
 
-@media screen and (media-feature: value) and (media-feature: value) {
-  /* CSS rules to apply */
+/* ====== CSS CUSTOM PROPERTIES ====== */
+:root {
+  --grid-gap: 12px;
+  --grid-padding: 40px;
+  --grid-template-columns: 100%;
+  --grid-template-rows: auto;
 }
-/* gridContainer stuff - https://www.w3schools.com/css/css_grid.asp */
-.gridContainer {
+
+@media screen and (min-width: 768px) {
+  :root {
+    --grid-gap: 32px;
+    --grid-padding: 20px;
+    --grid-template-columns: repeat(2, 300px);
+    --grid-template-rows: repeat(3, 280px);
+  }
+}
+
+/* ====== GRID ====== */
+.grid {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: repeat(3, 280px);
-  background-color: rgb(229, 229, 229);
-  background: fixed;
-  padding: 60px;
-  gap: 24px;
+  grid-template-columns: var(--grid-template-columns);
+  grid-template-rows: var(--grid-template-rows);
+  padding: var(--grid-padding);
+  gap: var(--grid-gap);
+}
+.eins , .zwei , .vier {
+  grid-column: 2;
+  grid-row-start: 2/2;
 }
 
-/* Normal Cards */
-.white-Card,
-.white-Card2 {
-  width: min-content;
-  margin-top: 5px;
-  padding: 20px;
+/* ====== CARD VARIANTS ====== */
+.card-Large,
+.card-Small {
   background: white;
   border-radius: 6px;
   box-shadow: 0 0 10px rgb(187, 187, 187);
+  padding: 20px;
 }
-.white-Card-Grid {
+
+.card-Large {
   width: 600px;
-  padding: 20px;
-  background: white;
-  border-radius: 6px;
-  box-shadow: 0 0 10px rgb(187, 187, 187);
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row: span 2;
 }
 
-h2.headline-Card {
-  margin: 20px 0;
-  font-size: 28px;
-  white-space: nowrap;
-}
-
-.card-Mask {
-  height: 280px;
-  overflow: hidden;
-  border-radius: 6px;
-}
-.card-Image img {
-  width: auto;
-  height: auto;
-  margin-top: -90px;
-  border-radius: 6px;
-}
-.card-Mask2 {
-  height: 280px;
-  overflow: hidden;
-  border-radius: 6px;
-}
-.card-Image2 {
-  background-image: url(img/GigaTV-Sound-Box-dc-h-496x476-dt.jpg);
-  background-position: center;
-  border-radius: 6px;
-}
-.card-List {
-  line-height: 35px;
-  margin-top: 20px;
-  margin-left: 20px;
-  padding: 0;
-  font-size: 18px;
-}
-
-.price-Numbers {
-  font-size: 48px;
-}
-.euro-Price {
-  font-size: 30px;
-}
-.price-Desc {
-  font-size: 20px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-.external-Link {
-  margin-bottom: 20px;
-}
-a {
-  color: #bd0000;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-/* Card-Small */
-
-.white-Card-Small,
-.white-Card-Small1,
-.white-Card-Small2,
-.white-Card-Small3,
-.white-Card-Small4 {
+.card-Small {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
+  align-items: center;
   width: 600px;
   gap: 5px;
-  padding: 20px;
-  background: white;
+}
+
+/* ====== CARD IMAGE ELEMENTS ====== */
+.card-Image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 6px;
-  box-shadow: 0 0 10px rgb(187, 187, 187);
+  margin-top: -90px;
 }
-h2.headline-Card-Small {
-  margin: 16px 0px 12px;
-  font-size: 28px;
-  white-space: nowrap;
+
+.image-Mask {
+  height: 280px;
+  overflow: hidden;
+  border-radius: 6px;
 }
+
 .card-Image-Small img {
   width: 200px;
   height: 230px;
@@ -178,56 +127,59 @@ h2.headline-Card-Small {
   border-radius: 6px;
 }
 
-.card-Content-Small {
-  padding: 0px 12px 0px 0px;
+/* ====== CARD HEADLINES ====== */
+h2.card-Headline-Large {
+  margin: 20px 0;
+  font-size: 28px;
 }
 
-.card-Badge-Small {
-  display: inline-flex;
-  align-items: center;
-  font-weight: 700;
-  width: 285px;
-  height: 28px;
-  margin-top: 0px;
-  padding: 10px 18px;
-  border-radius: 20px;
-  background-color: #fecb00;
+h2.card-Headline-Small {
+  font-size: 22px;
+  margin: 16px 0 12px;
+  white-space: normal;
 }
-.price-Main-Small {
+
+/* ====== CARD CONTENT ====== */
+.card-Content-Small {
+  padding: 0 12px 0 0;
+  text-align: center;
+}
+
+/* ====== PRICES ====== */
+.price-Container {
+  padding-bottom: 20px;
+}
+
+.price-Num-Euro {
+  display: inline-flex;
+}
+
+.price-Num-Euro-Small {
   margin-top: -20px;
   padding-top: 20px;
 }
+
+.price-Numbers,
 .price-Numbers-Small {
   font-size: 48px;
 }
 
+.euro-Price {
+  font-size: 30px;
+}
+
+.price-Desc {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 .price-Desc-Small {
-  gap: 12px;
   font-size: 16px;
+  gap: 12px;
 }
 
-.external-Link-Small {
-  display: block;
-  margin-top: 20px;
-}
-
-/* Card-GRID */
-
-.card-Image-Grid img {
-  width: 100%;
-  height: 100%;
-  border-radius: 6px;
-  object-fit: cover;
-}
-.card-Mask-Grid {
-  height: 310px;
-  overflow: hidden;
-  border-radius: 6px;
-}
-h2.headline-Card-Grid {
-  margin: 20px 0;
-  font-size: 28px;
-}
+/* ====== BADGES ====== */
 .card-Badge-Large {
   display: inline-flex;
   align-items: center;
@@ -239,52 +191,36 @@ h2.headline-Card-Grid {
   border-radius: 20px;
   background-color: #fecb00;
 }
-.priceMain-Grid {
+
+.card-Badge-Small {
   display: inline-flex;
-}
-.price-Container-Grid {
-  padding-bottom: 20px;
+  align-items: center;
+  font-weight: 700;
+  width: 285px;
+  height: 28px;
+  margin-top: 0;
+  padding: 10px 18px;
+  border-radius: 20px;
+  background-color: #fecb00;
 }
 
-/*  RESPONSIVE DESIGN */
-@media screen and (max-width: 768px) {
-  body {
-    margin: 20px;
-  }
-  .gridContainer {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    padding: 20px;
-    gap: 14px;
-  }
-  .white-Card-Grid {
-    width: 100%;
-    grid-row: auto;
-  }
-  .white-Card-Small,
-  .white-Card-Small1,
-  .white-Card-Small2,
-  .white-Card-Small3,
-  .white-Card-Small4 {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  .card-Image-Small img {
-    width: 100%;
-    height: auto;
-  }
-  .card-Mask-Small {
-    width: 100%;
-    height: auto;
-  }
-  .card-Content-Small {
-    padding: 12px;
-    text-align: center;
-  }
-  h2.headline-Card-Small {
-    white-space: normal;
-    font-size: 22px;
-  }
+/* ====== LINKS ====== */
+.external-Link {
+  margin-bottom: 20px;
 }
+
+.external-Link-Small {
+  display: block;
+  margin-top: 20px;
+}
+
+a {
+  color: #bd0000;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+
+
+

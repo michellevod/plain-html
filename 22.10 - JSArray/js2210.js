@@ -18,7 +18,7 @@ for (let i = 0; i < songs.length; i++) {
     '<span class`songRanked`>' +
     ranking +
     "." +
-    ') Song Name: ' +
+    ') Platz ' +
     songs[i] +
     '<br>'
 }
