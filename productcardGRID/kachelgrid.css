@@ -43,6 +43,7 @@ body {
 
 /* ====== CSS CUSTOM PROPERTIES ====== */
  :root {
+  --gutter: 20px;
   --grid-gap: 14px;
   --grid-template-columns: 100%;
 } 
@@ -51,103 +52,78 @@ body {
   :root {
     --grid-gap: 32px;
     --grid-template-columns: 1fr 1fr;
-    --grid-template-rows: repeat(3, 280px);
   }
 } 
 
 /* ====== GRID ====== */
- /* .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows:repeat(3, 280px);
-  margin:30px;
-  gap: 32px;
-}  */
- .grid {
+  .grid {
   display: grid;
   grid-template-columns:var(--grid-template-columns);
   grid-gap: var(--grid-gap);
-  grid-template-rows:var(--grid-template-rows) ;
-  margin: 30px;
+  margin: var(--gutter);
 } 
 
 /* ====== CARD VARIANTS ====== */
-.card-Large,
-.card-Small {
+.card {
   background: white;
   border-radius: 6px;
   box-shadow: 0 0 10px rgb(187, 187, 187);
-  padding: 20px;
+  padding: var(--gutter);
 }
 
 .card-Large {
-  width: 100%;
   grid-row: span 2;
+  display: flex;
+  gap: var(--gutter);
+  flex-direction:column
 }
 
 .card-Small {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-around;
   align-items: center;
-  width: 100%;
-  gap: 5px;
+  gap: var(--gutter);
 }
 
-/* ====== CARD IMAGE ELEMENTS ====== */
-.card-Image img {
+.content{
+  flex: 1 1 0%;
+}
+
+.image {
+  flex: 1 1 0%;
+}
+.card-Small .image{
+  max-width: 230px;
+}
+.card-Large .image{
+  max-height: 280px;
+  overflow: hidden;
+}
+
+.image img {
+  display: block;
   width: 100%;
-  height: 100%;
   object-fit: cover;
   border-radius: 6px;
+}
+.card-Large .image img{
   margin-top: -90px;
 }
 
-.image-Mask {
-  height: 280px;
-  overflow: hidden;
-  border-radius: 6px;
-}
-
-.card-Image-Small img {
-  width: 200px;
-  height: 230px;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-.card-Mask-Small {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5px -5px;
-  width: 220px;
-  height: 230px;
-  overflow: hidden;
-  border-radius: 6px;
-}
-
 /* ====== CARD HEADLINES ====== */
-h2.card-Headline-Large {
-  margin: 20px 0;
+.card-Large h2 {
   font-size: 28px;
+  margin: 20px 0;
 }
 
-h2.card-Headline-Small {
+.card-Small h2 {
   font-size: 22px;
   margin: 16px 0 12px;
-  white-space: normal;
-}
-
-/* ====== CARD CONTENT ====== */
-.card-Content-Small {
-  padding: 0 12px 0 0;
-  text-align: center;
 }
 
 /* ====== PRICES ====== */
 .price-Container {
-  padding-bottom: 20px;
+  padding-bottom: var(--gutter);
 }
 
 .price-Num-Euro {
@@ -155,8 +131,8 @@ h2.card-Headline-Small {
 }
 
 .price-Num-Euro-Small {
-  margin-top: -20px;
-  padding-top: 20px;
+  margin-top: calc(var(--gutter) * -1);;
+  padding-top: var(--gutter);
 }
 
 .price-Numbers,
@@ -171,7 +147,7 @@ h2.card-Headline-Small {
 .price-Desc {
   font-size: 20px;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: var(--gutter);
 }
 
 .price-Desc-Small {
@@ -180,41 +156,18 @@ h2.card-Headline-Small {
 }
 
 /* ====== BADGES ====== */
-.card-Badge-Large {
-  display: inline-flex;
-  align-items: center;
+.badge {
   font-weight: 700;
-  width: 190px;
-  height: 28px;
-  margin-top: 14px;
-  padding: 10px 18px;
-  border-radius: 20px;
-  background-color: #fecb00;
-}
-
-.card-Badge-Small {
-  display: inline-flex;
-  align-items: center;
-  font-weight: 700;
-  width: 285px;
-  height: 28px;
-  margin-top: 0;
+  width: fit-content;
   padding: 10px 18px;
   border-radius: 20px;
   background-color: #fecb00;
 }
 
 /* ====== LINKS ====== */
-.external-Link {
-  margin-bottom: 20px;
-}
-
-.external-Link-Small {
+.card a{
   display: block;
-  margin-top: 20px;
-}
-
-a {
+  margin-top: var(--gutter);
   color: #bd0000;
   text-decoration: none;
   font-size: 18px;
