@@ -61,15 +61,80 @@ main {
 .sucessBox {
     background-color:#E8F4D5;
     box-shadow: 5px 10px 10px rgb(178, 177, 177);
-    height: 700px;
+    height: 600px;
     width: 700px;
-    border-radius: 10px;
+    border-radius: 50px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
 }
 
 .sucessTick {
-font-size: 200px;
-margin-top: 30px;
+font-size: 160px;
+}
+
+/* text */
+.headlineSucess{
+padding: 10px;
+}
+.descriptionSucess {
+padding: 10px;
+
+}
+.textBoldSuccess{
+padding: 10px;
+font-size: 20px;
+}
+.textnormSuccess{
+padding: 10px;
+text-align: center;
+}
+
+.btn {
+  display: flex;
+  background-color: #f2bb16;
+  width: 185px;
+  height: 32px;
+  color: white;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.btnSec {
+  display: flex;
+  background-color: transparent;
+  border: 1px solid #f2bb16 ;
+  width: 185px;
+  height: 32px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: #e7b01a;
+  transition: 0.2s;
+}
+
+.btnSec:hover {
+    background-color: #e7b01a;
+    transform: 0.2s;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+}
+
+.sucessBoxButtonFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
