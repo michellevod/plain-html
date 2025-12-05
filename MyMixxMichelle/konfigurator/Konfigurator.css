@@ -26,11 +26,81 @@
 
 html {
   height: 100vh;
-  font-size: 17px;
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
 }
 
 body {
   color: var(--text_color);
   box-sizing: content-box;
   font-family: "Noto_regu", sans-serif;
+  background-color: #fdf4d7;
+}
+
+.blueHeader {
+  width: 100%;
+  height: 60px;
+  background-color: #22ddf2;
+}
+
+.logoCircle {
+  background-color: white;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-left: 30px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  margin: 20px;
+  display: flex;
+  background-color: #f2bb16;
+  width: 11.5625em;
+  height: 2em;
+  color: white;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.notification {
+  margin: 20px;
+  background-color: #ffffff;
+  border: 2px solid #f2bb16;
+  width: 30%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgb(201, 201, 201);
+  display: flex;
+  flex-direction: column;
+}
+
+#notifHeadline {
+  padding: 15px;
+}
+#notifText {
+  padding: 10px;
+  font-size: 1rem;
+}
+.notifCircle {
+  background-color: rgb(128, 110, 110);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.fa-exclamation {
+  font-size: 30px;
+}
+
+.flexcontainer1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
 }

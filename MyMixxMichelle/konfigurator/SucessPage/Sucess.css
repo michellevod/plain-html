@@ -26,7 +26,7 @@
 
 html {
   height: 100vh;
-  font-size: 17px;
+ font-size: 17px;
 }
 
 body {
@@ -61,8 +61,8 @@ main {
 .sucessBox {
     background-color:#E8F4D5;
     box-shadow: 5px 10px 10px rgb(178, 177, 177);
-    height: 600px;
-    width: 700px;
+    height: 30rem;
+    width: 40rem;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
@@ -80,11 +80,13 @@ padding: 10px;
 }
 .descriptionSucess {
 padding: 10px;
-
+font-size: 0.75rem;
+font-size: clamp(0.75rem, 0.675rem + 0.375vw, 1.125rem);
 }
 .textBoldSuccess{
 padding: 10px;
-font-size: 20px;
+font-size: 0.875rem;
+font-size: clamp(0.875rem, 0.8rem + 0.375vw, 1.25rem);
 }
 .textnormSuccess{
 padding: 10px;
@@ -94,8 +96,8 @@ text-align: center;
 .btn {
   display: flex;
   background-color: #f2bb16;
-  width: 185px;
-  height: 32px;
+  width: 11.5625em;
+  height: 2em;
   color: white;
   font-weight: bold;
   justify-content: center;
