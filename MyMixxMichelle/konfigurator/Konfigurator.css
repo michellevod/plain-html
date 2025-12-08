@@ -34,7 +34,7 @@ body {
   color: var(--text_color);
   box-sizing: content-box;
   font-family: "Noto_regu", sans-serif;
-  background-color: #fdf4d7;
+  background-color: #4d4d4d;
 }
 nav#blueBar {
   position: fixed;
@@ -123,15 +123,78 @@ nav#blueBar {
   display: inline-block;
 }
 .categoryHeadline {
- padding: 10px;
+  padding: 10px;
 }
-.productCard{
+
+.productCard {
+  margin-left: 40px;
+  margin-top: 40px;
   background-color: #f2eee2;
-  border: #22ddf2 2px solid;
-  width: 170px ;
-  height: 210px;
+  width: 190px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 24px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
 }
-.productCard__colorBlock{
+.productCard__colorBlock {
+  flex-direction: column;
+  align-items: end;
+  background-color: #a27c8d;
+  width: 190px;
+  height: 130px;
+  margin-top: auto;
+}
+.productCard__priceBadge {
   background-color: #a70c4f;
-  
+  padding: 5px;
+  color: white;
+  width: 70px;
+  height: 60px;
+  border-bottom-left-radius: 177px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
+.productCard__priceBadge p {
+  transform: translateY(-7px);
+  padding: 5px;
+}
+/* 👉 translateY() literally means “move this element up or down.” */
+
+.productCard__weightBadge {
+  background-color: #a70c4f;
+  color: white;
+  width: 60px;
+  height: 30px;
+  border-top-left-radius: 15px;
+  position: absolute;
+  left: 10px;
+  top: 0;
+  transform: translateY(12px);
+}
+.productCard__weightBadge p {
+  text-align: center;
+  transform: translateY(6px);
+font-size: 16px;
+}
+.productCard__IMG img {
+  width: 100px;
+  height: 100px;
+}
+.productCard__IMG {
+  position: absolute;
+  top: 65px;
+}
+.productCard__Headline {
+  color: white;
+}
+/* This works because:
+.productCard is a flex container with flex-direction: column
+margin-top: auto absorbs all remaining vertical space above the color block
+The block stays at the bottom without changing its height */
