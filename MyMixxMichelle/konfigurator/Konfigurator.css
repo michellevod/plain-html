@@ -36,6 +36,12 @@ body {
   font-family: "Noto_regu", sans-serif;
   background-color: #fdf4d7;
 }
+nav#blueBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 
 .blueHeader {
   width: 100%;
@@ -67,8 +73,9 @@ body {
   border-radius: 5px;
 }
 .notification {
-  margin: 20px;
-  background-color: #ffffff;
+  margin-top: 150px;
+  margin-left: 42px;
+  background-color: #fffbee;
   border: 2px solid #f2bb16;
   width: 30%;
   border-radius: 15px;
@@ -79,13 +86,15 @@ body {
 
 #notifHeadline {
   padding: 15px;
+  padding-left: 0px;
 }
 #notifText {
-  padding: 10px;
-  font-size: 1rem;
+  padding: 20px;
+  padding-top: 0;
+  font-size: 15px;
 }
 .notifCircle {
-  background-color: rgb(128, 110, 110);
+  background-color: #fff5d7;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -99,8 +108,30 @@ body {
   font-size: 30px;
 }
 
-.flexcontainer1 {
+.headlineExlcamationContainer {
   display: flex;
   justify-content: space-between;
-  margin: 10px;
+  padding: 20px;
+}
+
+.categoryAnchor {
+  background-color: #a70c4f;
+  color: white;
+  height: 42px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: inline-block;
+}
+.categoryHeadline {
+ padding: 10px;
+}
+.productCard{
+  background-color: #f2eee2;
+  border: #22ddf2 2px solid;
+  width: 170px ;
+  height: 210px;
+}
+.productCard__colorBlock{
+  background-color: #a70c4f;
+  
 }
