@@ -34,7 +34,7 @@ body {
   color: var(--text_color);
   box-sizing: content-box;
   font-family: "Noto_regu", sans-serif;
-  background-color: #4d4d4d;
+  background-color: #fdf4d8;
 }
 nav#blueBar {
   position: fixed;
@@ -130,8 +130,8 @@ nav#blueBar {
   margin-left: 40px;
   margin-top: 40px;
   background-color: #f2eee2;
-  width: 190px;
-  height: 250px;
+  width: 210px;
+  height: 280px;
   display: flex;
   flex-direction: column;
   border-top-left-radius: 24px;
@@ -143,13 +143,34 @@ nav#blueBar {
   flex-direction: column;
   align-items: end;
   background-color: #a27c8d;
-  width: 190px;
-  height: 130px;
+  width: 210px;
+  height: 160px;
   margin-top: auto;
+  text-align: center;
 }
+/* This works because:
+.productCard is a flex container with flex-direction: column
+margin-top: auto absorbs all remaining vertical space above the color block
+The block stays at the bottom without changing its height */
+.productCard__colorBlock p {
+  color: white;
+  transform: translateY(40px);
+}
+.productCard__colorBlock button {
+  margin: 5px;
+  color: white;
+  background-color: #a70c4f;
+  width: 140px;
+  height: 40px;
+  border-radius: 5px;
+  transform: translateY(50px);
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .productCard__priceBadge {
   background-color: #a70c4f;
-  padding: 5px;
+  padding: 4px;
   color: white;
   width: 70px;
   height: 60px;
@@ -162,8 +183,10 @@ nav#blueBar {
   align-items: center;
 }
 .productCard__priceBadge p {
-  transform: translateY(-7px);
+  transform: translateX(7px);
+  transform: translateY(-5px);
   padding: 5px;
+  font-size: 20px;
 }
 /* 👉 translateY() literally means “move this element up or down.” */
 
@@ -181,7 +204,7 @@ nav#blueBar {
 .productCard__weightBadge p {
   text-align: center;
   transform: translateY(6px);
-font-size: 16px;
+  font-size: 16px;
 }
 .productCard__IMG img {
   width: 100px;
@@ -194,7 +217,3 @@ font-size: 16px;
 .productCard__Headline {
   color: white;
 }
-/* This works because:
-.productCard is a flex container with flex-direction: column
-margin-top: auto absorbs all remaining vertical space above the color block
-The block stays at the bottom without changing its height */
