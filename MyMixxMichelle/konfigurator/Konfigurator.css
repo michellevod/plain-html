@@ -251,3 +251,23 @@ The block stays at the bottom without changing its height */
   --card-block: var(--clrPrdCrdClrBlckGtFr);
   --accent-color: var(--colorGetrFrue);
 }
+.theme-nueSam {
+  --anchor-color: var(--colorNueSam);
+  --card-block: var(--clrPrdCrdClrBlckNSm);
+  --accent-color: var(--colorNueSam);
+}
+.theme-superFood {
+  --anchor-color: var(--colorSuperFo);
+  --card-block: var(--clrPrdCrdClrBlckSprFds);
+  --accent-color: var(--colorSuperFo);
+}
+.theme-xtraSuess {
+  --anchor-color: var(--colorExtrasuess);
+  --card-block: var(--clrPrdCrdClrBlckXtrSss);
+  --accent-color: var(--colorExtrasuess);
+}
+.theme-Fluessig {
+  --anchor-color: var(--colorFluessMuePorr);
+  --card-block: var(--clrPrdCrdClrBlckFlssMPrr);
+  --accent-color: var(--colorFluessMuePorr);
+}
