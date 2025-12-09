@@ -124,7 +124,7 @@ nav#blueBar {
 }
 
 .categoryAnchor {
-  background-color: var(--colorBasisCer);
+  background-color: var(--anchor-color);
   color: white;
   height: 62px;
   border-top-right-radius: 15px;
@@ -162,7 +162,7 @@ nav#blueBar {
 .productCard__colorBlock {
   flex-direction: column;
   align-items: end;
-  background-color: var(--clrPrdCrdClrBlckBasic) ;
+  background-color: var(--card-block);
   width: 210px;
   height: 160px;
   margin-top: auto;
@@ -180,7 +180,7 @@ The block stays at the bottom without changing its height */
 .productCard__colorBlock button {
   margin: 5px;
   color: white;
-  background-color: #a70c4f;
+  background-color: var(--accent-color);
   width: 140px;
   height: 40px;
   border-radius: 5px;
@@ -190,7 +190,7 @@ The block stays at the bottom without changing its height */
 }
 
 .productCard__priceBadge {
-  background-color: #a70c4f;
+  background-color:var(--accent-color);
   padding: 4px;
   color: white;
   width: 70px;
@@ -211,7 +211,7 @@ The block stays at the bottom without changing its height */
 /* 👉 translateY() literally means “move this element up or down.” */
 
 .productCard__weightBadge {
-  background-color: #a70c4f;
+  background-color: var(--accent-color);
   color: white;
   width: 70px;
   height: 40px;
@@ -236,4 +236,18 @@ The block stays at the bottom without changing its height */
 }
 .productCard__Headline {
   color: white;
+}
+
+
+.theme-basis {
+  --anchor-color: var(--colorBasisCer);       /* Category block */
+  --card-block: var(--clrPrdCrdClrBlckBasic); /* Product color block */
+  --accent-color: var(--colorBasisCer);       /* Buttons & badges */
+}
+
+
+.theme-getrfrue {
+  --anchor-color: var(--colorGetrFrue);
+  --card-block: var(--clrPrdCrdClrBlckGtFr);
+  --accent-color: var(--colorGetrFrue);
 }
