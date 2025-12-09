@@ -47,6 +47,7 @@ nav#blueBar {
   width: 100%;
   height: 60px;
   background-color: #22ddf2;
+  transform: translateZ(1)
 }
 
 .logoCircle {
@@ -117,19 +118,26 @@ nav#blueBar {
 .categoryAnchor {
   background-color: #a70c4f;
   color: white;
-  height: 42px;
+  height: 62px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   display: inline-block;
+  margin-bottom: 50px;
 }
 .categoryHeadline {
   padding: 10px;
+  font-size: 32px;
 }
-
+.productCard__GRID {
+  display: grid;
+  justify-self: center;
+  grid-template-columns: repeat(6, 1fr);
+  gap:60px;
+  row-gap: 80px;
+}
 .productCard {
-  margin-left: 40px;
-  margin-top: 40px;
-  background-color: #f2eee2;
+  transform: scale(1.2);
+  background-color: #fffbf1;
   width: 210px;
   height: 280px;
   display: flex;
@@ -155,6 +163,7 @@ The block stays at the bottom without changing its height */
 .productCard__colorBlock p {
   color: white;
   transform: translateY(40px);
+  padding-top: 5px;
 }
 .productCard__colorBlock button {
   margin: 5px;
@@ -185,7 +194,6 @@ The block stays at the bottom without changing its height */
 .productCard__priceBadge p {
   transform: translateX(7px);
   transform: translateY(-5px);
-  padding: 5px;
   font-size: 20px;
 }
 /* 👉 translateY() literally means “move this element up or down.” */
@@ -193,26 +201,26 @@ The block stays at the bottom without changing its height */
 .productCard__weightBadge {
   background-color: #a70c4f;
   color: white;
-  width: 60px;
-  height: 30px;
+  width: 70px;
+  height: 40px;
   border-top-left-radius: 15px;
   position: absolute;
-  left: 10px;
+  left: 15px;
   top: 0;
   transform: translateY(12px);
 }
 .productCard__weightBadge p {
   text-align: center;
-  transform: translateY(6px);
-  font-size: 16px;
+  transform: translateY(9px);
+  font-size: 20px;
 }
 .productCard__IMG img {
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
 }
 .productCard__IMG {
   position: absolute;
-  top: 65px;
+  top: 60px;
 }
 .productCard__Headline {
   color: white;
