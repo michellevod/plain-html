@@ -8,12 +8,21 @@
   src: url(fonts/NotoSans-Italic-VariableFont_wdth\wght.ttf);
 }
 
+/* VARIABLE COLOR __PRODUCTCARDS */
 :root {
-  --mymixx_1: #f2bb16;
-  --mymixx_2: #d9580d;
-  --mymixx_3: #9abf11;
-  --mymixx_4: #22ddf2;
-  --text_color: darkslategrey;
+  --colorBasisCer: #a60c4f;
+  --clrPrdCrdClrBlckBasic: #a27c8d;
+  --colorGetrFrue: #d9580f;
+  --clrPrdCrdClrBlckGtFr: #ad897a;
+  --colorNueSam: #9abf11;
+  --clrPrdCrdClrBlckNSm: #94ad7a;
+  --colorSuperFo: #20ddf2;
+  --clrPrdCrdClrBlckSprFds: #7aada8;
+  --colorExtrasuess: #bf5f5f;
+  --clrPrdCrdClrBlckXtrSss: #ad7a7a;
+  --colorFluessMuePorr: #8c5fbf;
+  --clrPrdCrdClrBlckFlssMPrr: #9b7aad;
+  --colorprdCard: #f2eee2;
 }
 
 * {
@@ -47,7 +56,6 @@ nav#blueBar {
   width: 100%;
   height: 60px;
   background-color: #22ddf2;
-  transform: translateZ(1)
 }
 
 .logoCircle {
@@ -116,7 +124,7 @@ nav#blueBar {
 }
 
 .categoryAnchor {
-  background-color: #a70c4f;
+  background-color: var(--colorBasisCer);
   color: white;
   height: 62px;
   border-top-right-radius: 15px;
@@ -128,16 +136,20 @@ nav#blueBar {
   padding: 10px;
   font-size: 32px;
 }
+.section__GRID {
+  display: grid;
+  gap: 50px;
+}
 .productCard__GRID {
   display: grid;
   justify-self: center;
   grid-template-columns: repeat(6, 1fr);
-  gap:60px;
+  gap: 60px;
   row-gap: 80px;
 }
 .productCard {
   transform: scale(1.2);
-  background-color: #fffbf1;
+  background-color: var(--colorprdCard);
   width: 210px;
   height: 280px;
   display: flex;
@@ -150,7 +162,7 @@ nav#blueBar {
 .productCard__colorBlock {
   flex-direction: column;
   align-items: end;
-  background-color: #a27c8d;
+  background-color: var(--clrPrdCrdClrBlckBasic) ;
   width: 210px;
   height: 160px;
   margin-top: auto;
