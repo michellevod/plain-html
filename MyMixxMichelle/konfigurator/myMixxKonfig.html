@@ -38,8 +38,14 @@
     </header>
 
     <main>
+      <div popover id="my-popover">Greetings, one and all!
+     <button class="closePopOver"
+       popovertarget="my-popover"
+       popovertargetaction="hide">Close
+      </button>
+      </div>
       <div class="stickyOverlayButton">
-        <button class="yellowCircleSticky">
+        <button popovertarget="my-popover" class="yellowCircleSticky mypop">
           <img src="img/mortar-pestle-solid-full.svg" alt="müsliIcon" />
           <span class="blueCounterBubble">
             <p>#</p>
@@ -432,7 +438,6 @@
                 />
               </div>
             </div>
-            
           </div>
         </section>
         <section class="Getrocknete-Fruechte theme-getrfrue">
@@ -1120,7 +1125,6 @@
                 />
               </div>
             </div>
-            
           </div>
         </section>
         <section class="ExtraSuess theme-xtraSuess">
@@ -1254,7 +1258,6 @@
                 />
               </div>
             </div>
-
           </div>
         </section>
         <section class="Fluessigkeiten theme-Fluessig">
@@ -1444,7 +1447,6 @@
                 />
               </div>
             </div>
-           
           </div>
         </section>
       </div>

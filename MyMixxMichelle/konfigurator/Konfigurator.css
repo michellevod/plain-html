@@ -51,6 +51,37 @@ body {
   font-family: "Noto_regu", sans-serif;
   background-color: #fdf4d8;
 }
+
+/* A <div popover> does NOT behave like a normal element in the layout flow.
+When opened, it becomes a top-layer element, just like a modal or tooltip.
+
+👉 That means:
+
+It does NOT stay inside your .popover-Flex container
+
+It does not follow flex positioning
+
+It appears where the browser thinks it should, unless you position it manually
+
+So your justify-content: flex-end; does nothing. */
+#my-popover {
+  inset: auto;
+  /* inset:auto means "dont auto place me browser!" */
+  position: fixed;
+  background-color: #ffffff;
+  height: 100%;
+  width: 30%;
+  right: 0;
+  padding: 20px;
+}
+.closePopOver {
+  background-color: rgb(255, 21, 21);
+  color: white;
+  display: inline-block;
+  height: 20px;
+  padding: 20px;
+  text-align: center;
+}
 nav#blueBar {
   position: absolute;
   top: 0;
