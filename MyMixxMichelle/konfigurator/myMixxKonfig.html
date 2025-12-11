@@ -38,14 +38,27 @@
     </header>
 
     <main>
-      <div popover id="my-popover">Greetings, one and all!
-     <button class="closePopOver"
-       popovertarget="my-popover"
-       popovertargetaction="hide">Close
-      </button>
+      <div popover id="my-popover">
+        <div class="closePopOver__Flex">
+        <div class="yellowOverlayBadge">
+          <img src="img/mortar-pestle-solid-full.svg" alt="müsliIcon" />
+          <span class="blueCounterBubble2">
+            <p>#</p>
+          </span>
+        </div>
+          <button
+            class="closePopOver"
+            popovertarget="my-popover"
+            popovertargetaction="hide"
+          >
+            &times;
+          </button>
+        </div>
+
+        <strong>Produktauswahl</strong>
       </div>
       <div class="stickyOverlayButton">
-        <button popovertarget="my-popover" class="yellowCircleSticky mypop">
+        <button popovertarget="my-popover" class="yellowCircleSticky">
           <img src="img/mortar-pestle-solid-full.svg" alt="müsliIcon" />
           <span class="blueCounterBubble">
             <p>#</p>

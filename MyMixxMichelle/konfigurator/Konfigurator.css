@@ -72,15 +72,50 @@ So your justify-content: flex-end; does nothing. */
   height: 100%;
   width: 30%;
   right: 0;
-  padding: 20px;
+  border-top-left-radius: 15px;
+  text-align: center;
+}
+.closePopOver__Flex {
+  display: flex;
+ justify-content: space-between;
 }
 .closePopOver {
-  background-color: rgb(255, 21, 21);
-  color: white;
-  display: inline-block;
-  height: 20px;
-  padding: 20px;
+  color: rgb(211, 0, 0);
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent; /* removes gray box */
+ 
+}
+
+.yellowOverlayBadge {
+  display: flex;
+  background-color: var(--mymixx_1);
+  width: 60px;
+  height: 40px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.yellowOverlayBadge img {
+  width: 30px;
+  height: 30px;
+}
+.blueCounterBubble2 {
+  position: absolute;
+  top: 2px;
+  left: 50px;
+  background-color: #20ddf2;
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
   text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 nav#blueBar {
   position: absolute;
