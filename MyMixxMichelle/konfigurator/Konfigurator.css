@@ -118,8 +118,7 @@ So your justify-content: flex-end; does nothing. */
   display: flex;
   gap: 10px;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* Scrollable flex containers should almost never use justify-content: center. */
   background-color: #f4ead5;
   width: fit-content;
   padding: 20px;
