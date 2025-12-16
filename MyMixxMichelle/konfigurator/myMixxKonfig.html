@@ -46,6 +46,7 @@
               <p>#</p>
             </div>
           </div>
+          <span> <strong>Produktauswahl</strong> </span>
           <button
             class="closePopOver"
             popovertarget="my-popover"
@@ -54,8 +55,8 @@
             &times;
           </button>
         </div>
-        <strong>Produktauswahl</strong>
-        <div class="itemSummaryCardBackground">
+
+        <div class="itemSummaryCardContainer">
           <div class="itemSummaryCard">
             <div class="itemBubblePlusTextFlex">
               <div class="itemSummaryCardImageBubble">
@@ -224,31 +225,43 @@
           <p>21,05€</p>
         </div>
         <div class="itemSummaryDate">
-          <p>Abholtermin bestimmen</p>
-          <div class="BOXTEST">
-          <div class="dateBox">
-            <div class="date__Flex">
-              <label class="dateOption">
-                <input type="radio" name="date" />11.10.2025
-              </label>
-              <label class="dateOption">
-                <input type="radio" name="date" />17.10.2025
-              </label>
-              <label class="dateOption">
-                <input type="radio" name="date" />24.10.2025
-              </label>
-              <!-- All radio buttons that share the same name belong to one group. Only one button in a group can be selected at a time. -->
-            </div>
+          <p class="sectionHeading">Abholtermin bestimmen</p>
+          <div class="itemSummaryDateBoxContainer">
+            <div class="dateBox">
+              <div class="date__Flex">
+                <label class="dateOption">
+                  <input type="radio" name="date" />11.10.2025
+                </label>
+                <label class="dateOption">
+                  <input type="radio" name="date" />17.10.2025
+                </label>
+                <label class="dateOption">
+                  <input type="radio" name="date" />24.10.2025
+                </label>
+                <!-- All radio buttons that share the same name belong to one group. Only one button in a group can be selected at a time. -->
+              </div>
             </div>
           </div>
         </div>
+
         <section class="itemSummaryPersonField">
-          <p>Deine Daten</p>
-          <label for="personfirstName">Vorname</label>
-          <input type="text" name="person" id="personfirstName" />
-          <label for="personlastName">Nachname</label>
-          <input type="text" name="person" id="personlastName" />
-          <p class="legalText">Bitte bei Abholung den amtlichen Lichtbildausweis vorzeigen*</p>
+          <p class="sectionHeading">Deine Daten</p>
+
+          <div class="fieldGroup">
+            <label for="personfirstName">Vorname</label>
+            <input type="text" id="personfirstName" />
+          </div>
+
+          <div class="fieldGroup">
+            <label for="personlastName">Nachname</label>
+            <input type="text" id="personlastName" />
+          </div>
+
+          <p class="legalText fieldGroup">
+            Bitte bei Abholung den amtlichen Lichtbildausweis vorzeigen*
+          </p>
+
+          <a class="btn fieldGroup" href="SucessPage/Sucess.html">Jetzt Bestellen</a>
         </section>
       </div>
 
@@ -1659,9 +1672,7 @@ Cannot contain block-level elements like <div> or <p> -->
           </div>
         </section>
       </div>
-      <div class="btnContainer">
-        <a class="btn" href="SucessPage/Sucess.html">Sucess</a>
-      </div>
+
       <div class="Accordion">
         <details>
           <summary>Warum darf ich nur eine Auswahl pro Zutat wählen?</summary>

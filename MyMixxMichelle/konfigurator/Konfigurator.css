@@ -68,16 +68,20 @@ So your justify-content: flex-end; does nothing. */
   inset: auto;
   /* inset:auto means "dont auto place me browser!" */
   position: fixed;
-  background-color: #ffffff;
+  background-color: #fcfcfc;
   height: 100%;
   width: 30%;
   right: 0;
   border-top-left-radius: 15px;
-  text-align: center;
+}
+/* normal html popover backdrop */
+#my-popover::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .closePopOver__Flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .closePopOver {
   color: rgb(124, 124, 124);
@@ -86,9 +90,10 @@ So your justify-content: flex-end; does nothing. */
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent; /* removes gray box */
+  background-color: transparent;
   cursor: pointer;
 }
+
 .itemSummaryCard {
   background-color: #a60c4f;
   width: 400px;
@@ -98,6 +103,7 @@ So your justify-content: flex-end; does nothing. */
   justify-content: center;
   flex-shrink: 0;
 }
+
 .itemSummaryCard p {
   color: white;
   font-weight: 800;
@@ -116,6 +122,7 @@ So your justify-content: flex-end; does nothing. */
   width: 40px;
   height: 40px;
 }
+
 .itemDeleteButton {
   display: flex;
   justify-content: center;
@@ -141,9 +148,9 @@ So your justify-content: flex-end; does nothing. */
   display: flex;
   background-color: var(--mymixx_1);
   width: 60px;
-  height: 40px;
+  height: 60px;
   border-bottom-right-radius: 20px;
-  border-top-left-radius: 15px;
+  border-top-left-radius: 5px;
   align-items: center;
   justify-content: center;
 }
@@ -164,7 +171,7 @@ So your justify-content: flex-end; does nothing. */
   align-items: start;
   font-size: 18px;
 }
-.itemSummaryCardBackground {
+.itemSummaryCardContainer {
   display: flex;
   gap: 10px;
   flex-direction: column;
@@ -172,32 +179,28 @@ So your justify-content: flex-end; does nothing. */
   background-color: #f4ead5;
   width: fit-content;
   padding: 20px;
-  margin-top: 20px;
+  margin-top: 5px;
   border-radius: 20px;
-  max-height: 300px; /* adjust to your pop-over size */
+  max-height: 340px; /* adjust to your pop-over size */
   overflow-y: auto; /* enables vertical scrolling */
   margin-left: 70px;
 }
 .itemSummaryMainPrice {
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
   justify-content: space-between;
   gap: 20px;
   padding: 20px;
-  align-items: center;
   font-weight: 600;
 }
 .itemSummaryDate {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  
 }
-.BOXTEST {
+.itemSummaryDateBoxContainer {
   display: flex;
   justify-content: center;
-
 }
 .itemSummaryDate p {
   font-weight: 700;
@@ -208,15 +211,13 @@ So your justify-content: flex-end; does nothing. */
   background-color: #f4ead5;
   width: 500px;
   border-radius: 20px;
-   margin-bottom: 20px;
-
+  margin-bottom: 20px;
 }
 .date__Flex {
   display: flex;
   flex-direction: column;
   gap: 18px;
   padding: 10px 30px;
- 
 }
 .dateOption {
   display: flex;
@@ -227,25 +228,50 @@ input[type="radio"] {
 }
 
 .itemSummaryPersonField {
-  font-family: "Noto_regu", sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
-.itemSummaryPersonField input {
-  border: inset 5px rgb(208, 208, 208);
-  border-radius: 10px;
+
+/* centers the whole group */
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  align-self: center; /* 👈 key line */
+  width: 350px; /* same width as input */
+}
+
+/* label stays top-left of input */
+.fieldGroup label {
+  font-size: 16px;
+  padding: 2px;
+}
+
+/* input fills the group */
+.fieldGroup input {
   padding: 10px;
-  width: 50%;
-  height: 30px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
 }
+
+.sectionHeading {
+  margin-left: 20px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.itemSummaryPersonField input:focus {
+  border-color: #5f6a76;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+/* CSS Vorlage: https://uiverse.io/JayRamoliya/loud-rattlesnake-53 */
 .legalText {
   font-size: 10px;
   margin-bottom: 10px;
   color: gray;
 }
+
 
 nav#blueBar {
   position: absolute;
@@ -272,13 +298,14 @@ nav#blueBar {
   align-items: center;
 }
 .btn {
-  margin: 20px;
   background-color: #f2bb16;
-  width: 11.5625em;
-  height: 2em;
+ height: 60px;
+
   color: white;
   font-weight: bold;
   display: flex;
+  font-size: 20px;
+  margin-top: 10px;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
@@ -346,6 +373,7 @@ nav#blueBar {
 .section__GRID {
   display: grid;
   gap: 50px;
+  margin-bottom: 100px;
 }
 .productCard__GRID {
   display: grid;
