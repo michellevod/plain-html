@@ -89,90 +89,6 @@ So your justify-content: flex-end; does nothing. */
   background-color: transparent; /* removes gray box */
   cursor: pointer;
 }
-
-.yellowOverlayBadge {
-  display: flex;
-  background-color: var(--mymixx_1);
-  width: 60px;
-  height: 40px;
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 15px;
-  align-items: center;
-  justify-content: center;
-}
-.yellowOverlayBadge img {
-  width: 30px;
-  height: 30px;
-}
-.itemBubblePlusTextFlex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-.itemText {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  font-size: 18px;
-}
-.itemSummaryCardBackground {
-  display: flex;
-  gap: 10px;
-  flex-direction: column;
-  /* Scrollable flex containers should almost never use justify-content: center. */
-  background-color: #f4ead5;
-  width: fit-content;
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 20px;
-  max-height: 350px; /* adjust to your pop-over size */
-  overflow-y: auto; /* enables vertical scrolling */
-  margin-left: 70px;
-}
-.itemSummaryMainPrice {
-  display: flex;
-  flex-direction: row;
-  margin-top: 20px;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 20px;
-  align-items: center;
-  font-weight: 600;
-}
-.itemSummaryDate {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.itemSummaryDate p {
-  font-weight: 700;
-  text-align: left;
-  margin-left: 20px;
-}
-.dateBox {
-  display: flex;
-  background-color: #d0bf9a;
-  height: 150px;
-  width: 500px;
-  border-radius: 15px;
-  align-items: center;
-  margin-left: 40px;
-}
-.date__Flex {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  padding-left: 30px;
-}
-.dateOption {
-  display: flex;
-  gap: 5px;
-}
-input[type="radio"] {
-  accent-color: var(--mymixx_2);
-}
 .itemSummaryCard {
   background-color: #a60c4f;
   width: 400px;
@@ -220,6 +136,115 @@ input[type="radio"] {
   height: 25px;
   text-align: center;
   color: white;
+}
+.yellowOverlayBadge {
+  display: flex;
+  background-color: var(--mymixx_1);
+  width: 60px;
+  height: 40px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.yellowOverlayBadge img {
+  width: 30px;
+  height: 30px;
+}
+.itemBubblePlusTextFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.itemText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  font-size: 18px;
+}
+.itemSummaryCardBackground {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  /* Scrollable flex containers should almost never use justify-content: center. */
+  background-color: #f4ead5;
+  width: fit-content;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  max-height: 300px; /* adjust to your pop-over size */
+  overflow-y: auto; /* enables vertical scrolling */
+  margin-left: 70px;
+}
+.itemSummaryMainPrice {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+  font-weight: 600;
+}
+.itemSummaryDate {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+.BOXTEST {
+  display: flex;
+  justify-content: center;
+
+}
+.itemSummaryDate p {
+  font-weight: 700;
+  text-align: left;
+  margin-left: 20px;
+}
+.dateBox {
+  background-color: #f4ead5;
+  width: 500px;
+  border-radius: 20px;
+   margin-bottom: 20px;
+
+}
+.date__Flex {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 10px 30px;
+ 
+}
+.dateOption {
+  display: flex;
+  gap: 5px;
+}
+input[type="radio"] {
+  accent-color: var(--mymixx_2);
+}
+
+.itemSummaryPersonField {
+  font-family: "Noto_regu", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.itemSummaryPersonField input {
+  border: inset 5px rgb(208, 208, 208);
+  border-radius: 10px;
+  padding: 10px;
+  width: 50%;
+  height: 30px;
+}
+.legalText {
+  font-size: 10px;
+  margin-bottom: 10px;
+  color: gray;
 }
 
 nav#blueBar {
