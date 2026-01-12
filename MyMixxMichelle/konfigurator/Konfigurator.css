@@ -35,13 +35,11 @@
   padding: 0;
   border: none;
   text-decoration: none;
-
   box-sizing: border-box;
 }
 
 html {
-  height: 100vh;
-  font-size: 1rem;
+  height: 100vh;q
   font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
 }
 
@@ -216,7 +214,7 @@ So your justify-content: flex-end; does nothing. */
 .dateBox {
   background-color: #f4ead5;
   width: 100%;
-  max-width: 31.25rem; /*500px*/
+  max-width: 31.25rem; 
   border-radius: 20px;
   margin: 20px;
 }
@@ -377,6 +375,29 @@ nav#blueBar {
   padding: 10px;
   font-size: 32px;
 }
+
+.productCard__Margin {
+  margin: 2rem;
+}
+.productCard__GRID {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .productCard__GRID {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .productCard__GRID {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
 .section__GRID {
   display: grid;
   gap: 5rem;
@@ -387,6 +408,8 @@ nav#blueBar {
   background-color: var(--colorprdCard);
   position: relative;
   overflow: hidden;
+  height: auto;
+  width: 100%;
 }
 .productCard2::before {
   content: "";
@@ -394,7 +417,7 @@ nav#blueBar {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 55%; /* 👈 adjust this */
+  height: 55%; 
   background-color: var(--clrPrdCrdClrBlckBasic);
   z-index:1;
 }
@@ -443,7 +466,6 @@ nav#blueBar {
   color: white;
   font-weight: 800;
   text-align: center;
-
 }
 
 .FlexImageTextButton {
@@ -452,119 +474,6 @@ nav#blueBar {
   align-items: center;
 }
 
-.productCard__GRID {
-  display: grid;
-  width: 100%;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 2rem;
-  column-gap: 2rem;
-}
-@media (min-width: 768px) {
-  .productCard__GRID {
-    grid-template-columns: repeat(6, 1fr);
-  }
-}
-.productCard {
-  background-color: var(--colorprdCard);
-  width: 230px;
-  height: 290px;
-  display: flex;
-  flex-direction: column;
-  border-top-left-radius: 24px;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-}
-.productCard.selected {
-  border: 3px solid var(--accent-color);
-  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.3);
-}
-.productCard.selected .productCard__colorBlock button {
-  background-color: transparent;
-  border: 2px solid var(--accent-color);
-}
-
-.productCard__colorBlock {
-  flex-direction: column;
-  align-items: end;
-  background-color: var(--card-block);
-  width: 100%;
-  height: 8rem;
-  margin-top: auto;
-  text-align: center;
-}
-/* This works because:
-.productCard is a flex container with flex-direction: column
-margin-top: auto absorbs all remaining vertical space above the color block
-The block stays at the bottom without changing its height */
-.productCard__colorBlock p {
-  color: white;
-  font-weight: 600;
-  transform: translateY(40px);
-  padding-top: 5px;
-}
-.productCard__colorBlock button {
-  margin: 5px;
-  color: white;
-  background-color: var(--accent-color);
-  width: 140px;
-  height: 40px;
-  border-radius: 5px;
-  transform: translateY(50px);
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.productCard__priceBadge {
-  background-color: var(--accent-color);
-  padding: 4px;
-  color: white;
-  width: 70px;
-  height: 60px;
-  border-bottom-left-radius: 177px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.productCard__priceBadge p {
-  transform: translateX(7px);
-  transform: translateY(-5px);
-  font-size: 20px;
-}
-/* 👉 translateY() literally means “move this element up or down.” */
-
-.productCard__weightBadge {
-  background-color: var(--accent-color);
-  color: white;
-  width: 70px;
-  height: 40px;
-  border-top-left-radius: 15px;
-  position: absolute;
-  left: 15px;
-  top: 0;
-  transform: translateY(12px);
-}
-.productCard__weightBadge p {
-  text-align: center;
-  transform: translateY(9px);
-  font-size: 20px;
-}
-.productCard__IMG img {
-  width: 110px;
-  height: 110px;
-}
-.productCard__IMG {
-  position: absolute;
-  top: 60px;
-}
-.productCard__Headline {
-  color: white;
-}
 
 .theme-basis {
   --anchor-color: var(--colorBasisCer); /* Category block */
