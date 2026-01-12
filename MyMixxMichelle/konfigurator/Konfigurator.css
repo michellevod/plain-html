@@ -306,7 +306,7 @@ nav#blueBar {
   align-items: center;
 }
 .btn {
-  background-color:var(--accent-color);
+  background-color: var(--accent-color);
   height: 3rem;
   color: white;
   font-weight: bold;
@@ -316,6 +316,7 @@ nav#blueBar {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  padding: 10px;
 }
 .btnContainer {
   display: flex;
@@ -384,38 +385,72 @@ nav#blueBar {
 
 .productCard2 {
   background-color: var(--colorprdCard);
+  position: relative;
+  overflow: hidden;
+}
+.productCard2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 55%; /* 👈 adjust this */
+  background-color: var(--clrPrdCrdClrBlckBasic);
+  z-index:1;
+}
+.FlexBadges,
+.FlexImageTextButton {
+  position: relative;
+  margin-bottom: 10px;
+  z-index: 2;
 }
 .FlexBadges {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.5rem;
+  height: 50px;
 }
 .priceBadge2 {
- background-color: var(--accent-color);
+  background-color: var(--accent-color);
   color: white;
-  width: 100px;
-  height: 80px;
-  border-bottom-left-radius: 10rem;
-text-align: center;
-align-content: center;
-padding-left: 20px;
+  font-weight: 800;
+  width: 80px;
+  height: 60px;
+  border-bottom-left-radius: 5rem;
+  text-align: center;
+  align-content: center;
+  padding-left: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .weightBadge2 {
   background-color: var(--accent-color);
   color: white;
+  font-weight: 800;
   width: 70px;
   height: 40px;
   border-top-left-radius: 15px;
- text-align: center;
-align-content: center;
+  text-align: center;
+  align-content: center;
+}
+.bowlImage2 img {
+  width: 110px;
+}
+
+.headlineCard {
+  color: white;
+  font-weight: 800;
+  text-align: center;
 
 }
 
-
-
-
-
+.FlexImageTextButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .productCard__GRID {
   display: grid;
@@ -426,7 +461,7 @@ align-content: center;
   row-gap: 2rem;
   column-gap: 2rem;
 }
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .productCard__GRID {
     grid-template-columns: repeat(6, 1fr);
   }
@@ -451,13 +486,11 @@ align-content: center;
   border: 2px solid var(--accent-color);
 }
 
-
-
 .productCard__colorBlock {
   flex-direction: column;
   align-items: end;
   background-color: var(--card-block);
-   width: 100%;
+  width: 100%;
   height: 8rem;
   margin-top: auto;
   text-align: center;
