@@ -16,7 +16,7 @@
   --mymixx_4: #22ddf2;
   --text_color: darkslategrey;
   --colorBasisCer: #a60c4f;
-  --clrPrdCrdClrBlckBasic: #985171;
+  --clrPrdCrdClrBlckBasic: #963561;
   --colorGetrFrue: #d9580f;
   --clrPrdCrdClrBlckGtFr: #ad897a;
   --colorNueSam: #9abf11;
@@ -404,7 +404,7 @@ input[type="radio"] {
   left: 0;
   width: 100%;
   height: 55%;
-  background-color: var(--clrPrdCrdClrBlckBasic);
+  background-color: var(--card-block);
   z-index: 1;
 }
 .FlexBadges,
