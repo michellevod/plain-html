@@ -16,7 +16,7 @@
   --mymixx_4: #22ddf2;
   --text_color: darkslategrey;
   --colorBasisCer: #a60c4f;
-  --clrPrdCrdClrBlckBasic: #a27c8d;
+  --clrPrdCrdClrBlckBasic: #985171;
   --colorGetrFrue: #d9580f;
   --clrPrdCrdClrBlckGtFr: #ad897a;
   --colorNueSam: #9abf11;
@@ -39,7 +39,7 @@
 }
 
 html {
-  height: 100vh;q
+  height: 100vh;
   font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
 }
 
@@ -214,7 +214,7 @@ So your justify-content: flex-end; does nothing. */
 .dateBox {
   background-color: #f4ead5;
   width: 100%;
-  max-width: 31.25rem; 
+  max-width: 31.25rem;
   border-radius: 20px;
   margin: 20px;
 }
@@ -278,31 +278,24 @@ input[type="radio"] {
   margin-bottom: 10px;
   color: gray;
 }
+/* WEBSITE START HEADER */
 
-nav#blueBar {
+.imageHeader {
+  width: 100%;
+  height: auto;
+}
+.imageHeader img {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+}
+#headerimage1 {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+}
+#logoimage2 {
+  position: relative;
 }
 
-.blueHeader {
-  width: 100%;
-  height: 80px;
-  background-color: #22ddf2;
-}
-
-.logoCircle {
-  background-color: white;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  margin-left: 30px;
-  margin-top: -40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .btn {
   background-color: var(--accent-color);
   height: 3rem;
@@ -321,25 +314,16 @@ nav#blueBar {
   justify-content: center;
 }
 .notification {
-  margin-left: 32px;
-  margin-top: 150px;
-  margin-bottom: 32px;
+  margin: 3rem;
   background-color: #fffbee;
   border: 4px solid #f2bb16;
-  width: 30rem;
+  width: 60%;
   border-radius: 15px;
-  display: flex;
   flex-direction: column;
 }
 
-#notifHeadline {
-  padding: 15px;
-  padding-left: 0px;
-}
 #notifText {
   padding: 20px;
-  padding-top: 0;
-  font-size: 15px;
 }
 .notifCircle {
   background-color: #fff5d7;
@@ -358,8 +342,8 @@ nav#blueBar {
 
 .headlineExlcamationContainer {
   display: flex;
-  justify-content: space-around;
-  padding: 20px;
+  justify-content: space-between;
+  padding: 20px 20px 0px 20px;
 }
 
 .categoryAnchor {
@@ -370,6 +354,7 @@ nav#blueBar {
   border-bottom-right-radius: 15px;
   display: inline-block;
   margin-bottom: 50px;
+  margin-right: 10px;
 }
 .categoryHeadline {
   padding: 10px;
@@ -379,22 +364,23 @@ nav#blueBar {
 .productCard__Margin {
   margin: 2rem;
 }
+/* mobile - grid */
 .productCard__GRID {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   justify-content: center;
 }
-
+/* tablet - grid */
 @media (min-width: 768px) {
   .productCard__GRID {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
-
+/* desktop - grid */
 @media (min-width: 1200px) {
   .productCard__GRID {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
   }
 }
 
@@ -417,9 +403,9 @@ nav#blueBar {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 55%; 
+  height: 55%;
   background-color: var(--clrPrdCrdClrBlckBasic);
-  z-index:1;
+  z-index: 1;
 }
 .FlexBadges,
 .FlexImageTextButton {
@@ -473,7 +459,6 @@ nav#blueBar {
   flex-direction: column;
   align-items: center;
 }
-
 
 .theme-basis {
   --anchor-color: var(--colorBasisCer); /* Category block */
