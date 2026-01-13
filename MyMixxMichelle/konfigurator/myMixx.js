@@ -1,29 +1,4 @@
-// // proudctcard
-// <div class="productCard2" id="product-card-template" >
-//     <div class="FlexBadges">
-//       <div class="weightBadge2">
-//         <p>500g</p>
-//       </div>
-//       <div class="priceBadge2">
-//         <p>3,00€</p>
-//       </div>
-//     </div>
-
-//     <div class="FlexImageTextButton">
-//       <div class="bowlImage2">
-//         <img src="img/haferflockenplaceholder.png" alt="bowlImage2" />
-//       </div>
-
-//       <div class="headlineCard">
-//         <p>
-//           Zarte <br />
-//           Haferflocken
-//         </p>
-//         <button class="btn">Hinzufügen</button>
-//       </div>
-//     </div>
-//   </div> //
-
+// PRODUCT CARDS INSTALL //
 const productCardTemplate = `
   <div class="productCard2">
     <div class="FlexBadges">
@@ -79,6 +54,5 @@ for (let i = 0; i < 10; i++) {
   FluessigkeitenGrid.innerHTML += productCardTemplate
 }
 
-// for (let count = 0; count < 12; count++) {
-//   basisGrid.innerHTML += productCardTemplate; i IST NUR EINE VARIABLE UND KANN BELIEBIG UMBENANNT WERDEN
-// }
+
+

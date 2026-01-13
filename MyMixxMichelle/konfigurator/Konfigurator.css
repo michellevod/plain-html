@@ -83,7 +83,7 @@ So your justify-content: flex-end; does nothing. */
 }
 .closePopOver {
   color: rgb(124, 124, 124);
-  padding-right: 10px;
+  padding-right: 20px;
   font-size: 50px;
   display: flex;
   justify-content: center;
@@ -141,8 +141,8 @@ So your justify-content: flex-end; does nothing. */
   padding: 20px;
   margin-top: 0.625rem;
   border-radius: 20px;
-  max-height: 21rem; /* adjust to your pop-over size */
-  overflow-y: auto; /* enables vertical scrolling */
+  max-height: 21rem;
+  overflow-y: auto;
 
   margin-left: auto;
   margin-right: auto;
@@ -278,6 +278,26 @@ input[type="radio"] {
   margin-bottom: 10px;
   color: gray;
 }
+
+/* mobile popover */
+@media (max-width: 768px) {
+  #my-popover {
+    width: 100%;
+    height: 95%;
+    bottom: 0;
+    right: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .fieldGroup input {
+    margin: 10px;
+  }
+  .itemSummaryCardContainer {
+  }
+}
+
 /* WEBSITE START HEADER */
 
 .imageHeader {
@@ -297,7 +317,7 @@ input[type="radio"] {
 }
 
 .btn {
-  background-color: var(--accent-color);
+  background-color: var(--anchor-color);
   height: 3rem;
   color: white;
   font-weight: bold;
@@ -364,24 +384,13 @@ input[type="radio"] {
 .productCard__Margin {
   margin: 2rem;
 }
-/* mobile - grid */
+
 .productCard__GRID {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  justify-content: start;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   gap: 1rem;
-  justify-content: center;
-}
-/* tablet - grid */
-@media (min-width: 768px) {
-  .productCard__GRID {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-/* desktop - grid */
-@media (min-width: 1200px) {
-  .productCard__GRID {
-    grid-template-columns: repeat(8, 1fr);
-  }
+  margin-right: 20%;
 }
 
 .section__GRID {
@@ -396,6 +405,8 @@ input[type="radio"] {
   overflow: hidden;
   height: auto;
   width: 100%;
+  min-width: 12rem;
+  box-sizing: border-box;
 }
 .productCard2::before {
   content: "";
@@ -410,7 +421,7 @@ input[type="radio"] {
 .FlexBadges,
 .FlexImageTextButton {
   position: relative;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   z-index: 2;
 }
 .FlexBadges {
@@ -461,9 +472,9 @@ input[type="radio"] {
 }
 
 .theme-basis {
-  --anchor-color: var(--colorBasisCer); /* Category block */
-  --card-block: var(--clrPrdCrdClrBlckBasic); /* Product color block */
-  --accent-color: var(--colorBasisCer); /* Buttons & badges */
+  --anchor-color: var(--colorBasisCer);
+  --card-block: var(--clrPrdCrdClrBlckBasic);
+  --accent-color: var(--colorBasisCer);
 }
 
 .theme-getrfrue {
