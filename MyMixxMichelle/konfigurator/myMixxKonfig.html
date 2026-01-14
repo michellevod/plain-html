@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>myMIXX</title>
+
     <link rel="stylesheet" href="Konfigurator.css" />
     <link rel="icon" type="image/x-icon" href="img/logo-mymixx_2024_FI.png" />
     <link
@@ -12,17 +13,10 @@
     />
     <script src="myMixx.js" defer></script>
   </head>
-  <body>
-    <header>
-      <div class="imageHeader">
-        <img
-          id="headerimage1"
-          src="img/cup-coffee-healthy-cereals_24972-297.avif"
-          alt="granolaheaderimage"
-        />
-      </div>
-      <img id="logoimage2" src="img/logo_mymixx_2024.png" alt="mymixxlogo" />
 
+  <body>
+    <!-- HEADER -->
+    <header>
       <div class="notification">
         <div class="headlineExlcamationContainer">
           <h3 id="notifHeadline">Dein Müsli, deine Wahl:</h3>
@@ -30,15 +24,18 @@
             <i class="fa-solid fa-exclamation" style="color: #ffd43b"></i>
           </div>
         </div>
+
         <p id="notifText">
           Du kannst aus jeder Kategorie mehrere Zutaten auswählen. Jede Zutat
-          steht dir einmal zur Verfügung - so bleibt deine Mischung vielfältig
+          steht dir einmal zur Verfügung – so bleibt deine Mischung vielfältig
           und ausgewogen.
         </p>
       </div>
     </header>
 
+    <!-- MAIN -->
     <main>
+      <!-- POPOVER -->
       <div popover id="my-popover">
         <div class="closePopOver__Flex">
           <div class="yellowOverlayBadge">
@@ -47,7 +44,9 @@
               <p>#</p>
             </div>
           </div>
-          <span> <strong>Produktauswahl</strong> </span>
+
+          <strong>Produktauswahl</strong>
+
           <button
             class="closePopOver"
             popovertarget="my-popover"
@@ -57,177 +56,39 @@
           </button>
         </div>
 
-        <div class="itemSummaryCardContainer">
-          <div class="itemSummaryCard">
-            <div class="itemBubblePlusTextFlex">
-              <div class="itemSummaryCardImageBubble">
-                <img
-                  src="img/haferflockenplaceholder.png"
-                  alt="HaferflockenIcon"
-                />
-              </div>
-              <div class="itemText">
-                <p>Zarte Haferflocken</p>
-                <p>500g</p>
-              </div>
-              <p>2,50€</p>
-              <div class="itemDeleteButton">
-                <i class="fa-regular fa-trash-can"></i>
-              </div>
+        <!-- ITEM SUMMARY CARD -->
+        <div class="itemSumCard2">
+          <div class="itemSumCard2ContentFlex">
+            <div class="itemSumIcon">
+              <img
+                src="img/haferflockenplaceholder.png"
+                alt="HaferflockenIcon"
+              />
             </div>
-          </div>
 
-          <div class="itemSummaryCard">
-            <div class="itemBubblePlusTextFlex">
-              <div class="itemSummaryCardImageBubble">
-                <img
-                  src="img/haferflockenplaceholder.png"
-                  alt="HaferflockenIcon"
-                />
-              </div>
-              <div class="itemText">
-                <p>Zarte Haferflocken</p>
-                <p>500g</p>
-              </div>
-              <p>2,50€</p>
-              <div class="itemDeleteButton">
-                <i class="fa-regular fa-trash-can"></i>
-              </div>
+            <div class="itemText">
+              <p class="itemSumName">Item NameItem NameItem NameItem Name</p>
+              <p class="itemSumWeight">Weight</p>
             </div>
-          </div>
-          <div class="itemSummaryCard">
-            <div class="itemBubblePlusTextFlex">
-              <div class="itemSummaryCardImageBubble">
-                <img
-                  src="img/haferflockenplaceholder.png"
-                  alt="HaferflockenIcon"
-                />
-              </div>
-              <div class="itemText">
-                <p>Zarte Haferflocken</p>
-                <p>500g</p>
-              </div>
-              <p>2,50€</p>
-              <div class="itemDeleteButton">
-                <i class="fa-regular fa-trash-can"></i>
-              </div>
-            </div>
-          </div>
-          <div class="itemSummaryCard">
-            <div class="itemBubblePlusTextFlex">
-              <div class="itemSummaryCardImageBubble">
-                <img
-                  src="img/haferflockenplaceholder.png"
-                  alt="HaferflockenIcon"
-                />
-              </div>
-              <div class="itemText">
-                <p>Zarte Haferflocken</p>
-                <p>500g</p>
-              </div>
-              <p>2,50€</p>
-              <div class="itemDeleteButton">
-                <i class="fa-regular fa-trash-can"></i>
-              </div>
-            </div>
-          </div>
-          <div class="itemSummaryCard">
-            <div class="itemBubblePlusTextFlex">
-              <div class="itemSummaryCardImageBubble">
-                <img
-                  src="img/haferflockenplaceholder.png"
-                  alt="HaferflockenIcon"
-                />
-              </div>
-              <div class="itemText">
-                <p>Zarte Haferflocken</p>
-                <p>500g</p>
-              </div>
-              <p>2,50€</p>
-              <div class="itemDeleteButton">
-                <i class="fa-regular fa-trash-can"></i>
-              </div>
-            </div>
-          </div>
-          <div class="itemSummaryCard">
-            <div class="itemBubblePlusTextFlex">
-              <div class="itemSummaryCardImageBubble">
-                <img
-                  src="img/haferflockenplaceholder.png"
-                  alt="HaferflockenIcon"
-                />
-              </div>
-              <div class="itemText">
-                <p>Zarte Haferflocken</p>
-                <p>500g</p>
-              </div>
-              <p>2,50€</p>
-              <div class="itemDeleteButton">
-                <i class="fa-regular fa-trash-can"></i>
-              </div>
-            </div>
-          </div>
-          <div class="itemSummaryCard">
-            <div class="itemBubblePlusTextFlex">
-              <div class="itemSummaryCardImageBubble">
-                <img
-                  src="img/haferflockenplaceholder.png"
-                  alt="HaferflockenIcon"
-                />
-              </div>
-              <div class="itemText">
-                <p>Zarte Haferflocken</p>
-                <p>500g</p>
-              </div>
-              <p>2,50€</p>
-              <div class="itemDeleteButton">
-                <i class="fa-regular fa-trash-can"></i>
-              </div>
-            </div>
-          </div>
-          <div class="itemSummaryCard">
-            <div class="itemBubblePlusTextFlex">
-              <div class="itemSummaryCardImageBubble">
-                <img
-                  src="img/haferflockenplaceholder.png"
-                  alt="HaferflockenIcon"
-                />
-              </div>
-              <div class="itemText">
-                <p>Zarte Haferflocken</p>
-                <p>500g</p>
-              </div>
-              <p>2,50€</p>
-              <div class="itemDeleteButton">
-                <i class="fa-regular fa-trash-can"></i>
-              </div>
-            </div>
-          </div>
-          <div class="itemSummaryCard">
-            <div class="itemBubblePlusTextFlex">
-              <div class="itemSummaryCardImageBubble">
-                <img
-                  src="img/haferflockenplaceholder.png"
-                  alt="HaferflockenIcon"
-                />
-              </div>
-              <div class="itemText">
-                <p>Zarte Haferflocken</p>
-                <p>500g</p>
-              </div>
-              <p>2,50€</p>
-              <div class="itemDeleteButton">
-                <i class="fa-regular fa-trash-can"></i>
-              </div>
+
+            <div class="itemSumDelBtn">
+              <i class="fa-regular fa-trash-can"></i>
             </div>
           </div>
         </div>
-        <div class="itemSummaryMainPrice">
-          <p>Gesamt</p>
-          <p>21,05€</p>
+
+        <!-- TOTAL -->
+        <div class="itemSumTotal">
+          <p class="sectionHeading">Gesamtpreis</p>
+          <div class="itemSumTotal_Price">
+            <p>0,00€</p>
+          </div>
         </div>
+
+        <!-- DATE -->
         <div class="itemSummaryDate">
           <p class="sectionHeading">Abholtermin bestimmen</p>
+
           <div class="itemSummaryDateBoxContainer">
             <div class="dateBox">
               <div class="date__Flex">
@@ -240,13 +101,13 @@
                 <label class="dateOption">
                   <input type="radio" name="date" />24.10.2025
                 </label>
-                <!-- All radio buttons that share the same name belong to one group. Only one button in a group can be selected at a time. -->
               </div>
             </div>
           </div>
         </div>
 
-        <section class="itemSummaryPersonField">
+        <!-- PERSONAL DATA -->
+        <div class="itemSummaryPersonField">
           <p class="sectionHeading">Deine Daten</p>
 
           <div class="fieldGroup">
@@ -263,23 +124,21 @@
             Bitte bei Abholung den amtlichen Lichtbildausweis vorzeigen*
           </p>
 
-          <a class="btn theme-nueSam fieldGroup" href="SucessPage/Sucess.html"
-            >Jetzt Bestellen</a
-          >
-        </section>
+          <a class="btn theme-nueSam fieldGroup" href="SucessPage/Sucess.html">
+            Jetzt Bestellen
+          </a>
+        </div>
       </div>
 
-      
-
+      <!-- STICKY BUTTON -->
       <div class="stickyOverlayButton">
-        <!-- <button> can contain phrasing content only
-Examples: span, img, strong, em, abbr, b, i, small, etc.
-Cannot contain block-level elements like <div> or <p> -->
         <button popovertarget="my-popover" class="yellowCircleSticky">
           <img src="img/mortar-pestle-solid-full.svg" alt="müsliIcon" />
           <span class="blueCounterBubble">#</span>
         </button>
       </div>
+
+      <!-- PRODUCT SECTIONS -->
       <div class="section__GRID">
         <section class="Basis-Cerealien theme-basis">
           <div class="categoryAnchor">
@@ -288,103 +147,74 @@ Cannot contain block-level elements like <div> or <p> -->
             </h4>
           </div>
           <div class="productCard__Margin">
-            <div class="productCard__GRID" id="basis-CEREAL">
-                </div>
-              </div>
-            </div>
+            <div class="productCard__GRID" id="basis-CEREAL"></div>
           </div>
         </section>
-        <div class="section__GRID">
+
         <section class="Getrocknete-Fruechte theme-getrfrue">
           <div class="categoryAnchor">
             <h4 class="categoryHeadline">Getrocknete Früchte</h4>
           </div>
-           <div class="productCard__Margin">
-            <div class="productCard__GRID" id="getrocknete-Fr">
-                </div>
-              </div>
-              </div>
+          <div class="productCard__Margin">
+            <div class="productCard__GRID" id="getrocknete-Fr"></div>
+          </div>
         </section>
+
         <section class="Nuesse-und-Samen theme-nueSam">
           <div class="categoryAnchor">
             <h4 class="categoryHeadline">Nüsse und Samen</h4>
           </div>
-           <div class="productCard__Margin">
-            <div class="productCard__GRID" id="Nuesse-Samen">
-                </div>
-              </div>
+          <div class="productCard__Margin">
+            <div class="productCard__GRID" id="Nuesse-Samen"></div>
+          </div>
         </section>
+
         <section class="Superfoods theme-superFood">
           <div class="categoryAnchor">
             <h4 class="categoryHeadline">Superfoods</h4>
           </div>
-           <div class="productCard__Margin">
-            <div class="productCard__GRID" id="super-Foods">
-                </div>
-              </div>
+          <div class="productCard__Margin">
+            <div class="productCard__GRID" id="super-Foods"></div>
+          </div>
         </section>
-        <div class="section__GRID">
+
         <section class="ExtraSuess theme-xtraSuess">
           <div class="categoryAnchor">
-            <h4 class="categoryHeadline">Extras und Süßungsmittel </h4>
+            <h4 class="categoryHeadline">Extras und Süßungsmittel</h4>
           </div>
-           <div class="productCard__Margin">
-            <div class="productCard__GRID" id="extra-Su">
-                </div>
-              </div>
-</div>
+          <div class="productCard__Margin">
+            <div class="productCard__GRID" id="extra-Su"></div>
+          </div>
         </section>
-        <div class="section__GRID">
+
         <section class="Fluessigkeiten theme-Fluessig">
           <div class="categoryAnchor">
             <h4 class="categoryHeadline">
-              Flüssigkeiten für Müsli und Porridge 
+              Flüssigkeiten für Müsli und Porridge
             </h4>
           </div>
-           <div class="productCard__Margin">
-            <div class="productCard__GRID" id="fluessig-SE">
-                </div>
-              </div>
-              </div>
+          <div class="productCard__Margin">
+            <div class="productCard__GRID" id="fluessig-SE"></div>
+          </div>
         </section>
       </div>
 
+      <!-- FAQ -->
       <div class="Accordion">
         <details>
           <summary>Warum darf ich nur eine Auswahl pro Zutat wählen?</summary>
           <ul>
-            <li>
-              <strong>Faire Mischung & Konsistenz</strong> <br />
-              Die Limitierung hilft, dass jede Zutat im Mix zur Geltung kommt
-              und das Müsli eine angenehme Textur hat.
-            </li>
-            <li>
-              <strong> Nachhaltigkeit & Ressourcenschonung </strong> <br />Durch
-              klare Portionsgrößen verhinderst du Übermengen einzelner Zutaten
-              und reduzierst Lebensmittelverschwendung bei der Produktion.
-            </li>
-            <li>
-              <strong> Produktionssicherheit & Hygiene</strong> <br />
-              Die einheitliche Portionierung erleichtert das Abwiegen,
-              verhindert Fehler und sorgt dafür, dass jeder Mix korrekt und
-              hygienisch zusammengestellt wird.
-            </li>
-            <li>
-              <strong> Schnellerer Versand </strong> <br />
-              Ein Standardprozess ohne Mehrfachmengen verringert den Aufwand in
-              der Produktion und beschleunigt Lieferzeiten.
-            </li>
-            <li>
-              <strong> Technische Stabilität des Mixes </strong> <br />Das
-              Volumen des Müslis muss in die Verpackung passen.
-              Mehrfachportionen einzelner Zutaten könnten das Gesamtvolumen
-              sprengen.
-            </li>
+            <li><strong>Faire Mischung & Konsistenz</strong></li>
+            <li><strong>Nachhaltigkeit & Ressourcenschonung</strong></li>
+            <li><strong>Produktionssicherheit & Hygiene</strong></li>
+            <li><strong>Schnellerer Versand</strong></li>
+            <li><strong>Technische Stabilität des Mixes</strong></li>
           </ul>
         </details>
       </div>
     </main>
 
+    <!-- FOOTER -->
     <footer>
       <div id="footwrap">
         <section id="mymixx">
@@ -394,11 +224,12 @@ Cannot contain block-level elements like <div> or <p> -->
             <li><a href="">Nachhaltigkeit</a></li>
             <li><a href="">Impressum</a></li>
             <li><a href="">Datenschutz</a></li>
-            <li><a href="">Allgemeine AGB</a></li>
+            <li><a href="">AGB</a></li>
             <li><a href="">Jobs</a></li>
             <li><a href="">Presse</a></li>
           </ul>
         </section>
+
         <section id="ernaehrung">
           <h3>Ernährung</h3>
           <ul>
@@ -407,46 +238,30 @@ Cannot contain block-level elements like <div> or <p> -->
             <li><a href="">Müsli-Zutaten</a></li>
           </ul>
         </section>
+
         <section id="siegel">
           <h3>Ökologische Verantwortung</h3>
           <ul>
             <li>
-              <a href=""
-                ><img
-                  src="./img/siegel-deutsches-bio-siegel.svg"
-                  alt="Biosiegel 1"
-              /></a>
+              <img src="./img/siegel-deutsches-bio-siegel.svg" alt="Bio" />
             </li>
             <li>
-              <a href=""
-                ><img src="./img/smb_biosiegel-euroblatt.svg" alt="Biosiegel 2"
-              /></a>
+              <img src="./img/smb_biosiegel-euroblatt.svg" alt="EU Bio" />
             </li>
             <li>
-              <a href=""
-                ><img src="./img/ohne-gentechnik-logo.svg" alt="Biosiegel 3"
-              /></a>
+              <img src="./img/ohne-gentechnik-logo.svg" alt="Ohne Gentechnik" />
             </li>
           </ul>
         </section>
+
         <section id="socmed">
           <h3>MyMIXX folgen</h3>
           <ul>
-            <li>
-              <a href=""><img src="./img/facebook.svg" alt="Facebook" /></a>
-            </li>
-            <li>
-              <a href=""><img src="./img/instagram.svg" alt="Instagram" /></a>
-            </li>
-            <li>
-              <a href=""><img src="./img/pinterest.svg" alt="Pinterest" /></a>
-            </li>
-            <li>
-              <a href=""><img src="./img/youtube.svg" alt="YouTube" /></a>
-            </li>
-            <li>
-              <a href=""><img src="./img/tiktok.svg" alt="TikTok" /></a>
-            </li>
+            <li><img src="./img/facebook.svg" alt="Facebook" /></li>
+            <li><img src="./img/instagram.svg" alt="Instagram" /></li>
+            <li><img src="./img/pinterest.svg" alt="Pinterest" /></li>
+            <li><img src="./img/youtube.svg" alt="YouTube" /></li>
+            <li><img src="./img/tiktok.svg" alt="TikTok" /></li>
           </ul>
         </section>
       </div>

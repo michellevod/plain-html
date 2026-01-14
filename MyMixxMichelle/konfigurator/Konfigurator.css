@@ -1,3 +1,7 @@
+/* =====================================================
+   FONTS
+===================================================== */
+
 @font-face {
   font-family: "Noto_regu";
   src: url(fonts/NotoSans-VariableFont_wdth\wght.ttf);
@@ -8,27 +12,41 @@
   src: url(fonts/NotoSans-Italic-VariableFont_wdth\wght.ttf);
 }
 
-/* VARIABLE COLOR __PRODUCTCARDS */
+/* =====================================================
+   CSS VARIABLES / ROOT
+===================================================== */
+
 :root {
   --mymixx_1: #f2bb16;
   --mymixx_2: #d9580d;
   --mymixx_3: #9abf11;
   --mymixx_4: #22ddf2;
   --text_color: darkslategrey;
+
   --colorBasisCer: #a60c4f;
   --clrPrdCrdClrBlckBasic: #963561;
+
   --colorGetrFrue: #d9580f;
   --clrPrdCrdClrBlckGtFr: #ad897a;
+
   --colorNueSam: #9abf11;
   --clrPrdCrdClrBlckNSm: #94ad7a;
+
   --colorSuperFo: #20ddf2;
   --clrPrdCrdClrBlckSprFds: #7aada8;
+
   --colorExtrasuess: #bf5f5f;
   --clrPrdCrdClrBlckXtrSss: #ad7a7a;
+
   --colorFluessMuePorr: #8c5fbf;
   --clrPrdCrdClrBlckFlssMPrr: #9b7aad;
+
   --colorprdCard: #f2eee2;
 }
+
+/* =====================================================
+   RESET & BASE
+===================================================== */
 
 * {
   margin: 0;
@@ -50,21 +68,15 @@ body {
   background-color: #fdf4d8;
 }
 
+/* =====================================================
+   POPOVER (HTML POPOVER API)
+===================================================== */
+
 /* A <div popover> does NOT behave like a normal element in the layout flow.
-When opened, it becomes a top-layer element, just like a modal or tooltip.
+   When opened, it becomes a top-layer element */
 
-👉 That means:
-
-It does NOT stay inside your .popover-Flex container
-
-It does not follow flex positioning
-
-It appears where the browser thinks it should, unless you position it manually
-
-So your justify-content: flex-end; does nothing. */
 #my-popover {
   inset: auto;
-  /* inset:auto means "dont auto place me browser!" */
   position: fixed;
   background-color: #fcfcfc;
   height: 100%;
@@ -72,15 +84,18 @@ So your justify-content: flex-end; does nothing. */
   right: 0;
   border-top-left-radius: 15px;
 }
+
 /* normal html popover backdrop */
 #my-popover::backdrop {
   background-color: rgba(0, 0, 0, 0.6);
 }
+
 .closePopOver__Flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .closePopOver {
   color: rgb(124, 124, 124);
   padding-right: 20px;
@@ -91,6 +106,23 @@ So your justify-content: flex-end; does nothing. */
   background-color: transparent;
   cursor: pointer;
 }
+
+.yellowOverlayBadge {
+  display: flex;
+  background-color: var(--mymixx_1);
+  width: 60px;
+  height: 60px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.yellowOverlayBadge img {
+  width: 30px;
+  height: 30px;
+}
+
 .blueCounterBubble2 {
   position: absolute;
   top: 2px;
@@ -102,84 +134,45 @@ So your justify-content: flex-end; does nothing. */
   text-align: center;
   color: white;
 }
-.yellowOverlayBadge {
-  display: flex;
-  background-color: var(--mymixx_1);
-  width: 60px;
-  height: 60px;
-  border-bottom-right-radius: 20px;
-  border-top-left-radius: 5px;
-  align-items: center;
-  justify-content: center;
-}
-.yellowOverlayBadge img {
-  width: 30px;
-  height: 30px;
-}
-.itemBubblePlusTextFlex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
-}
-.itemText {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  font-size: 18px;
-}
-.itemSummaryCardContainer {
+
+/* =====================================================
+   ITEM SUMMARY / CART CONTENT
+===================================================== */
+
+.itemSumCard2 {
+  background-color: #f4ead5;
   display: flex;
   gap: 12px;
   align-items: center;
   flex-direction: column;
-  /* Scrollable flex containers should almost never use justify-content: center. */
-  background-color: #f4ead5;
-  width: 100%;
-  max-width: 35.125rem;
-  padding: 20px;
-  margin-top: 0.625rem;
-  border-radius: 20px;
-  max-height: 21rem;
-  overflow-y: auto;
-
-  margin-left: auto;
-  margin-right: auto;
-}
-.itemSummaryCard {
-  background-color: #a60c4f;
-  width: 100%;
-  max-width: 30rem;
+  width: 80%;
   padding: 10px;
-  height: auto;
-  min-height: 4rem;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  flex-shrink: 0;
+  border-radius: 20px;
+  max-height: 18rem;
+  overflow-y: auto;
+  margin: auto;
 }
 
-.itemSummaryCard p {
-  color: white;
-  font-weight: 800;
-}
-.itemSummaryCardImageBubble {
+.itemSumCard2ContentFlex {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 10px;
   align-items: center;
-  background-color: rgba(217, 217, 217, 0.3);
-  width: 55px;
-  height: 55px;
-  border-radius: 50px;
-  box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.5);
-}
-.itemSummaryCardImageBubble img {
-  width: 2.5rem;
-  height: 2.5rem;
+  background-color: #a60c4f;
+  width: 80%;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
 }
 
-.itemDeleteButton {
+.itemSumIcon img {
+  width: 2rem;
+  padding: 2px;
+  background-color: #dbcfcf5a;
+  border-radius: 50%;
+}
+
+.itemSumDelBtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,48 +182,60 @@ So your justify-content: flex-end; does nothing. */
   border-radius: 50px;
   padding: 16px;
 }
-.itemSummaryMainPrice {
+
+.fa-trash-can {
+  color: black;
+}
+
+.itemSumTotal {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.itemSumTotal_Price {
+  margin-left: auto;
+  padding-right: 10px;
+  color: green;
   font-weight: 600;
 }
-.itemSummaryDate {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.itemSummaryDateBoxContainer {
-  display: flex;
-  justify-content: center;
-}
+
+/* =====================================================
+   DATE SELECTION
+===================================================== */
+
 .itemSummaryDate p {
   font-weight: 700;
   text-align: left;
   margin-left: 20px;
 }
+
 .dateBox {
   background-color: #f4ead5;
-  width: 100%;
-  max-width: 31.25rem;
+  width: 90%;
   border-radius: 20px;
-  margin: 20px;
+  margin-left: 2rem;
 }
+
 .date__Flex {
   display: flex;
   flex-direction: column;
   gap: 18px;
   padding: 10px 30px;
 }
+
 .dateOption {
   display: flex;
   gap: 5px;
 }
+
 input[type="radio"] {
   accent-color: var(--mymixx_2);
 }
+
+/* =====================================================
+   FORM / USER DATA
+===================================================== */
 
 .itemSummaryPersonField {
   display: flex;
@@ -242,9 +247,9 @@ input[type="radio"] {
 .fieldGroup {
   display: flex;
   flex-direction: column;
-  align-self: center; /* 👈 key line */
+  align-self: center;
   width: 100%;
-  max-width: 550px; /* same width as input */
+  max-width: 550px;
   margin: 10px;
 }
 
@@ -262,16 +267,17 @@ input[type="radio"] {
   font-size: 16px;
 }
 
+.itemSummaryPersonField input:focus {
+  border-color: #5f6a76;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
 .sectionHeading {
   margin-left: 20px;
   font-weight: 700;
   text-align: left;
 }
 
-.itemSummaryPersonField input:focus {
-  border-color: #5f6a76;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
 /* CSS Vorlage: https://uiverse.io/JayRamoliya/loud-rattlesnake-53 */
 .legalText {
   font-size: 0.6rem;
@@ -279,7 +285,10 @@ input[type="radio"] {
   color: gray;
 }
 
-/* mobile popover */
+/* =====================================================
+   MOBILE POPOVER OVERRIDES
+===================================================== */
+
 @media (max-width: 768px) {
   #my-popover {
     width: 100%;
@@ -291,30 +300,15 @@ input[type="radio"] {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
+
   .fieldGroup input {
     margin: 10px;
   }
-  .itemSummaryCardContainer {
-  }
 }
 
-/* WEBSITE START HEADER */
-
-.imageHeader {
-  width: 100%;
-  height: auto;
-}
-.imageHeader img {
-  width: 100%;
-  height: 18rem;
-  object-fit: cover;
-}
-#headerimage1 {
-  position: absolute;
-}
-#logoimage2 {
-  position: relative;
-}
+/* =====================================================
+   HEADER / NOTIFICATION
+===================================================== */
 
 .btn {
   background-color: var(--anchor-color);
@@ -329,22 +323,26 @@ input[type="radio"] {
   border-radius: 5px;
   padding: 10px;
 }
+
 .btnContainer {
   display: flex;
   justify-content: center;
 }
+
 .notification {
-  margin: 3rem;
+  margin: 2rem;
   background-color: #fffbee;
-  border: 4px solid #f2bb16;
-  width: 60%;
+  border: 2px solid #f2bb16;
+  width: 70%;
   border-radius: 15px;
   flex-direction: column;
+  box-shadow: 5px 10px 10px rgb(197, 197, 197);
 }
 
 #notifText {
   padding: 20px;
 }
+
 .notifCircle {
   background-color: #fff5d7;
   width: 40px;
@@ -356,6 +354,7 @@ input[type="radio"] {
   flex-shrink: 0;
   flex-grow: 0;
 }
+
 .fa-exclamation {
   font-size: 30px;
 }
@@ -366,16 +365,20 @@ input[type="radio"] {
   padding: 20px 20px 0px 20px;
 }
 
+/* =====================================================
+   PRODUCT GRID & CARDS
+===================================================== */
+
 .categoryAnchor {
   background-color: var(--anchor-color);
   color: white;
-  height: auto;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   display: inline-block;
   margin-bottom: 50px;
   margin-right: 10px;
 }
+
 .categoryHeadline {
   padding: 10px;
   font-size: 32px;
@@ -393,14 +396,26 @@ input[type="radio"] {
   margin-right: 20%;
 }
 
+/* mobile viewport */
+@media (max-width: 767px) {
+  .productCard__GRID {
+    grid-template-columns: repeat(2, minmax(12rem, 1fr));
+  }
+}
+
 .section__GRID {
   display: grid;
   gap: 5rem;
   margin-bottom: 5rem;
 }
 
+/* =====================================================
+   PRODUCT CARD COMPONENT
+===================================================== */
+
 .productCard2 {
   background-color: var(--colorprdCard);
+  border-top-left-radius: 15px;
   position: relative;
   overflow: hidden;
   height: auto;
@@ -408,6 +423,7 @@ input[type="radio"] {
   min-width: 12rem;
   box-sizing: border-box;
 }
+
 .productCard2::before {
   content: "";
   position: absolute;
@@ -418,18 +434,21 @@ input[type="radio"] {
   background-color: var(--card-block);
   z-index: 1;
 }
+
 .FlexBadges,
 .FlexImageTextButton {
   position: relative;
   padding-bottom: 10px;
   z-index: 2;
 }
+
 .FlexBadges {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
   height: 50px;
 }
+
 .priceBadge2 {
   background-color: var(--accent-color);
   color: white;
@@ -455,6 +474,7 @@ input[type="radio"] {
   text-align: center;
   align-content: center;
 }
+
 .bowlImage2 img {
   width: 110px;
 }
@@ -471,6 +491,10 @@ input[type="radio"] {
   align-items: center;
 }
 
+/* =====================================================
+   THEMES
+===================================================== */
+
 .theme-basis {
   --anchor-color: var(--colorBasisCer);
   --card-block: var(--clrPrdCrdClrBlckBasic);
@@ -482,26 +506,35 @@ input[type="radio"] {
   --card-block: var(--clrPrdCrdClrBlckGtFr);
   --accent-color: var(--colorGetrFrue);
 }
+
 .theme-nueSam {
   --anchor-color: var(--colorNueSam);
   --card-block: var(--clrPrdCrdClrBlckNSm);
   --accent-color: var(--colorNueSam);
 }
+
 .theme-superFood {
   --anchor-color: var(--colorSuperFo);
   --card-block: var(--clrPrdCrdClrBlckSprFds);
   --accent-color: var(--colorSuperFo);
 }
+
 .theme-xtraSuess {
   --anchor-color: var(--colorExtrasuess);
   --card-block: var(--clrPrdCrdClrBlckXtrSss);
   --accent-color: var(--colorExtrasuess);
 }
+
 .theme-Fluessig {
   --anchor-color: var(--colorFluessMuePorr);
   --card-block: var(--clrPrdCrdClrBlckFlssMPrr);
   --accent-color: var(--colorFluessMuePorr);
 }
+
+/* =====================================================
+   STICKY OVERLAY BUTTON
+===================================================== */
+
 .stickyOverlayButton {
   position: fixed;
   display: flex;
@@ -523,10 +556,12 @@ input[type="radio"] {
   box-shadow: 5px 5px 10px 1px rgb(55, 55, 55);
   cursor: pointer;
 }
+
 .yellowCircleSticky img {
   width: 50px;
   height: 50px;
 }
+
 .blueCounterBubble {
   position: absolute;
   top: 2px;
@@ -540,6 +575,10 @@ input[type="radio"] {
   justify-content: center;
   align-items: center;
 }
+
+/* =====================================================
+   ACCORDION
+===================================================== */
 
 details {
   background-color: #22ddf2;
@@ -555,6 +594,7 @@ details ul {
   padding-bottom: 25px;
   font-size: 18px;
 }
+
 summary {
   font-weight: bold;
   font-size: 24px;
@@ -569,18 +609,20 @@ details[open] summary {
   border-bottom: 2px solid #ffffff;
 }
 
+/* =====================================================
+   FOOTER
+===================================================== */
+
 footer {
   min-height: 10rem;
   background-color: var(--colorNueSam);
 }
 
+footer ul,
 footer ul li {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
-}
-
-footer ul {
-  padding-left: 0;
-  margin-left: 0;
 }
 
 #footwrap {
@@ -595,6 +637,7 @@ footer ul {
 footer section {
   margin-top: 2rem;
 }
+
 footer section ul li a {
   font-size: 0.8rem;
 }
@@ -607,11 +650,11 @@ footer section#socmed ul {
   gap: 2rem;
 }
 
-footer section ul li a img:hover {
-  cursor: grab;
-}
-
 footer section ul li a img {
   width: 300%;
   padding-top: 1rem;
+}
+
+footer section ul li a img:hover {
+  cursor: grab;
 }
