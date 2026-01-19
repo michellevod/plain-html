@@ -207,7 +207,6 @@ body {
 .itemSummaryDate p {
   font-weight: 700;
   text-align: left;
-  margin-left: 20px;
 }
 
 .dateBox {
@@ -220,8 +219,9 @@ body {
 .date__Flex {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  padding: 10px 30px;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .dateOption {
@@ -248,7 +248,7 @@ input[type="radio"] {
   display: flex;
   flex-direction: column;
   align-self: center;
-  width: 100%;
+  width: 80%;
   max-width: 550px;
   margin: 10px;
 }
@@ -281,9 +281,10 @@ input[type="radio"] {
 /* CSS Vorlage: https://uiverse.io/JayRamoliya/loud-rattlesnake-53 */
 .legalText {
   font-size: 0.6rem;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   color: gray;
 }
+
 
 /* =====================================================
    MOBILE POPOVER OVERRIDES
@@ -295,10 +296,7 @@ input[type="radio"] {
     height: 95%;
     bottom: 0;
     right: auto;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+   border-radius: 15px 15px 0 0;
   }
 
   .fieldGroup input {
@@ -480,10 +478,20 @@ input[type="radio"] {
 }
 
 .headlineCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   color: white;
   font-weight: 800;
   text-align: center;
 }
+/* .headlineCard p {
+  margin: 0;
+  line-height: 1.2;
+  max-height: 3.6em; /* ~3 lines */
+  /* overflow: hidden;
+} */ 
 
 .FlexImageTextButton {
   display: flex;
