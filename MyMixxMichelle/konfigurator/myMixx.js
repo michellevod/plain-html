@@ -257,7 +257,7 @@ const nuesseSamen = [
     name: "Mandeln (geröstet, gehackt, blättrig)",
     weight: "150 g",
     price: 4.00,
-    image: "img/nuesse-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "Nuesse-Samen"
   },
   {
@@ -265,7 +265,7 @@ const nuesseSamen = [
     name: "Walnüsse",
     weight: "150 g",
     price: 4.50,
-    image: "img/nuesse-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "Nuesse-Samen"
   },
   {
@@ -273,7 +273,7 @@ const nuesseSamen = [
     name: "Haselnüsse",
     weight: "150 g",
     price: 4.20,
-    image: "img/nuesse-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "Nuesse-Samen"
   },
   {
@@ -281,7 +281,7 @@ const nuesseSamen = [
     name: "Pistazien",
     weight: "100 g",
     price: 5.50,
-    image: "img/nuesse-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "Nuesse-Samen"
   },
   {
@@ -289,7 +289,7 @@ const nuesseSamen = [
     name: "Cashewkerne",
     weight: "150 g",
     price: 4.80,
-    image: "img/nuesse-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "Nuesse-Samen"
   },
   {
@@ -297,7 +297,7 @@ const nuesseSamen = [
     name: "Pekanüsse",
     weight: "150 g",
     price: 5.00,
-    image: "img/nuesse-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "Nuesse-Samen"
   },
   {
@@ -305,7 +305,7 @@ const nuesseSamen = [
     name: "Sonnenblumenkerne",
     weight: "200 g",
     price: 2.50,
-    image: "img/nuesse-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "Nuesse-Samen"
   },
   {
@@ -313,7 +313,7 @@ const nuesseSamen = [
     name: "Kürbiskerne",
     weight: "150 g",
     price: 3.50,
-    image: "img/nuesse-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "Nuesse-Samen"
   },
   {
@@ -321,7 +321,7 @@ const nuesseSamen = [
     name: "Chiasamen",
     weight: "100 g",
     price: 3.50,
-    image: "img/nuesse-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "Nuesse-Samen"
   },
   {
@@ -329,7 +329,7 @@ const nuesseSamen = [
     name: "Leinsamen",
     weight: "200 g",
     price: 2.50,
-    image: "img/nuesse-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "Nuesse-Samen"
   },
   {
@@ -337,7 +337,7 @@ const nuesseSamen = [
     name: "Hanfsamen",
     weight: "100 g",
     price: 4.00,
-    image: "img/nuesse-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "Nuesse-Samen"
   },
   {
@@ -345,7 +345,7 @@ const nuesseSamen = [
     name: "Sesamsamen",
     weight: "200 g",
     price: 2.80,
-    image: "img/nuesse-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "Nuesse-Samen"
   }
 ];
@@ -355,7 +355,7 @@ const superFoods = [
     name: "Kakaonibs",
     weight: "100 g",
     price: 4.50,
-    image: "img/superfood-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "super-Foods"
   },
   {
@@ -363,7 +363,7 @@ const superFoods = [
     name: "Matcha-Pulver",
     weight: "50 g",
     price: 8.00,
-    image: "img/superfood-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "super-Foods"
   },
   {
@@ -371,7 +371,7 @@ const superFoods = [
     name: "Maca-Pulver",
     weight: "100 g",
     price: 5.50,
-    image: "img/superfood-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "super-Foods"
   },
   {
@@ -379,7 +379,7 @@ const superFoods = [
     name: "Baobab-Pulver",
     weight: "100 g",
     price: 6.00,
-    image: "img/superfood-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "super-Foods"
   },
   {
@@ -387,7 +387,7 @@ const superFoods = [
     name: "Spirulina",
     weight: "50 g",
     price: 7.00,
-    image: "img/superfood-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "super-Foods"
   },
   {
@@ -395,7 +395,7 @@ const superFoods = [
     name: "Acai-Beeren",
     weight: "100 g",
     price: 8.50,
-    image: "img/superfood-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "super-Foods"
   },
   {
@@ -403,7 +403,7 @@ const superFoods = [
     name: "Lucuma-Pulver",
     weight: "100 g",
     price: 5.00,
-    image: "img/superfood-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "super-Foods"
   },
   {
@@ -411,7 +411,7 @@ const superFoods = [
     name: "Weizengraspulver",
     weight: "100 g",
     price: 6.50,
-    image: "img/superfood-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "super-Foods"
   },
   {
@@ -419,7 +419,7 @@ const superFoods = [
     name: "Gojipulver",
     weight: "100 g",
     price: 7.50,
-    image: "img/superfood-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "super-Foods"
   },
   {
@@ -427,7 +427,7 @@ const superFoods = [
     name: "Kokosflocken",
     weight: "150 g",
     price: 3.50,
-    image: "img/superfood-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "super-Foods"
   },
   {
@@ -435,7 +435,7 @@ const superFoods = [
     name: "Trockene Maulbeeren",
     weight: "150 g",
     price: 5.50,
-    image: "img/superfood-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "super-Foods"
   }
 ];
@@ -445,7 +445,7 @@ const extraSuess = [
     name: "Dunkle Schokoladenstücke",
     weight: "150 g",
     price: 3.80,
-    image: "img/extra-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "extra-Su"
   },
   {
@@ -453,7 +453,7 @@ const extraSuess = [
     name: "Weiße Schokoladenstücke",
     weight: "150 g",
     price: 3.80,
-    image: "img/extra-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "extra-Su"
   },
   {
@@ -461,7 +461,7 @@ const extraSuess = [
     name: "Karamellstückchen",
     weight: "150 g",
     price: 4.00,
-    image: "img/extra-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "extra-Su"
   },
   {
@@ -469,7 +469,7 @@ const extraSuess = [
     name: "Kokoschips",
     weight: "150 g",
     price: 3.50,
-    image: "img/extra-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "extra-Su"
   },
   {
@@ -477,7 +477,7 @@ const extraSuess = [
     name: "Honig",
     weight: "250 g",
     price: 6.00,
-    image: "img/extra-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "extra-Su"
   },
   {
@@ -485,7 +485,7 @@ const extraSuess = [
     name: "Ahornsirup",
     weight: "250 ml",
     price: 8.00,
-    image: "img/extra-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "extra-Su"
   },
   {
@@ -493,7 +493,7 @@ const extraSuess = [
     name: "Agavendicksaft",
     weight: "250 ml",
     price: 4.50,
-    image: "img/extra-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "extra-Su"
   }
 ];
@@ -503,7 +503,7 @@ const fluessigkeiten = [
     name: "Hafermilch",
     weight: "1 l",
     price: 1.85,
-    image: "img/fluessig-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "fluessig-SE"
   },
   {
@@ -511,7 +511,7 @@ const fluessigkeiten = [
     name: "Mandelmilch",
     weight: "1 l",
     price: 2.25,
-    image: "img/fluessig-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "fluessig-SE"
   },
   {
@@ -519,7 +519,7 @@ const fluessigkeiten = [
     name: "Kokosmilch",
     weight: "1 l",
     price: 2.25,
-    image: "img/fluessig-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "fluessig-SE"
   },
   {
@@ -527,7 +527,7 @@ const fluessigkeiten = [
     name: "Sojamilch",
     weight: "1 l",
     price: 1.75,
-    image: "img/fluessig-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "fluessig-SE"
   },
   {
@@ -535,7 +535,7 @@ const fluessigkeiten = [
     name: "Reismilch",
     weight: "1 l",
     price: 1.85,
-    image: "img/fluessig-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "fluessig-SE"
   },
   {
@@ -543,7 +543,7 @@ const fluessigkeiten = [
     name: "Vollmilch",
     weight: "1 l",
     price: 1.55,
-    image: "img/fluessig-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "fluessig-SE"
   },
   {
@@ -551,7 +551,7 @@ const fluessigkeiten = [
     name: "Joghurt (natur, griechisch)",
     weight: "250 ml",
     price: 0.95,
-    image: "img/fluessig-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "fluessig-SE"
   },
   {
@@ -559,7 +559,7 @@ const fluessigkeiten = [
     name: "Wasser (sehr weich und mikrofiltriert)",
     weight: "1 l",
     price: 1.85,
-    image: "img/fluessig-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "fluessig-SE"
   },
   {
@@ -567,7 +567,7 @@ const fluessigkeiten = [
     name: "Kokoswasser",
     weight: "1 l",
     price: 2.05,
-    image: "img/fluessig-placeholder.png",
+    image: "img/haferflockenplaceholder.png",
     category: "fluessig-SE"
   }
 ];
@@ -601,8 +601,8 @@ function createProductCard(product) {
 
       <div class="headlineCard">
         <p>${product.name.replace(" ", "<br />")}</p>
-        <button class="btn">Hinzufügen</button>
       </div>
+      <button class="btn">Hinzufügen</button>
     </div>
   `;
 

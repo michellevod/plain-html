@@ -23,7 +23,7 @@
   --mymixx_4: #22ddf2;
   --text_color: darkslategrey;
 
-  --colorBasisCer: #a60c4f;
+  --colorBasisCer: #bc155e;
   --clrPrdCrdClrBlckBasic: #963561;
 
   --colorGetrFrue: #d9580f;
@@ -42,6 +42,14 @@
   --clrPrdCrdClrBlckFlssMPrr: #9b7aad;
 
   --colorprdCard: #f2eee2;
+
+  /* hovers */
+  --colorBasisCerHv: #8c0a42;
+  --colorGetrFrueHv: #be4d0b;
+  --colorNueSamHv: #85a60e;
+  --colorSuperFoHv: #1bbcce;
+  --colorExtrasuessHv: #8e4747;
+  --colorFluessMuePorrHv: #724c9d;
 }
 
 /* =====================================================
@@ -83,6 +91,8 @@ body {
   width: 40rem;
   right: 0;
   border-top-left-radius: 15px;
+}
+#my-popover:popover-open {
 }
 
 /* normal html popover backdrop */
@@ -285,7 +295,6 @@ input[type="radio"] {
   color: gray;
 }
 
-
 /* =====================================================
    MOBILE POPOVER OVERRIDES
 ===================================================== */
@@ -296,7 +305,7 @@ input[type="radio"] {
     height: 95%;
     bottom: 0;
     right: auto;
-   border-radius: 15px 15px 0 0;
+    border-radius: 15px 15px 0 0;
   }
 
   .fieldGroup input {
@@ -310,21 +319,21 @@ input[type="radio"] {
 
 .btn {
   background-color: var(--anchor-color);
-  height: 3rem;
   color: white;
   font-weight: bold;
   display: flex;
   font-size: 1.2rem;
-  margin-top: 10px;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
   padding: 10px;
+  margin-top: -2rem;
+  margin-bottom: 3rem;
 }
 
-.btnContainer {
-  display: flex;
-  justify-content: center;
+.btn:hover {
+  background-color: var(--hover-color);
+  transition: 0.2s;
 }
 
 .notification {
@@ -370,16 +379,13 @@ input[type="radio"] {
 .categoryAnchor {
   background-color: var(--anchor-color);
   color: white;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 0px 15px 15px 0px;
   display: inline-block;
-  margin-bottom: 50px;
-  margin-right: 10px;
 }
 
 .categoryHeadline {
-  padding: 10px;
-  font-size: 32px;
+  padding: 1rem;
+  font-size: 1.5rem;
 }
 
 .productCard__Margin {
@@ -402,11 +408,8 @@ input[type="radio"] {
 }
 
 .section__GRID {
-  display: grid;
-  gap: 5rem;
-  margin-bottom: 5rem;
+  margin: 1rem 1rem 1rem 0;
 }
-
 /* =====================================================
    PRODUCT CARD COMPONENT
 ===================================================== */
@@ -485,18 +488,14 @@ input[type="radio"] {
   color: white;
   font-weight: 800;
   text-align: center;
+  flex-grow: 1;
 }
-/* .headlineCard p {
-  margin: 0;
-  line-height: 1.2;
-  max-height: 3.6em; /* ~3 lines */
-  /* overflow: hidden;
-} */ 
 
 .FlexImageTextButton {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
 /* =====================================================
@@ -507,36 +506,42 @@ input[type="radio"] {
   --anchor-color: var(--colorBasisCer);
   --card-block: var(--clrPrdCrdClrBlckBasic);
   --accent-color: var(--colorBasisCer);
+  --hover-color: var(--colorBasisCerHv);
 }
 
 .theme-getrfrue {
   --anchor-color: var(--colorGetrFrue);
   --card-block: var(--clrPrdCrdClrBlckGtFr);
   --accent-color: var(--colorGetrFrue);
+  --hover-color: var(--colorGetrFrueHv);
 }
 
 .theme-nueSam {
   --anchor-color: var(--colorNueSam);
   --card-block: var(--clrPrdCrdClrBlckNSm);
   --accent-color: var(--colorNueSam);
+  --hover-color: var(--colorNueSamHv);
 }
 
 .theme-superFood {
   --anchor-color: var(--colorSuperFo);
   --card-block: var(--clrPrdCrdClrBlckSprFds);
   --accent-color: var(--colorSuperFo);
+  --hover-color: var(--colorSuperFoHv);
 }
 
 .theme-xtraSuess {
   --anchor-color: var(--colorExtrasuess);
   --card-block: var(--clrPrdCrdClrBlckXtrSss);
   --accent-color: var(--colorExtrasuess);
+  --hover-color: var(--colorExtrasuessHv);
 }
 
 .theme-Fluessig {
   --anchor-color: var(--colorFluessMuePorr);
   --card-block: var(--clrPrdCrdClrBlckFlssMPrr);
   --accent-color: var(--colorFluessMuePorr);
+  --hover-color: var(--colorFluessMuePorrHv);
 }
 
 /* =====================================================
