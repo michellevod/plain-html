@@ -106,12 +106,29 @@ const basisCerealien = [
   },
   {
     id: "basis-14",
-    name: "Crunchy Müsli (Schoko, Nuss, Honig)",
+    name: "Crunchy Müsli Schoko",
     weight: "350 g",
     price: 4.50,
     image: "img/haferflockenplaceholder.png",
     category: "basis-CEREAL"
   },
+  {
+    id: "basis-141",
+    name: "Crunchy Müsli Nuss",
+    weight: "350 g",
+    price: 4.50,
+    image: "img/haferflockenplaceholder.png",
+    category: "basis-CEREAL"
+  },
+  {
+    id: "basis-142",
+    name: "Crunchy Müsli Honig",
+    weight: "350 g",
+    price: 4.50,
+    image: "img/haferflockenplaceholder.png",
+    category: "basis-CEREAL"
+  },
+
   {
     id: "basis-15",
     name: "Rice Krispies",
@@ -254,7 +271,23 @@ const getrockneteFruechte = [
 const nuesseSamen = [
   {
     id: "nuesse-1",
-    name: "Mandeln (geröstet, gehackt, blättrig)",
+    name: "Mandeln geröstet",
+    weight: "150 g",
+    price: 4.00,
+    image: "img/haferflockenplaceholder.png",
+    category: "Nuesse-Samen"
+  },
+  {
+    id: "nuesse-1-2",
+    name: "Mandeln gehackt",
+    weight: "150 g",
+    price: 4.00,
+    image: "img/haferflockenplaceholder.png",
+    category: "Nuesse-Samen"
+  },
+  {
+    id: "nuesse-1-3",
+    name: "Mandeln blättrig",
     weight: "150 g",
     price: 4.00,
     image: "img/haferflockenplaceholder.png",
@@ -548,7 +581,15 @@ const fluessigkeiten = [
   },
   {
     id: "fluessig-7",
-    name: "Joghurt (natur, griechisch)",
+    name: "Joghurt (natur)",
+    weight: "250 ml",
+    price: 0.95,
+    image: "img/haferflockenplaceholder.png",
+    category: "fluessig-SE"
+  },
+  {
+    id: "fluessig-7-1",
+    name: "Joghurt (griechisch)",
     weight: "250 ml",
     price: 0.95,
     image: "img/haferflockenplaceholder.png",
@@ -556,7 +597,7 @@ const fluessigkeiten = [
   },
   {
     id: "fluessig-8",
-    name: "Wasser (sehr weich und mikrofiltriert)",
+    name: "Wasser sehr weich und mikrofiltriert",
     weight: "1 l",
     price: 1.85,
     image: "img/haferflockenplaceholder.png",
@@ -601,8 +642,9 @@ function createProductCard(product) {
 
       <div class="headlineCard">
         <p>${product.name.replace(" ", "<br />")}</p>
+       
       </div>
-      <button class="btn">Hinzufügen</button>
+      <button class="btn btn-leveling">Hinzufügen</button>
     </div>
   `;
 
@@ -634,3 +676,27 @@ fluessigkeiten.forEach(product=> {
   fluessigGrid.appendChild(createProductCard(product));
 });
 ///////////////////////////////////////////////////////////////////
+
+// IMAGE TRANSITIONS //
+const images = [
+  "img/ben-neale-cARNiGpmf70-unsplash.jpg",
+  "img/julian-hochgesang-mfKjqdSIZDM-unsplash.jpg",
+  "img/dimitris-asproloupos-qzRVPgqSWn4-unsplash.jpg",
+  "img/carlee-jones-1lPSM8VIdBQ-unsplash.jpg"
+];
+
+let currentIndex = 0;
+const headerImage = document.getElementById("cerealImages");
+
+setInterval(() => {
+  // fade out
+  headerImage.style.opacity = 0;
+
+  setTimeout(() => {
+    currentIndex = (currentIndex + 1) % images.length;
+    headerImage.src = images[currentIndex];
+
+    // fade in
+    headerImage.style.opacity = 1;
+  }, 500); // half of CSS transition time
+}, 5000);
