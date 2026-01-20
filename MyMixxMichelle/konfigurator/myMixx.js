@@ -5,7 +5,7 @@ const basisCerealien = [
     name: "Zarte Haferflocken",
     weight: "500 g",
     price: 2.50,
-    image: "img/haferflockenplaceholder.png",
+    image: "imgP/zarteHaferflocken.jpg",
     category: "basis-CEREAL"
   },
   {
@@ -639,10 +639,8 @@ function createProductCard(product) {
       <div class="bowlImage2">
         <img src="${product.image}" alt="${product.name}" />
       </div>
-
       <div class="headlineCard">
         <p>${product.name.replace(" ", "<br />")}</p>
-       
       </div>
       <button class="btn btn-leveling">Hinzufügen</button>
     </div>
