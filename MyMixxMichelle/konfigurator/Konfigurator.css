@@ -321,6 +321,30 @@ input[type="radio"] {
 }
 
 /* =====================================================
+   ANCHOR JUMP SIDE TRAY
+===================================================== */
+.categoryFlex {
+   display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: end;
+
+  position: sticky;
+  top: 2rem;   /* how far from the top it sticks */
+ 
+}
+
+.Anchor {
+  background: var(--anchor-color);
+  color: white;
+  width: 10rem;
+  font-size: 16px;
+  padding: 1.5rem;
+  border-radius: 25px 0px 0px 25px;
+}
+
+
+/* =====================================================
    HEADER / NOTIFICATION
 ===================================================== */
 
@@ -355,7 +379,7 @@ input[type="radio"] {
   font-size: clamp(8px, 1vw, 2rem);
 }
 #cerealImages {
-  transition: opacity 1s ease-in;
+  transition: opacity 1s ease;
 }
 .cerealImages {
   position: relative;
@@ -394,7 +418,7 @@ input[type="radio"] {
   margin-left: 2rem;
   background-color: #ffffff;
   border: 2px solid #f2bb16;
-  width: 80%;
+  width: 76%;
   border-radius: 15px;
   flex-direction: column;
   box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.12);

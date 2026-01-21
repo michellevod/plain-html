@@ -699,4 +699,4 @@ setInterval(() => {
     // fade in
     headerImage.style.opacity = 1
   }, 500) // half of CSS transition time
-}, 5000)
+}, 4000)
