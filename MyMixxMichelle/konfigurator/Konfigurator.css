@@ -27,7 +27,7 @@
   --clrPrdCrdClrBlckBasic: #963561;
 
   --colorGetrFrue: #d9580f;
-  --clrPrdCrdClrBlckGtFr: #ad897a;
+  --clrPrdCrdClrBlckGtFr: #c37452;
 
   --colorNueSam: #9abf11;
   --clrPrdCrdClrBlckNSm: #94ad7a;
@@ -75,8 +75,16 @@ body {
   box-sizing: content-box;
   font-family: "Noto_regu", sans-serif;
   background-color: #fdf4d8;
+  opacity: 1;
+  background-image:
+    radial-gradient(#ddd1ae 1.35px, transparent 1.35px),
+    radial-gradient(#ddd1ae 1.35px, #fdf4d8 1.35px);
+  background-size: 54px 54px;
+  background-position:
+    0 0,
+    27px 27px;
 }
-
+/* css background pattern: https://www.magicpattern.design/tools/css-backgrounds */
 /* =====================================================
    POPOVER (HTML POPOVER API)
 ===================================================== */
@@ -93,7 +101,6 @@ body {
   right: 0;
   border-top-left-radius: 15px;
 }
-
 
 /* normal html popover backdrop */
 #my-popover::backdrop {
@@ -356,7 +363,7 @@ input[type="radio"] {
 .cerealImages::before {
   content: "";
   position: absolute;
-  inset: 0;
+
   background-color: rgba(233, 221, 194, 0.4);
   z-index: 1;
 }
@@ -387,7 +394,7 @@ input[type="radio"] {
   margin-left: 2rem;
   background-color: #ffffff;
   border: 2px solid #f2bb16;
-  width: 70%;
+  width: 80%;
   border-radius: 15px;
   flex-direction: column;
   box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.12);
@@ -477,15 +484,16 @@ input[type="radio"] {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 55%;
+  height: 10rem;
   background-color: var(--card-block);
   z-index: 1;
 }
 
 .FlexBadges,
-.FlexImageTextButton {
+.FlexImageText,
+.ButtonFlex {
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   z-index: 2;
 }
 
@@ -522,34 +530,31 @@ input[type="radio"] {
   align-content: center;
 }
 .bowlImage2 {
-  width: 100px;            
-  height: 100px; 
+  width: 100px;
+  height: 100px;
   background-color: var(--accent-color);
-  border-radius: 50%;  
-  overflow: hidden;  
-  margin: 10px;   
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10px;
   border: solid var(--hover-color) 5px;
 }
 
 .bowlImage2 img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
-  display: block;
+  object-fit: cover;
 }
 
-.headlineCard {
+.cardName {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   color: white;
-  font-weight: 800;
+  font-weight: 600;
   text-align: center;
   flex-grow: 1;
 }
 
-.FlexImageTextButton {
+.FlexImageText {
   display: flex;
   flex-direction: column;
   align-items: center;
