@@ -16,7 +16,9 @@
 
   <body>
     <!-- HEADER -->
+  
     <header>
+        
       <nav>
         <div class="navField">
           <a class="btn theme-nueSam" href="SucessPage/">One Field</a>
@@ -55,10 +57,34 @@
           und ausgewogen.
         </p>
       </div>
+   
     </header>
 
     <!-- MAIN -->
     <main>
+         
+      <div class="categoryFlex">
+          <!-- ANCHOR JUMP SIDE TRAY -->
+          <span class="Anchor theme-basis" id="Cat1">
+            <a href="#basis-CEREAL-ANCHOR">Basis-Cerealien</a>
+          </span>
+          <span class="Anchor theme-getrfrue" id="Cat2">
+            <a href="#getrfrue-ANCHOR">Getrocknete Früchte</a>
+          </span>
+          <span class="Anchor theme-nueSam" id="Cat3">
+            <a href="#nueSam-ANCHOR">Nüsse und Samen</a>
+          </span>
+          <span class="Anchor theme-superFood" id="Cat4">
+            <a href="#superFood-ANCHOR">Superfood </a>
+          </span>
+          <span class="Anchor theme-xtraSuess" id="Cat5">
+            <a href="#xtraSuess-ANCHOR">Extras und Süßungsmittel</a>
+          </span>
+          <span class="Anchor theme-Fluessig" id="Cat6">
+            <a href="#fluessig-ANCHOR">Flüssigkeiten</a>
+          </span>
+        </div>
+       
       <!-- POPOVER -->
       <div popover id="my-popover">
         <div class="closePopOver__Flex">
@@ -82,85 +108,27 @@
 
         <!-- CART - ITEMS -->
 
-      <section class="container content-section">
-        <div class="cartScrollContainer">
-          <div class="cart-items">
-            <div class="cart-row">
-              <div class="cart-item cart-column">
-                <img
-                  class="cart-item-image"
-                  src="img/haferflockenplaceholder.png"
-                  width="100"
-                  height="100"
-                />
-                <span class="cart-item-title">Name</span>
-              </div>
-              <span class="cart-price cart-column">19.99€</span>
-              <div class="cart-quantity cart-column">
-                <input class="cart-quantity-input" type="number" value="1" />
-                <button class="btn btn-danger" type="button">REMOVE</button>
-              </div>
+        <section class="container content-section">
+          <div class="cartScrollContainer">
+            <div class="cart-items">
+                <div class="cart-item ">
+                  <img
+                    class="cart-item-image"
+                    src="img/haferflockenplaceholder.png"
+                  />
+                  <span class="cart-item-title">Name</span>
+                  <span class="cart-price ">19.99€</span>
+                <div class="cart-quantity">
+                  <input class="cart-quantity-input" type="number" value="1" />
+                  <i class="fa-solid fa-trash-can"></i>
+                </div>
+                </div>
             </div>
-            <div class="cart-row">
-              <div class="cart-item cart-column">
-                <img
-                  class="cart-item-image"
-                  src="img/haferflockenplaceholder.png"
-                  width="100"
-                  height="100"
-                />
-                <span class="cart-item-title">Name</span>
-              </div>
-              <span class="cart-price cart-column">9.99€</span>
-              <div class="cart-quantity cart-column">
-                <input class="cart-quantity-input" type="number" value="2" />
-                <button class="btn btn-danger" type="button">REMOVE</button>
-              </div>
-            </div>
-          </div>
-          <div class="cart-items">
-            <div class="cart-row">
-              <div class="cart-item cart-column">
-                <img
-                  class="cart-item-image"
-                  src="img/haferflockenplaceholder.png"
-                  width="100"
-                  height="100"
-                />
-                <span class="cart-item-title">Name</span>
-              </div>
-              <span class="cart-price cart-column">19.99€</span>
-              <div class="cart-quantity cart-column">
-                <input class="cart-quantity-input" type="number" value="1" />
-                <button class="btn btn-danger" type="button">REMOVE</button>
-              </div>
-            </div>
-            <div class="cart-row">
-              <div class="cart-item cart-column">
-                <img
-                  class="cart-item-image"
-                  src="img/haferflockenplaceholder.png"
-                  width="100"
-                  height="100"
-                />
-                <span class="cart-item-title">Name</span>
-              </div>
-              <span class="cart-price cart-column">9.99€</span>
-              <div class="cart-quantity cart-column">
-                <input class="cart-quantity-input" type="number" value="2" />
-                <button class="btn btn-danger" type="button">REMOVE</button>
-              </div>
-            </div>
-          </div>
-          
           </div>
           <div class="cart-total">
             <strong class="cart-total-title">Total</strong>
             <span class="cart-total-price">39.97€</span>
           </div>
-          <button class="btn btn-primary btn-purchase" type="button">
-            PURCHASE
-          </button>
         </section>
 
         <!-- DATE -->
@@ -218,27 +186,7 @@
 
       <!-- PRODUCT SECTIONS -->
       <div class="section__GRID">
-        <div class="categoryFlex">
-          <!-- ANCHOR JUMP SIDE TRAY -->
-          <div class="Anchor theme-basis" id="Cat1">
-            <a href="#basis-CEREAL-ANCHOR">Basis-Cerealien</a>
-          </div>
-          <div class="Anchor theme-getrfrue" id="Cat2">
-            <a href="#getrfrue-ANCHOR">Getrocknete Früchte</a>
-          </div>
-          <div class="Anchor theme-nueSam" id="Cat3">
-            <a href="#nueSam-ANCHOR">Nüsse und Samen</a>
-          </div>
-          <div class="Anchor theme-superFood" id="Cat4">
-            <a href="#superFood-ANCHOR">Superfood </a>
-          </div>
-          <div class="Anchor theme-xtraSuess" id="Cat5">
-            <a href="#xtraSuess-ANCHOR">Extras und Süßungsmittel</a>
-          </div>
-          <div class="Anchor theme-Fluessig" id="Cat6">
-            <a href="#fluessig-ANCHOR">Flüssigkeiten</a>
-          </div>
-        </div>
+        
         <section class="Basis-Cerealien theme-basis">
           <div class="categoryAnchor" id="basis-CEREAL-ANCHOR">
             <h4 class="categoryHeadline">Basis-Cerealien</h4>
