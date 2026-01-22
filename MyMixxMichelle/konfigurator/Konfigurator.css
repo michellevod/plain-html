@@ -84,6 +84,7 @@ body {
     0 0,
     27px 27px;
 }
+
 /* css background pattern: https://www.magicpattern.design/tools/css-backgrounds */
 /* =====================================================
    POPOVER (HTML POPOVER API)
@@ -91,7 +92,15 @@ body {
 
 /* A <div popover> does NOT behave like a normal element in the layout flow.
    When opened, it becomes a top-layer element */
-
+.Anchor a {
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+}
+.Anchor:hover {
+  background-color: var(--hover-color);
+  transition: 0.2s;
+}
 #my-popover {
   inset: auto;
   position: fixed;
@@ -156,66 +165,108 @@ body {
    ITEM SUMMARY / CART CONTENT
 ===================================================== */
 
-.itemSumCard2 {
-  background-color: #f4ead5;
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  flex-direction: column;
-  width: 80%;
-  padding: 10px;
-  border-radius: 20px;
-  max-height: 18rem;
-  overflow-y: auto;
-  margin: auto;
+.cartScrollContainer {
+  background-color: gray;
+    max-height: 20rem;
+    overflow-y: auto;
+    margin: 2rem;
+    border-radius: 15px;
+    padding: 1rem;
+
+   
+}
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
 }
 
-.itemSumCard2ContentFlex {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  align-items: center;
-  background-color: #a60c4f;
-  width: 80%;
-  border-radius: 10px;
-  color: white;
-  font-weight: 600;
+.cart-row {
+    display: flex;
 }
 
-.itemSumIcon img {
-  width: 2rem;
-  padding: 2px;
-  background-color: #dbcfcf5a;
-  border-radius: 50%;
+.cart-item {
+    width: 45%;
 }
 
-.itemSumDelBtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  width: 30px;
-  height: 30px;
-  border-radius: 50px;
-  padding: 16px;
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
 }
 
-.fa-trash-can {
-  color: black;
+.cart-quantity {
+    width: 35%;
 }
 
-.itemSumTotal {
-  display: flex;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
 }
 
-.itemSumTotal_Price {
-  margin-left: auto;
-  padding-right: 10px;
-  color: green;
-  font-weight: 600;
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
 }
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: green;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+
 
 /* =====================================================
    DATE SELECTION
@@ -227,7 +278,7 @@ body {
 }
 
 .dateBox {
-  background-color: #f4ead5;
+  background-color: #eaeaea;
   width: 90%;
   border-radius: 20px;
   margin-left: 2rem;
@@ -297,7 +348,7 @@ input[type="radio"] {
 
 /* CSS Vorlage: https://uiverse.io/JayRamoliya/loud-rattlesnake-53 */
 .legalText {
-  font-size: 0.6rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
   color: gray;
 }

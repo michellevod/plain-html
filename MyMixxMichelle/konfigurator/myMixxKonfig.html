@@ -15,36 +15,32 @@
   </head>
 
   <body>
-
-
     <!-- HEADER -->
     <header>
       <nav>
         <div class="navField">
           <a class="btn theme-nueSam" href="SucessPage/">One Field</a>
           <a class="btn theme-getrfrue" href="myMixxKonfig.html">Two Field</a>
-         <i class="fa-solid fa-map-location" style="color: #99bf11;"></i>
-         <i class="fa-solid fa-basket-shopping" style="color: #21ddf2;"></i>
+          <i class="fa-solid fa-map-location" style="color: #99bf11"></i>
+          <i class="fa-solid fa-basket-shopping" style="color: #21ddf2"></i>
         </div>
-        
       </nav>
       <div class="headerGrid">
         <div class="colorBlock">
-          <img src="img/logo_mymixx_2024.png" alt="mymixxlogo">
+          <img src="img/logo_mymixx_2024.png" alt="mymixxlogo" />
           <div class="colorBText">
-          <h1>MÜSLI-KONFIGURATOR</h1>
+            <h1>MÜSLI-KONFIGURATOR</h1>
           </div>
         </div>
         <div class="cerealImages">
-        <img
-        id="cerealImages"
-          src="img/ben-neale-cARNiGpmf70-unsplash.jpg"
-          alt="cereal-bowl"
-        />
+          <img
+            id="cerealImages"
+            src="img/ben-neale-cARNiGpmf70-unsplash.jpg"
+            alt="cereal-bowl"
+          />
         </div>
       </div>
 
-      <section>
       <div class="notification">
         <div class="headlineExlcamationContainer">
           <h3 id="notifHeadline">Dein Müsli, deine Wahl:</h3>
@@ -59,7 +55,6 @@
           und ausgewogen.
         </p>
       </div>
-      </section>
     </header>
 
     <!-- MAIN -->
@@ -85,34 +80,88 @@
           </button>
         </div>
 
-        <!-- ITEM SUMMARY CARD -->
-        <div class="itemSumCard2">
-          <div class="itemSumCard2ContentFlex">
-            <div class="itemSumIcon">
-              <img
-                src="img/haferflockenplaceholder.png"
-                alt="HaferflockenIcon"
-              />
-            </div>
+        <!-- CART - ITEMS -->
 
-            <div class="itemText">
-              <p class="itemSumName">Item NameItem NameItem NameItem Name</p>
-              <p class="itemSumWeight">Weight</p>
+      <section class="container content-section">
+        <div class="cartScrollContainer">
+          <div class="cart-items">
+            <div class="cart-row">
+              <div class="cart-item cart-column">
+                <img
+                  class="cart-item-image"
+                  src="img/haferflockenplaceholder.png"
+                  width="100"
+                  height="100"
+                />
+                <span class="cart-item-title">Name</span>
+              </div>
+              <span class="cart-price cart-column">19.99€</span>
+              <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="1" />
+                <button class="btn btn-danger" type="button">REMOVE</button>
+              </div>
             </div>
-
-            <div class="itemSumDelBtn">
-              <i class="fa-regular fa-trash-can"></i>
+            <div class="cart-row">
+              <div class="cart-item cart-column">
+                <img
+                  class="cart-item-image"
+                  src="img/haferflockenplaceholder.png"
+                  width="100"
+                  height="100"
+                />
+                <span class="cart-item-title">Name</span>
+              </div>
+              <span class="cart-price cart-column">9.99€</span>
+              <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="2" />
+                <button class="btn btn-danger" type="button">REMOVE</button>
+              </div>
             </div>
           </div>
-        </div>
-
-        <!-- TOTAL -->
-        <div class="itemSumTotal">
-          <p class="sectionHeading">Gesamtpreis</p>
-          <div class="itemSumTotal_Price">
-            <p>0,00€</p>
+          <div class="cart-items">
+            <div class="cart-row">
+              <div class="cart-item cart-column">
+                <img
+                  class="cart-item-image"
+                  src="img/haferflockenplaceholder.png"
+                  width="100"
+                  height="100"
+                />
+                <span class="cart-item-title">Name</span>
+              </div>
+              <span class="cart-price cart-column">19.99€</span>
+              <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="1" />
+                <button class="btn btn-danger" type="button">REMOVE</button>
+              </div>
+            </div>
+            <div class="cart-row">
+              <div class="cart-item cart-column">
+                <img
+                  class="cart-item-image"
+                  src="img/haferflockenplaceholder.png"
+                  width="100"
+                  height="100"
+                />
+                <span class="cart-item-title">Name</span>
+              </div>
+              <span class="cart-price cart-column">9.99€</span>
+              <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="2" />
+                <button class="btn btn-danger" type="button">REMOVE</button>
+              </div>
+            </div>
           </div>
-        </div>
+          
+          </div>
+          <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">39.97€</span>
+          </div>
+          <button class="btn btn-primary btn-purchase" type="button">
+            PURCHASE
+          </button>
+        </section>
 
         <!-- DATE -->
         <div class="itemSummaryDate">
@@ -167,1734 +216,1570 @@
         </button>
       </div>
 
-
-      <!-- ANCHOR JUMP SIDE TRAY -->
-            
       <!-- PRODUCT SECTIONS -->
-     <div class="section__GRID">
-   <div class="categoryFlex">
-        <div class="Anchor theme-basis" id="Cat1">
-          <h2>Basis Cerealien</h2>
+      <div class="section__GRID">
+        <div class="categoryFlex">
+          <!-- ANCHOR JUMP SIDE TRAY -->
+          <div class="Anchor theme-basis" id="Cat1">
+            <a href="#basis-CEREAL-ANCHOR">Basis-Cerealien</a>
+          </div>
+          <div class="Anchor theme-getrfrue" id="Cat2">
+            <a href="#getrfrue-ANCHOR">Getrocknete Früchte</a>
+          </div>
+          <div class="Anchor theme-nueSam" id="Cat3">
+            <a href="#nueSam-ANCHOR">Nüsse und Samen</a>
+          </div>
+          <div class="Anchor theme-superFood" id="Cat4">
+            <a href="#superFood-ANCHOR">Superfood </a>
+          </div>
+          <div class="Anchor theme-xtraSuess" id="Cat5">
+            <a href="#xtraSuess-ANCHOR">Extras und Süßungsmittel</a>
+          </div>
+          <div class="Anchor theme-Fluessig" id="Cat6">
+            <a href="#fluessig-ANCHOR">Flüssigkeiten</a>
+          </div>
         </div>
-        <div class="Anchor theme-getrfrue" id="Cat2">
-          <h2>Getrocknete Früchte</h2>
-        </div>
-        <div class="Anchor theme-nueSam" id="Cat3">
-          <h2>Nüsse und Samen</h2>
-        </div>
-        <div class="Anchor theme-superFood" id="Cat4">
-          <h2>Superfood</h2>
-        </div>
-        <div class="Anchor theme-xtraSuess" id="Cat5">
-          <h2>Extras und Süßungsmittel</h2>
-        </div>
-        <div class="Anchor theme-Fluessig" id="Cat6">
-          <h2>Flüssigkeiten</h2>
-        </div>
-       </div>
         <section class="Basis-Cerealien theme-basis">
-          <div class="categoryAnchor">
+          <div class="categoryAnchor" id="basis-CEREAL-ANCHOR">
             <h4 class="categoryHeadline">Basis-Cerealien</h4>
           </div>
           <div class="productCard__Margin">
-            <div class="productCard__GRID" id="basis-CEREAL"><div class="productCard2" data-id="basis-1">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>500 g</p></div>
-      <div class="priceBadge2"><p>2.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="imgP/zarteHaferflocken.jpg" alt="Zarte Haferflocken">
-      </div>
-      <div class="cardName">
-        <p>Zarte<br>Haferflocken</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="basis-2">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>500 g</p></div>
-      <div class="priceBadge2"><p>2.70 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Großblättrige Haferflocken">
-      </div>
-      <div class="cardName">
-        <p>Großblättrige<br>Haferflocken</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="basis-3">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>400 g</p></div>
-      <div class="priceBadge2"><p>3.20 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Dinkelflocken">
-      </div>
-      <div class="cardName">
-        <p>Dinkelflocken</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="basis-4">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>300 g</p></div>
-      <div class="priceBadge2"><p>4.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Quinoaflocken">
-      </div>
-      <div class="cardName">
-        <p>Quinoaflocken</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="basis-5">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>300 g</p></div>
-      <div class="priceBadge2"><p>4.20 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Buchweizenflocken">
-      </div>
-      <div class="cardName">
-        <p>Buchweizenflocken</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="basis-6">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>300 g</p></div>
-      <div class="priceBadge2"><p>3.80 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Hirseflocken">
-      </div>
-      <div class="cardName">
-        <p>Hirseflocken</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="basis-7">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>300 g</p></div>
-      <div class="priceBadge2"><p>3.90 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Vollkorn-Reisflocken">
-      </div>
-      <div class="cardName">
-        <p>Vollkorn-Reisflocken</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="basis-8">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>400 g</p></div>
-      <div class="priceBadge2"><p>3.00 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Gerstenflocken">
-      </div>
-      <div class="cardName">
-        <p>Gerstenflocken</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="basis-9">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>500 g</p></div>
-      <div class="priceBadge2"><p>3.00 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Maisgrieß (Polenta)">
-      </div>
-      <div class="cardName">
-        <p>Maisgrieß<br>(Polenta)</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="basis-10">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>400 g</p></div>
-      <div class="priceBadge2"><p>2.80 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Haferschrot">
-      </div>
-      <div class="cardName">
-        <p>Haferschrot</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="basis-11">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>400 g</p></div>
-      <div class="priceBadge2"><p>3.00 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Gersten- und Roggenschrot">
-      </div>
-      <div class="cardName">
-        <p>Gersten-<br>und Roggenschrot</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="basis-12">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>200 g</p></div>
-      <div class="priceBadge2"><p>4.00 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Amaranth-Pops">
-      </div>
-      <div class="cardName">
-        <p>Amaranth-Pops</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="basis-13">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>300 g</p></div>
-      <div class="priceBadge2"><p>3.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Cornflakes (zuckerfrei &amp; Honig)">
-      </div>
-      <div class="cardName">
-        <p>Cornflakes<br>(zuckerfrei &amp; Honig)</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="basis-14">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>350 g</p></div>
-      <div class="priceBadge2"><p>4.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Crunchy Müsli Schoko">
-      </div>
-      <div class="cardName">
-        <p>Crunchy<br>Müsli Schoko</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="basis-141">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>350 g</p></div>
-      <div class="priceBadge2"><p>4.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Crunchy Müsli Nuss">
-      </div>
-      <div class="cardName">
-        <p>Crunchy<br>Müsli Nuss</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="basis-142">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>350 g</p></div>
-      <div class="priceBadge2"><p>4.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Crunchy Müsli Honig">
-      </div>
-      <div class="cardName">
-        <p>Crunchy<br>Müsli Honig</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="basis-15">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>300 g</p></div>
-      <div class="priceBadge2"><p>3.80 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Rice Krispies">
-      </div>
-      <div class="cardName">
-        <p>Rice<br>Krispies</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="basis-16">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>200 g</p></div>
-      <div class="priceBadge2"><p>2.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Weizenkleie">
-      </div>
-      <div class="cardName">
-        <p>Weizenkleie</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="basis-17">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>300 g</p></div>
-      <div class="priceBadge2"><p>3.20 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Geröstete Haferflakes">
-      </div>
-      <div class="cardName">
-        <p>Geröstete<br>Haferflakes</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="basis-18">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>150 g</p></div>
-      <div class="priceBadge2"><p>3.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Müsliriegelstückchen">
-      </div>
-      <div class="cardName">
-        <p>Müsliriegelstückchen</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div></div>
+            <div class="productCard__GRID" id="basis-CEREAL">
+              <div class="productCard2" data-id="basis-1">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>500 g</p></div>
+                  <div class="priceBadge2"><p>2.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="imgP/zarteHaferflocken.jpg"
+                      alt="Zarte Haferflocken"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Zarte<br />Haferflocken</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="basis-2">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>500 g</p></div>
+                  <div class="priceBadge2"><p>2.70 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Großblättrige Haferflocken"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Großblättrige<br />Haferflocken</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="basis-3">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>400 g</p></div>
+                  <div class="priceBadge2"><p>3.20 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Dinkelflocken"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Dinkelflocken</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="basis-4">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>300 g</p></div>
+                  <div class="priceBadge2"><p>4.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Quinoaflocken"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Quinoaflocken</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="basis-5">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>300 g</p></div>
+                  <div class="priceBadge2"><p>4.20 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Buchweizenflocken"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Buchweizenflocken</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="basis-6">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>300 g</p></div>
+                  <div class="priceBadge2"><p>3.80 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Hirseflocken"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Hirseflocken</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="basis-7">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>300 g</p></div>
+                  <div class="priceBadge2"><p>3.90 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Vollkorn-Reisflocken"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Vollkorn-Reisflocken</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="basis-8">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>400 g</p></div>
+                  <div class="priceBadge2"><p>3.00 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Gerstenflocken"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Gerstenflocken</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="basis-9">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>500 g</p></div>
+                  <div class="priceBadge2"><p>3.00 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Maisgrieß (Polenta)"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Maisgrieß<br />(Polenta)</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="basis-10">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>400 g</p></div>
+                  <div class="priceBadge2"><p>2.80 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Haferschrot"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Haferschrot</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="basis-11">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>400 g</p></div>
+                  <div class="priceBadge2"><p>3.00 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Gersten- und Roggenschrot"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Gersten-<br />und Roggenschrot</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="basis-12">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>200 g</p></div>
+                  <div class="priceBadge2"><p>4.00 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Amaranth-Pops"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Amaranth-Pops</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="basis-13">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>300 g</p></div>
+                  <div class="priceBadge2"><p>3.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Cornflakes (zuckerfrei &amp; Honig)"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Cornflakes<br />(zuckerfrei &amp; Honig)</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="basis-14">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>350 g</p></div>
+                  <div class="priceBadge2"><p>4.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Crunchy Müsli Schoko"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Crunchy<br />Müsli Schoko</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="basis-141">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>350 g</p></div>
+                  <div class="priceBadge2"><p>4.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Crunchy Müsli Nuss"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Crunchy<br />Müsli Nuss</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="basis-142">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>350 g</p></div>
+                  <div class="priceBadge2"><p>4.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Crunchy Müsli Honig"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Crunchy<br />Müsli Honig</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="basis-15">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>300 g</p></div>
+                  <div class="priceBadge2"><p>3.80 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Rice Krispies"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Rice<br />Krispies</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="basis-16">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>200 g</p></div>
+                  <div class="priceBadge2"><p>2.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Weizenkleie"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Weizenkleie</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="basis-17">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>300 g</p></div>
+                  <div class="priceBadge2"><p>3.20 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Geröstete Haferflakes"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Geröstete<br />Haferflakes</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="basis-18">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>150 g</p></div>
+                  <div class="priceBadge2"><p>3.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Müsliriegelstückchen"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Müsliriegelstückchen</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
         <section class="Getrocknete-Fruechte theme-getrfrue">
-          <div class="categoryAnchor">
+          <div class="categoryAnchor" id="getrfrue-ANCHOR">
             <h4 class="categoryHeadline">Getrocknete Früchte</h4>
           </div>
           <div class="productCard__Margin">
-            <div class="productCard__GRID" id="getrocknete-Fr"><div class="productCard2" data-id="getr-1">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>200 g</p></div>
-      <div class="priceBadge2"><p>4.00 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Cranberries">
-      </div>
-      <div class="cardName">
-        <p>Cranberries</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="getr-2">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>250 g</p></div>
-      <div class="priceBadge2"><p>3.00 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Rosinen">
-      </div>
-      <div class="cardName">
-        <p>Rosinen</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="getr-3">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>150 g</p></div>
-      <div class="priceBadge2"><p>6.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Goji-Beeren">
-      </div>
-      <div class="cardName">
-        <p>Goji-Beeren</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="getr-4">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>150 g</p></div>
-      <div class="priceBadge2"><p>5.00 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Mangostückchen">
-      </div>
-      <div class="cardName">
-        <p>Mangostückchen</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="getr-5">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>150 g</p></div>
-      <div class="priceBadge2"><p>4.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Ananasstücke">
-      </div>
-      <div class="cardName">
-        <p>Ananasstücke</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="getr-6">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>100 g</p></div>
-      <div class="priceBadge2"><p>3.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Apfelringe">
-      </div>
-      <div class="cardName">
-        <p>Apfelringe</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="getr-7">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>200 g</p></div>
-      <div class="priceBadge2"><p>2.80 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Bananenchips">
-      </div>
-      <div class="cardName">
-        <p>Bananenchips</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="getr-8">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>200 g</p></div>
-      <div class="priceBadge2"><p>4.20 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Datteln">
-      </div>
-      <div class="cardName">
-        <p>Datteln</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="getr-9">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>200 g</p></div>
-      <div class="priceBadge2"><p>4.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Feigen">
-      </div>
-      <div class="cardName">
-        <p>Feigen</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="getr-10">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>100 g</p></div>
-      <div class="priceBadge2"><p>6.00 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Erdbeerscheiben">
-      </div>
-      <div class="cardName">
-        <p>Erdbeerscheiben</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="getr-11">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>150 g</p></div>
-      <div class="priceBadge2"><p>5.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Heidelbeeren">
-      </div>
-      <div class="cardName">
-        <p>Heidelbeeren</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="getr-12">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>150 g</p></div>
-      <div class="priceBadge2"><p>5.00 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Kirschen">
-      </div>
-      <div class="cardName">
-        <p>Kirschen</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="getr-13">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>200 g</p></div>
-      <div class="priceBadge2"><p>4.00 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Aprikosen">
-      </div>
-      <div class="cardName">
-        <p>Aprikosen</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div></div>
+            <div class="productCard__GRID" id="getrocknete-Fr">
+              <div class="productCard2" data-id="getr-1">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>200 g</p></div>
+                  <div class="priceBadge2"><p>4.00 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Cranberries"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Cranberries</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="getr-2">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>250 g</p></div>
+                  <div class="priceBadge2"><p>3.00 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img src="img/haferflockenplaceholder.png" alt="Rosinen" />
+                  </div>
+                  <div class="cardName">
+                    <p>Rosinen</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="getr-3">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>150 g</p></div>
+                  <div class="priceBadge2"><p>6.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Goji-Beeren"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Goji-Beeren</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="getr-4">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>150 g</p></div>
+                  <div class="priceBadge2"><p>5.00 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Mangostückchen"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Mangostückchen</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="getr-5">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>150 g</p></div>
+                  <div class="priceBadge2"><p>4.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Ananasstücke"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Ananasstücke</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="getr-6">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>100 g</p></div>
+                  <div class="priceBadge2"><p>3.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Apfelringe"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Apfelringe</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="getr-7">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>200 g</p></div>
+                  <div class="priceBadge2"><p>2.80 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Bananenchips"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Bananenchips</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="getr-8">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>200 g</p></div>
+                  <div class="priceBadge2"><p>4.20 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img src="img/haferflockenplaceholder.png" alt="Datteln" />
+                  </div>
+                  <div class="cardName">
+                    <p>Datteln</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="getr-9">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>200 g</p></div>
+                  <div class="priceBadge2"><p>4.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img src="img/haferflockenplaceholder.png" alt="Feigen" />
+                  </div>
+                  <div class="cardName">
+                    <p>Feigen</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="getr-10">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>100 g</p></div>
+                  <div class="priceBadge2"><p>6.00 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Erdbeerscheiben"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Erdbeerscheiben</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="getr-11">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>150 g</p></div>
+                  <div class="priceBadge2"><p>5.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Heidelbeeren"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Heidelbeeren</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="getr-12">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>150 g</p></div>
+                  <div class="priceBadge2"><p>5.00 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img src="img/haferflockenplaceholder.png" alt="Kirschen" />
+                  </div>
+                  <div class="cardName">
+                    <p>Kirschen</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="getr-13">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>200 g</p></div>
+                  <div class="priceBadge2"><p>4.00 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Aprikosen"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Aprikosen</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
         <section class="Nuesse-und-Samen theme-nueSam">
-          <div class="categoryAnchor">
+          <div class="categoryAnchor" id="nueSam-ANCHOR">
             <h4 class="categoryHeadline">Nüsse und Samen</h4>
           </div>
           <div class="productCard__Margin">
-            <div class="productCard__GRID" id="Nuesse-Samen"><div class="productCard2" data-id="nuesse-1">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>150 g</p></div>
-      <div class="priceBadge2"><p>4.00 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Mandeln geröstet">
-      </div>
-      <div class="cardName">
-        <p>Mandeln<br>geröstet</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="nuesse-1-2">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>150 g</p></div>
-      <div class="priceBadge2"><p>4.00 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Mandeln gehackt">
-      </div>
-      <div class="cardName">
-        <p>Mandeln<br>gehackt</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="nuesse-1-3">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>150 g</p></div>
-      <div class="priceBadge2"><p>4.00 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Mandeln blättrig">
-      </div>
-      <div class="cardName">
-        <p>Mandeln<br>blättrig</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="nuesse-2">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>150 g</p></div>
-      <div class="priceBadge2"><p>4.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Walnüsse">
-      </div>
-      <div class="cardName">
-        <p>Walnüsse</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="nuesse-3">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>150 g</p></div>
-      <div class="priceBadge2"><p>4.20 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Haselnüsse">
-      </div>
-      <div class="cardName">
-        <p>Haselnüsse</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="nuesse-4">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>100 g</p></div>
-      <div class="priceBadge2"><p>5.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Pistazien">
-      </div>
-      <div class="cardName">
-        <p>Pistazien</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="nuesse-5">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>150 g</p></div>
-      <div class="priceBadge2"><p>4.80 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Cashewkerne">
-      </div>
-      <div class="cardName">
-        <p>Cashewkerne</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="nuesse-6">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>150 g</p></div>
-      <div class="priceBadge2"><p>5.00 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Pekanüsse">
-      </div>
-      <div class="cardName">
-        <p>Pekanüsse</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="nuesse-7">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>200 g</p></div>
-      <div class="priceBadge2"><p>2.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Sonnenblumenkerne">
-      </div>
-      <div class="cardName">
-        <p>Sonnenblumenkerne</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="nuesse-8">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>150 g</p></div>
-      <div class="priceBadge2"><p>3.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Kürbiskerne">
-      </div>
-      <div class="cardName">
-        <p>Kürbiskerne</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="nuesse-9">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>100 g</p></div>
-      <div class="priceBadge2"><p>3.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Chiasamen">
-      </div>
-      <div class="cardName">
-        <p>Chiasamen</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="nuesse-10">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>200 g</p></div>
-      <div class="priceBadge2"><p>2.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Leinsamen">
-      </div>
-      <div class="cardName">
-        <p>Leinsamen</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="nuesse-11">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>100 g</p></div>
-      <div class="priceBadge2"><p>4.00 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Hanfsamen">
-      </div>
-      <div class="cardName">
-        <p>Hanfsamen</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="nuesse-12">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>200 g</p></div>
-      <div class="priceBadge2"><p>2.80 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Sesamsamen">
-      </div>
-      <div class="cardName">
-        <p>Sesamsamen</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div></div>
+            <div class="productCard__GRID" id="Nuesse-Samen">
+              <div class="productCard2" data-id="nuesse-1">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>150 g</p></div>
+                  <div class="priceBadge2"><p>4.00 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Mandeln geröstet"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Mandeln<br />geröstet</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="nuesse-1-2">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>150 g</p></div>
+                  <div class="priceBadge2"><p>4.00 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Mandeln gehackt"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Mandeln<br />gehackt</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="nuesse-1-3">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>150 g</p></div>
+                  <div class="priceBadge2"><p>4.00 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Mandeln blättrig"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Mandeln<br />blättrig</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="nuesse-2">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>150 g</p></div>
+                  <div class="priceBadge2"><p>4.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img src="img/haferflockenplaceholder.png" alt="Walnüsse" />
+                  </div>
+                  <div class="cardName">
+                    <p>Walnüsse</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="nuesse-3">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>150 g</p></div>
+                  <div class="priceBadge2"><p>4.20 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Haselnüsse"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Haselnüsse</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="nuesse-4">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>100 g</p></div>
+                  <div class="priceBadge2"><p>5.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Pistazien"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Pistazien</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="nuesse-5">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>150 g</p></div>
+                  <div class="priceBadge2"><p>4.80 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Cashewkerne"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Cashewkerne</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="nuesse-6">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>150 g</p></div>
+                  <div class="priceBadge2"><p>5.00 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Pekanüsse"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Pekanüsse</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="nuesse-7">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>200 g</p></div>
+                  <div class="priceBadge2"><p>2.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Sonnenblumenkerne"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Sonnenblumenkerne</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="nuesse-8">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>150 g</p></div>
+                  <div class="priceBadge2"><p>3.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Kürbiskerne"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Kürbiskerne</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="nuesse-9">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>100 g</p></div>
+                  <div class="priceBadge2"><p>3.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Chiasamen"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Chiasamen</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="nuesse-10">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>200 g</p></div>
+                  <div class="priceBadge2"><p>2.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Leinsamen"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Leinsamen</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="nuesse-11">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>100 g</p></div>
+                  <div class="priceBadge2"><p>4.00 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Hanfsamen"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Hanfsamen</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="nuesse-12">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>200 g</p></div>
+                  <div class="priceBadge2"><p>2.80 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Sesamsamen"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Sesamsamen</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
         <section class="Superfoods theme-superFood">
-          <div class="categoryAnchor">
+          <div class="categoryAnchor" id="superFood-ANCHOR">
             <h4 class="categoryHeadline">Superfoods</h4>
           </div>
           <div class="productCard__Margin">
-            <div class="productCard__GRID" id="super-Foods"><div class="productCard2" data-id="super-1">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>100 g</p></div>
-      <div class="priceBadge2"><p>4.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Kakaonibs">
-      </div>
-      <div class="cardName">
-        <p>Kakaonibs</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="super-2">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>50 g</p></div>
-      <div class="priceBadge2"><p>8.00 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Matcha-Pulver">
-      </div>
-      <div class="cardName">
-        <p>Matcha-Pulver</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="super-3">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>100 g</p></div>
-      <div class="priceBadge2"><p>5.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Maca-Pulver">
-      </div>
-      <div class="cardName">
-        <p>Maca-Pulver</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="super-4">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>100 g</p></div>
-      <div class="priceBadge2"><p>6.00 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Baobab-Pulver">
-      </div>
-      <div class="cardName">
-        <p>Baobab-Pulver</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="super-5">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>50 g</p></div>
-      <div class="priceBadge2"><p>7.00 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Spirulina">
-      </div>
-      <div class="cardName">
-        <p>Spirulina</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="super-6">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>100 g</p></div>
-      <div class="priceBadge2"><p>8.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Acai-Beeren">
-      </div>
-      <div class="cardName">
-        <p>Acai-Beeren</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="super-7">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>100 g</p></div>
-      <div class="priceBadge2"><p>5.00 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Lucuma-Pulver">
-      </div>
-      <div class="cardName">
-        <p>Lucuma-Pulver</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="super-8">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>100 g</p></div>
-      <div class="priceBadge2"><p>6.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Weizengraspulver">
-      </div>
-      <div class="cardName">
-        <p>Weizengraspulver</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="super-9">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>100 g</p></div>
-      <div class="priceBadge2"><p>7.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Gojipulver">
-      </div>
-      <div class="cardName">
-        <p>Gojipulver</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="super-10">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>150 g</p></div>
-      <div class="priceBadge2"><p>3.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Kokosflocken">
-      </div>
-      <div class="cardName">
-        <p>Kokosflocken</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="super-11">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>150 g</p></div>
-      <div class="priceBadge2"><p>5.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Trockene Maulbeeren">
-      </div>
-      <div class="cardName">
-        <p>Trockene<br>Maulbeeren</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div></div>
+            <div class="productCard__GRID" id="super-Foods">
+              <div class="productCard2" data-id="super-1">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>100 g</p></div>
+                  <div class="priceBadge2"><p>4.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Kakaonibs"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Kakaonibs</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="super-2">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>50 g</p></div>
+                  <div class="priceBadge2"><p>8.00 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Matcha-Pulver"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Matcha-Pulver</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="super-3">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>100 g</p></div>
+                  <div class="priceBadge2"><p>5.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Maca-Pulver"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Maca-Pulver</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="super-4">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>100 g</p></div>
+                  <div class="priceBadge2"><p>6.00 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Baobab-Pulver"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Baobab-Pulver</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="super-5">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>50 g</p></div>
+                  <div class="priceBadge2"><p>7.00 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Spirulina"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Spirulina</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="super-6">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>100 g</p></div>
+                  <div class="priceBadge2"><p>8.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Acai-Beeren"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Acai-Beeren</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="super-7">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>100 g</p></div>
+                  <div class="priceBadge2"><p>5.00 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Lucuma-Pulver"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Lucuma-Pulver</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="super-8">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>100 g</p></div>
+                  <div class="priceBadge2"><p>6.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Weizengraspulver"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Weizengraspulver</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="super-9">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>100 g</p></div>
+                  <div class="priceBadge2"><p>7.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Gojipulver"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Gojipulver</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="super-10">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>150 g</p></div>
+                  <div class="priceBadge2"><p>3.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Kokosflocken"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Kokosflocken</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="super-11">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>150 g</p></div>
+                  <div class="priceBadge2"><p>5.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Trockene Maulbeeren"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Trockene<br />Maulbeeren</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
         <section class="ExtraSuess theme-xtraSuess">
-          <div class="categoryAnchor">
+          <div class="categoryAnchor" id="xtraSuess-ANCHOR">
             <h4 class="categoryHeadline">Extras und Süßungsmittel</h4>
           </div>
           <div class="productCard__Margin">
-            <div class="productCard__GRID" id="extra-Su"><div class="productCard2" data-id="extra-1">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>150 g</p></div>
-      <div class="priceBadge2"><p>3.80 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Dunkle Schokoladenstücke">
-      </div>
-      <div class="cardName">
-        <p>Dunkle<br>Schokoladenstücke</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="extra-2">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>150 g</p></div>
-      <div class="priceBadge2"><p>3.80 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Weiße Schokoladenstücke">
-      </div>
-      <div class="cardName">
-        <p>Weiße<br>Schokoladenstücke</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="extra-3">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>150 g</p></div>
-      <div class="priceBadge2"><p>4.00 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Karamellstückchen">
-      </div>
-      <div class="cardName">
-        <p>Karamellstückchen</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="extra-4">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>150 g</p></div>
-      <div class="priceBadge2"><p>3.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Kokoschips">
-      </div>
-      <div class="cardName">
-        <p>Kokoschips</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="extra-5">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>250 g</p></div>
-      <div class="priceBadge2"><p>6.00 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Honig">
-      </div>
-      <div class="cardName">
-        <p>Honig</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="extra-6">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>250 ml</p></div>
-      <div class="priceBadge2"><p>8.00 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Ahornsirup">
-      </div>
-      <div class="cardName">
-        <p>Ahornsirup</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="extra-7">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>250 ml</p></div>
-      <div class="priceBadge2"><p>4.50 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Agavendicksaft">
-      </div>
-      <div class="cardName">
-        <p>Agavendicksaft</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div></div>
+            <div class="productCard__GRID" id="extra-Su">
+              <div class="productCard2" data-id="extra-1">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>150 g</p></div>
+                  <div class="priceBadge2"><p>3.80 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Dunkle Schokoladenstücke"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Dunkle<br />Schokoladenstücke</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="extra-2">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>150 g</p></div>
+                  <div class="priceBadge2"><p>3.80 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Weiße Schokoladenstücke"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Weiße<br />Schokoladenstücke</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="extra-3">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>150 g</p></div>
+                  <div class="priceBadge2"><p>4.00 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Karamellstückchen"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Karamellstückchen</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="extra-4">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>150 g</p></div>
+                  <div class="priceBadge2"><p>3.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Kokoschips"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Kokoschips</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="extra-5">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>250 g</p></div>
+                  <div class="priceBadge2"><p>6.00 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img src="img/haferflockenplaceholder.png" alt="Honig" />
+                  </div>
+                  <div class="cardName">
+                    <p>Honig</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="extra-6">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>250 ml</p></div>
+                  <div class="priceBadge2"><p>8.00 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Ahornsirup"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Ahornsirup</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="extra-7">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>250 ml</p></div>
+                  <div class="priceBadge2"><p>4.50 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Agavendicksaft"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Agavendicksaft</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
         <section class="Fluessigkeiten theme-Fluessig">
-          <div class="categoryAnchor">
+          <div class="categoryAnchor" id="fluessig-ANCHOR">
             <h4 class="categoryHeadline">
               Flüssigkeiten für Müsli und Porridge
             </h4>
           </div>
           <div class="productCard__Margin">
-            <div class="productCard__GRID" id="fluessig-SE"><div class="productCard2" data-id="fluessig-1">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>1 l</p></div>
-      <div class="priceBadge2"><p>1.85 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Hafermilch">
-      </div>
-      <div class="cardName">
-        <p>Hafermilch</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="fluessig-2">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>1 l</p></div>
-      <div class="priceBadge2"><p>2.25 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Mandelmilch">
-      </div>
-      <div class="cardName">
-        <p>Mandelmilch</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="fluessig-3">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>1 l</p></div>
-      <div class="priceBadge2"><p>2.25 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Kokosmilch">
-      </div>
-      <div class="cardName">
-        <p>Kokosmilch</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="fluessig-4">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>1 l</p></div>
-      <div class="priceBadge2"><p>1.75 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Sojamilch">
-      </div>
-      <div class="cardName">
-        <p>Sojamilch</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="fluessig-5">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>1 l</p></div>
-      <div class="priceBadge2"><p>1.85 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Reismilch">
-      </div>
-      <div class="cardName">
-        <p>Reismilch</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="fluessig-6">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>1 l</p></div>
-      <div class="priceBadge2"><p>1.55 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Vollmilch">
-      </div>
-      <div class="cardName">
-        <p>Vollmilch</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="fluessig-7">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>250 ml</p></div>
-      <div class="priceBadge2"><p>0.95 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Joghurt (natur)">
-      </div>
-      <div class="cardName">
-        <p>Joghurt<br>(natur)</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="fluessig-7-1">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>250 ml</p></div>
-      <div class="priceBadge2"><p>0.95 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Joghurt (griechisch)">
-      </div>
-      <div class="cardName">
-        <p>Joghurt<br>(griechisch)</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="fluessig-8">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>1 l</p></div>
-      <div class="priceBadge2"><p>1.85 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Wasser (sehr weich &amp; mikrofiltriert)">
-      </div>
-      <div class="cardName">
-        <p>Wasser<br>(sehr weich &amp; mikrofiltriert)</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div><div class="productCard2" data-id="fluessig-9">
-    <div class="FlexBadges">
-      <div class="weightBadge2"><p>1 l</p></div>
-      <div class="priceBadge2"><p>2.05 €</p></div>
-    </div>
-    <div class="FlexImageText">
-      <div class="bowlImage2">
-        <img src="img/haferflockenplaceholder.png" alt="Kokoswasser">
-      </div>
-      <div class="cardName">
-        <p>Kokoswasser</p>
-      </div>
-<div class="ButtonFlex">
-    <button class="btn btn-leveling">Hinzufügen</button>
-    </div>
-    </div>
-    
-
-
-
-
-    
-  </div></div>
+            <div class="productCard__GRID" id="fluessig-SE">
+              <div class="productCard2" data-id="fluessig-1">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>1 l</p></div>
+                  <div class="priceBadge2"><p>1.85 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Hafermilch"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Hafermilch</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="fluessig-2">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>1 l</p></div>
+                  <div class="priceBadge2"><p>2.25 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Mandelmilch"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Mandelmilch</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="fluessig-3">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>1 l</p></div>
+                  <div class="priceBadge2"><p>2.25 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Kokosmilch"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Kokosmilch</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="fluessig-4">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>1 l</p></div>
+                  <div class="priceBadge2"><p>1.75 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Sojamilch"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Sojamilch</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="fluessig-5">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>1 l</p></div>
+                  <div class="priceBadge2"><p>1.85 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Reismilch"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Reismilch</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="fluessig-6">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>1 l</p></div>
+                  <div class="priceBadge2"><p>1.55 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Vollmilch"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Vollmilch</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="fluessig-7">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>250 ml</p></div>
+                  <div class="priceBadge2"><p>0.95 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Joghurt (natur)"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Joghurt<br />(natur)</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="fluessig-7-1">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>250 ml</p></div>
+                  <div class="priceBadge2"><p>0.95 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Joghurt (griechisch)"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Joghurt<br />(griechisch)</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="fluessig-8">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>1 l</p></div>
+                  <div class="priceBadge2"><p>1.85 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Wasser (sehr weich &amp; mikrofiltriert)"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Wasser<br />(sehr weich &amp; mikrofiltriert)</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+              <div class="productCard2" data-id="fluessig-9">
+                <div class="FlexBadges">
+                  <div class="weightBadge2"><p>1 l</p></div>
+                  <div class="priceBadge2"><p>2.05 €</p></div>
+                </div>
+                <div class="FlexImageText">
+                  <div class="bowlImage2">
+                    <img
+                      src="img/haferflockenplaceholder.png"
+                      alt="Kokoswasser"
+                    />
+                  </div>
+                  <div class="cardName">
+                    <p>Kokoswasser</p>
+                  </div>
+                  <div class="ButtonFlex">
+                    <button class="btn btn-leveling">Hinzufügen</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>
