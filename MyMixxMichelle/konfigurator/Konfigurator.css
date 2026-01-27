@@ -67,7 +67,7 @@
 
 html {
   height: 100vh;
-  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+  font-size: clamp(16px, 1vw + 0.5rem, 20px);
 }
 
 body {
@@ -133,9 +133,9 @@ body {
   cursor: pointer;
 }
 
-.yellowOverlayBadge {
+.OverlayBadge {
   display: flex;
-  background-color: var(--mymixx_1);
+  background-color: #dfdede;
   width: 60px;
   height: 60px;
   border-bottom-right-radius: 20px;
@@ -144,7 +144,7 @@ body {
   justify-content: center;
 }
 
-.yellowOverlayBadge img {
+.OverlayBadge img {
   width: 30px;
   height: 30px;
 }
@@ -157,10 +157,17 @@ body {
   border-radius: 50px;
   width: 25px;
   height: 25px;
-  text-align: center;
+  align-content: center;
   color: white;
 }
-
+.blueCounterBubble2 p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  font-size: 14px;
+  font-weight: 600;
+}
 /* =====================================================
    ITEM SUMMARY / CART CONTENT
 ===================================================== */
@@ -238,11 +245,11 @@ body {
   font-weight: bold;
   font-size: 1.5em;
   color: black;
-  margin-right: 20px;
+  padding: 10px;
 }
 
 .cart-total-price {
-  color: green;
+  color: var(--mymixx_3);
   font-weight: 600;
   font-size: 1.8rem;
   padding-right: 2rem;
@@ -353,27 +360,47 @@ input[type="radio"] {
 }
 
 /* =====================================================
+anchor AND product
+===================================================== */
+
+.anchorAndProduct {
+  margin-top: 1rem;
+  grid-gap: 1rem;
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+
+/* =====================================================
    ANCHOR JUMP SIDE TRAY
 ===================================================== */
-.categoryFlex {
+
+.anchorCategoryFlex {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  height: max-content;
+  align-self: start;
   align-items: end;
   z-index: 10;
   position: sticky;
-  top: 2rem; /* how far from the top it sticks */
+  top: 2rem;
 }
 
-
-
 .Anchor {
+  display: flex;
+  align-items: center;
   background: var(--anchor-color);
   color: white;
   width: 10rem;
-  font-size: 16px;
-  padding: 1.5rem;
+  height: 5rem;
   border-radius: 25px 0px 0px 25px;
+  box-shadow: 4px 6px 12px rgba(157, 52, 52, 0.12);
+  white-space: normal;
+}
+
+.Anchor a {
+  font-size: clamp(16px, 1vw, 28px);
+  padding-left: 1.5rem;
 }
 
 /* =====================================================
@@ -498,16 +525,13 @@ input[type="radio"] {
   font-size: 1.5rem;
 }
 
-.productCard__Margin {
-  margin: 2rem;
-}
-
 .productCard__GRID {
   display: grid;
   justify-content: start;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   gap: 1rem;
-  margin-right: 20%;
+  margin: 1rem;
+  margin-right: 1rem;
 }
 
 /* mobile viewport */
@@ -516,7 +540,6 @@ input[type="radio"] {
     grid-template-columns: repeat(2, minmax(12rem, 1fr));
   }
 }
-
 
 /* =====================================================
    PRODUCT CARD COMPONENT
@@ -572,7 +595,9 @@ input[type="radio"] {
   top: 0;
   right: 0;
 }
-
+.priceBadge2 p {
+  padding-bottom: 0.5rem;
+}
 .weightBadge2 {
   background-color: var(--accent-color);
   color: white;
@@ -662,48 +687,41 @@ input[type="radio"] {
 }
 
 /* =====================================================
-   STICKY OVERLAY BUTTON
+   STICKY CART BUTTON
 ===================================================== */
-
-.stickyOverlayButton {
+.stickyButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
-  display: flex;
-  justify-content: flex-end;
-  right: 40px;
-  bottom: 80px;
-  z-index: 9999;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
 }
-
-.yellowCircleSticky {
-  position: relative;
+.stickyButtonClick:hover {
+  background-color: rgb(244, 244, 244);
+  transition: 0.2s;
+}
+.stickyButtonClick {
+  position: sticky;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--mymixx_1);
-  border-radius: 50px;
-  height: 80px;
-  width: 80px;
-  box-shadow: 5px 5px 10px 1px rgb(55, 55, 55);
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  height: 4rem;
+  margin-bottom: 2rem;
   cursor: pointer;
-}
-
-.yellowCircleSticky img {
-  width: 50px;
-  height: 50px;
-}
-
-.blueCounterBubble {
-  position: absolute;
-  top: 2px;
-  right: -6px;
-  background-color: #20ddf2;
-  border-radius: 50px;
-  width: 25px;
-  height: 25px;
-  color: white;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.fa-basket-shopping {
+  font-size: 2rem;
+  color: var(--colorNueSam);
+  align-self: center;
+  justify-content: center;
+  padding: 1rem;
 }
 
 /* =====================================================
