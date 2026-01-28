@@ -57,14 +57,12 @@ function addToCartClicked (event) {
  popOverCartItem.innerText = title, imageSrc, weight, price
  var cartItems = document.getElementsByClassName("cart-items")[0]
  var CartItemContent = `  <div class="cart-item">
-                <img class="productImage"
+                <img class="productImage imageFrame"
                   src="${imageSrc}"
                 />
-                <span class="cart-item-title">Name</span>
-                <span class="cart-price">19.99€</span>
-                <div class="cart-quantity">
-                  <input class="cart-quantity-input" type="number" value="1" />
-                  
+                <span class="cart-item-title">${title}</span>
+                <span class="cart-price">${price}</span>
+                 <span class="cart-weight">${weight}</span>
                   <i class="removeButton fa-solid fa-trash-can"></i>
                  
                 </div>`
