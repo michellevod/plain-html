@@ -191,6 +191,7 @@ body {
   width: 100%;
   background-color: var(--colorBasisCer);
   border-radius: 15px;
+  margin-bottom: 0.5rem;
 }
 
 .cart-price {
@@ -206,7 +207,7 @@ body {
   font-size: 1.2em;
 }
 
-.cart-item-image {
+.productImage {
   width: 15%;
   border-radius: 10px;
 }
