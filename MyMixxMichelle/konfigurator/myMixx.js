@@ -45,6 +45,9 @@ function addToCartClicked (event) {
     : null
 
   addItemToCart(title, imageSrc, weight, price, themeClass)
+
+  
+  
 }
 
 function addItemToCart (title, imageSrc, weight, price, themeClass) {
@@ -103,3 +106,12 @@ function updateCartTotal() {
   }
 
 }
+// Show overlay on button click
+document.getElementById('successButton').addEventListener('click', () => {
+  document.getElementById('successOverlay').hidden = false;
+});
+
+// Close overlay
+document.getElementById('closeSuccess').addEventListener('click', () => {
+  document.getElementById('successOverlay').hidden = true;
+});

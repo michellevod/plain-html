@@ -65,6 +65,7 @@
 
     <!-- MAIN -->
     <main>
+     
       <!-- POPOVER -->
       <div popover id="my-popover">
         <div class="closePopOver__Flex">
@@ -149,9 +150,27 @@
             Bitte bei Abholung den amtlichen Lichtbildausweis vorzeigen*
           </p>
 
-          <a class="btn fieldGroup theme-basis" href="SucessPage/Sucess.html">
-            Jetzt kostenpflichtig bestellen
-          </a>
+<!-- Success Overlay (outside cart popover) -->
+ <button
+  id="successButton"
+  class="btn theme-basis"
+>
+Jetzt kostenpflichtig bestellen
+</button>
+<div id="successOverlay" class="overlay" hidden>
+  <div class="overlay-content">
+      <i class="fa-solid fa-circle-check"></i>
+    <h1 class="headlineSucess">Ihre Bestellung war erfolgreich!</h1>
+    <p class="descriptionSucess">Bestellnummer.: 06328992-MYX</p>
+    <p class="textBoldSuccess">
+      <strong>Dein persönliches My Mixx-Müsli wird jetzt frisch für dich zubereitet.</strong> <br>
+      Abholung: 24.10.2024, Filiale Düsseldorf, Benrath
+    </p>
+    <button id="closeSuccess" class="btn">Zurück zum Konfigurator</button>
+  </div>
+</div>
+
+
         </div>
       </div>
 
@@ -2075,4 +2094,35 @@
       </div>
     </footer>
   </body>
+   
 </html>
+ <!-- <div id="successOverlay" popover="manual" hidden>
+            
+        <div class="sucessTick">
+          <i class="fa-solid fa-circle-check" style="color: #9bbf0f"></i>
+        </div>
+        <h1 class="headlineSucess">Ihre Bestellung war erfolgreich!</h1>
+        <p class="descriptionSucess">Bestellnummer.: 06328992-MYX</p>
+        <p class="textBoldSuccess">
+          <strong
+            >Dein persönliches My Mixx-Müsli <br />wird jetzt frisch für dich
+            zubereitet.
+          </strong>
+        </p>
+        <p class="textnormSuccess">
+          Sobald alles fertig ist, liefern wir deine Bestellung direkt in die
+          Filiale. <br />
+          Nenne uns bei der Abholung deine <strong>Bestellnummer.</strong>
+        </p>
+      
+          </div>
+          <button
+  popovertarget="successOverlay"
+  popovertargetaction="show"
+  class="btn theme-basis"
+>
+Jetzt kostenpflichtig bestellen
+</button>
+
+          
+          -->
