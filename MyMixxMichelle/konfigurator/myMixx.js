@@ -38,11 +38,16 @@ function addToCartClicked (event) {
   var title = shopItem.getElementsByClassName('cardName')[0].innerText
   var weight = shopItem.getElementsByClassName('weightBadge2')[0].innerText
   var price = shopItem.getElementsByClassName('priceBadge2')[0].innerText
+// 🎨 find theme on parent section
+  var themedParent = shopItem.closest('[class*="theme-"]')
+  var themeClass = themedParent
+    ? Array.from(themedParent.classList).find(c => c.startsWith('theme-'))
+    : null
 
-  addItemToCart(title, imageSrc, weight, price)
+  addItemToCart(title, imageSrc, weight, price, themeClass)
 }
 
-function addItemToCart (title, imageSrc, weight, price) {
+function addItemToCart (title, imageSrc, weight, price, themeClass) {
   var popOverCartItem = document.createElement("div")
   var cartItems = document.getElementsByClassName("cart-items")[0]
 
@@ -57,6 +62,11 @@ function addItemToCart (title, imageSrc, weight, price) {
 
   popOverCartItem.innerHTML = CartItemContent
   cartItems.append(popOverCartItem)
+
+  var cartItem = popOverCartItem.querySelector('.cart-item')
+  if (themeClass) {
+    cartItem.classList.add(themeClass)
+  }
 
   // ✅ REMOVE BUTTON FOR THIS ITEM
   popOverCartItem
@@ -91,4 +101,5 @@ function updateCartTotal() {
   for (var i = 0; i < totalElements.length; i++) {
     totalElements[i].innerText = total.toFixed(2) + '€'
   }
+
 }

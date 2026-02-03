@@ -170,6 +170,11 @@ body {
 /* =====================================================
    ITEM SUMMARY / CART CONTENT
 ===================================================== */
+.cart-empty {
+  text-align: center;
+  padding: 1.5rem;
+  opacity: 0.6;
+}
 
 .cartScrollContainer {
   background-color: #f0f0f0;
@@ -188,7 +193,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: #bc5c1c;
+  background-color: var(--accent-color);
   border-radius: 15px;
   padding: 1rem;
   margin-bottom: 0.5rem;
@@ -223,10 +228,10 @@ body {
   height: 4rem;
 }
 .imageFrame {
-  border: 3px solid #f67a33;
+  border: 3px solid var(--hover-color);
   padding: 2px;
   border-radius: 50%;
-  background-color:rgb(200, 96, 5);
+  background-color:var(--accent-color);
   box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.12);
   object-fit: cover;
 }
@@ -311,7 +316,6 @@ input[type="radio"] {
   flex-direction: column;
   align-self: center;
   width: 80%;
-  max-width: 550px;
   margin: 10px;
 }
 
