@@ -1,0 +1,56 @@
+/* =====================================================
+   FONTS
+===================================================== */
+
+@font-face {
+  font-family: "Noto_regu";
+  src: url(fonts/NotoSans-VariableFont_wdth\wght.ttf);
+}
+/* 
+@font-face {
+  font-family: "Noto_ital";
+  src: url(fonts/NotoSans-Italic-VariableFont_wdth\wght.ttf);
+} */
+
+/* =====================================================
+   CSS VARIABLES / ROOT
+===================================================== */
+
+:root {
+  --color1: #8c0a42;
+  --color2: #be4d0b;
+  --color3: #85a60e;
+  --color4: #1bbcce;
+  --color5: #8e4747;
+  --color6: #724c9d;
+}
+
+/* =====================================================
+   RESET & BASE
+===================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: clamp(16px, 1vw + 0.5rem, 20px);
+}
+
+body {
+  box-sizing: content-box;
+  font-family: "Noto_regu", sans-serif;
+  background-color: #fdf4d8;
+  opacity: 1;
+  background-image:
+    radial-gradient(#ddd1ae 1.35px, transparent 1.35px),
+    radial-gradient(#ddd1ae 1.35px, #fdf4d8 1.35px);
+  background-size: 54px 54px;
+  background-position:
+    0 0,
+    27px 27px;
+}
