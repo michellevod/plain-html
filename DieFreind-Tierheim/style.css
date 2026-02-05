@@ -28,7 +28,9 @@
 /* =====================================================
    RESET & BASE
 ===================================================== */
-
+img {
+  width: 10%;
+}
 * {
   margin: 0;
   padding: 0;
@@ -43,14 +45,10 @@ html {
 
 body {
   box-sizing: content-box;
-  font-family: "Noto_regu", sans-serif;
-  background-color: #fdf4d8;
-  opacity: 1;
-  background-image:
-    radial-gradient(#ddd1ae 1.35px, transparent 1.35px),
-    radial-gradient(#ddd1ae 1.35px, #fdf4d8 1.35px);
-  background-size: 54px 54px;
-  background-position:
-    0 0,
-    27px 27px;
+
+}
+
+
+.text-Block-Large {
+  background-color: #F9F6F6;
 }
