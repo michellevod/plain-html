@@ -229,12 +229,7 @@ h3 {
   gap: 1rem;
   margin: 1rem 0rem;
 }
-.section-Grid-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin: 1rem 0rem;
-}
+ 
 
 .text-Block-Small {
   background-color: #ffffff;
