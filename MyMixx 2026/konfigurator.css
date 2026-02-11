@@ -1,209 +1,187 @@
-@font-face {
-  font-family: "Noto_regu";
-  src: url(../fonts/NotoSans-VariableFont_wdth\,wght.ttf);
-}
-
-@font-face {
-  font-family: "Noto_ital";
-  src: url(../fonts/NotoSans-Italic-VariableFont_wdth\,wght.ttf);
-}
-
-:root {
-  --mymixx_1: #f2bb16;
-  --mymixx_2: #d9580d;
-  --mymixx_3: #9abf11;
-  --mymixx_4: #22ddf2;
-  --text_color: darkslategrey;
-}
+/* =====================================================
+   RESET & BASE
+===================================================== */
 
 * {
   margin: 0;
   padding: 0;
   border: none;
   text-decoration: none;
-  list-style-type: none;
+  box-sizing: border-box;
+  cursor: url("cursor.png"), auto;
 }
 
 html {
-  height: 100vh;
-  font-size: 17px;
+  scroll-behavior: smooth;
 }
 
 body {
   color: var(--text_color);
   box-sizing: content-box;
   font-family: "Noto_regu", sans-serif;
+  background-color: gray;
+
 }
 
-nav {
-  position: relative;
-  width: 100%;
-  height: 3rem;
-  background-color: var(--mymixx_4);
+/* =====================================================
+   FONTS
+===================================================== */
+
+@font-face {
+  font-family: "Noto_regu";
+  src: url(fonts/NotoSans-VariableFont_wdth\wght.ttf);
 }
 
-nav ul {
-  width: 100%;
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+/* =====================================================
+   CSS VARIABLES / ROOT
+===================================================== */
+
+:root {
+  /* mymixx colors */
+  --mymixx_1: #f2bb16;
+  --mymixx_2: #d9580d;
+  --mymixx_3: #9abf11;
+  --mymixx_4: #22ddf2;
+  --text_color: darkslategrey;
+
+/* accent colors */
+  --colorBasisCer: #bc155e;
+  --colorGetrFrue: #d9580f;
+  --colorNueSam: #9abf11;
+  --colorSuperFo: #20ddf2;
+  --colorExtrasuess: #bf5f5f;
+  --colorFluessMuePorr: #8c5fbf;
+ 
+  /* hovers */
+  --colorBasisCerHv: #8c0a42;
+  --colorGetrFrueHv: #be4d0b;
+  --colorNueSamHv: #85a60e;
+  --colorSuperFoHv: #1bbcce;
+  --colorExtrasuessHv: #8e4747;
+  --colorFluessMuePorrHv: #724c9d;
 }
 
-nav ul li {
-  width: 7rem;
-  padding: 0.8rem;
-  margin-right: 1rem;
-  height: 4rem;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-  text-align: center;
-  transition: height 0.8s ease;
-  z-index: 1;
+/* =====================================================
+   THEMES
+===================================================== */
+
+.theme-basis {
+  --accent-color: var(--colorBasisCer);
+  --hover-color: var(--colorBasisCerHv);
 }
 
-nav ul li:last-of-type {
-  margin-right: 0;
+.theme-getrfrue {
+  --accent-color: var(--colorGetrFrue);
+  --hover-color: var(--colorGetrFrueHv);
 }
 
-nav ul li:hover {
-  height: 7rem;
+.theme-nueSam {
+  --accent-color: var(--colorNueSam);
+  --hover-color: var(--colorNueSamHv);
 }
 
-nav ul li.prod {
-  background-color: var(--mymixx_1);
+.theme-superFood {
+  --accent-color: var(--colorSuperFo);
+  --hover-color: var(--colorSuperFoHv);
 }
 
-nav ul li.uns {
-  background-color: var(--mymixx_2);
+.theme-xtraSuess {
+  --accent-color: var(--colorExtrasuess);
+  --hover-color: var(--colorExtrasuessHv);
 }
 
-nav ul li.stor {
-  background-color: var(--mymixx_3);
+.theme-Fluessig {
+  --accent-color: var(--colorFluessMuePorr);
+  --hover-color: var(--colorFluessMuePorrHv);
 }
 
-nav ul li.nach {
-  background-color: var(--mymixx_4);
-}
 
-nav ul li.kon {
-  background-color: var(--mymixx_1);
-}
+/* =====================================================
+mainGRID
+===================================================== */
 
-nav ul a {
-  color: rgb(235, 248, 248);
-  font-weight: 700;
-}
-
-header {
-  min-height: 25rem;
-  background: transparent url("./img/headerbild_mymixx.jpg") no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-header h1 {
-  display: none;
-}
-
-header figure {
-  width: 40%;
-  margin-left: 2rem;
-  padding-top: 3rem;
-  z-index: 1000;
-}
-
-header figure img {
-  width: 100%;
-}
-
-div#contentwrap {
-  width: 80%;
-  max-width: 75rem;
-  margin: 0 auto;
+.main__Grid {
+  margin-top: 1rem;
+  grid-gap: 1rem;
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 2rem;
+  grid-template-columns: 90% 10%;
 }
 
-/* CTA ADDED */
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+.btn-selected {
+  background-color: transparent;
+  border: 2px solid white; /* uses theme variable */
+}
 
 .btn {
-  background-color: white;
-  font-weight: 600;
-  width: fit-content;
-  padding: 0.7rem;
-  border-radius: 15px;
-}
-
-.btn a {
-  color: black;
-}
-.cta-Container {
-  position: relative;
-  border-radius: 20px;
-}
-.stoerer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  background-color: var(--anchor-color);
   color: white;
-  rotate: -5deg;
-  font-weight: 600;
-  text-align: center;
-  padding: 1rem;
-  background-color: var(--mymixx_1);
-  border-radius: 50%;
-  width: 180px;
-  height: 180px;
-  box-shadow: -3px 6px 10px 2px rgba(104, 104, 104, 0.19);
-  position: absolute;
-  bottom: 40px;
-  left: 45rem;
-  z-index: 10;
-  margin: 1rem;
-}
-.stoerer p {
-    font-size: 20px;
-    text-align: center;
-}
-
-main h2,
-aside h2 {
-  margin-top: 1rem;
-  margin-bottom: 0.8rem;
-}
-
-main p,
-aside p {
-  margin-bottom: 0.5rem;
-  text-indent: 1rem;
-}
-
-main p.claim {
-  font-weight: 600;
+  font-weight: bold;
+  display: flex;
   font-size: 1.2rem;
-  font-family: "Noto_ital", sans-serif;
-  text-indent: 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 0;
+}
+.btn-leveling {
+  margin-bottom: 3rem;
+}
+.btn:hover {
+  background-color: var(--hover-color);
+  transition: 0.2s;
 }
 
-aside {
-  width: 100%;
+/* =====================================================
+   PRODUCT GRID & CARDS
+===================================================== */
+.product__MainFlex {
+   display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product__AccentFlex {
+   display:flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  align-items: center;
+}
+.product__Card {
+  gap: 1rem;
+  background-color: white;
+  max-width: 300px;
+  border-radius: 20px;
+  padding: 15px;
 }
 
-aside figure {
-  width: 100%;
+.product__AddToCartBtn {
+  width: 30px;
+  background-color: var(--accent-color);
 }
 
-aside figure img {
-  width: 100%;
-}
+/* =====================================================
+   FOOTER
+===================================================== */
 
 footer {
-  min-height: 10rem;
-  background-color: var(--mymixx_3);
-  margin-top: 2rem;
+  background-color: var(--colorNueSam);
+  display: flow-root;
+}
+
+footer ul,
+footer ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 #footwrap {
@@ -218,8 +196,8 @@ footer {
 footer section {
   margin-top: 2rem;
 }
+
 footer section ul li a {
-  color: var(--text_color);
   font-size: 0.8rem;
 }
 
@@ -231,11 +209,11 @@ footer section#socmed ul {
   gap: 2rem;
 }
 
-footer section ul li a img:hover {
-  cursor: grab;
-}
-
 footer section ul li a img {
   width: 300%;
   padding-top: 1rem;
+}
+
+footer section ul li a img:hover {
+  cursor: grab;
 }

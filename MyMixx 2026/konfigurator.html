@@ -7,73 +7,135 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="konfigurator.css" />
   </head>
-  <body>
 
-  </body>
-   <footer>
-      <div id="footwrap">
-        <section id="mymixx">
-          <h3>MyMIXX</h3>
-          <ul>
-            <li><a href="">Über uns</a></li>
-            <li><a href="">Nachhaltigkeit</a></li>
-            <li><a href="">Impressum</a></li>
-            <li><a href="">Datenschutz</a></li>
-            <li><a href="">Allgemeine AGB</a></li>
-            <li><a href="">Jobs</a></li>
-            <li><a href="">Presse</a></li>
-          </ul>
-        </section>
-        <section id="ernaehrung">
-          <h3>Ernährung</h3>
-          <ul>
-            <li><a href="">Bewusste Ernährung</a></li>
-            <li><a href="">Rezepte</a></li>
-            <li><a href="">Müsli-Zutaten</a></li>
-          </ul>
-        </section>
-        <section id="siegel">
-          <h3>Ökologische Verantwortung</h3>
-          <ul>
-            <li>
-              <a href=""
-                ><img
-                  src="./img/siegel-deutsches-bio-siegel.svg"
-                  alt="Biosiegel 1"
-              /></a>
-            </li>
-            <li>
-              <a href=""
-                ><img src="./img/smb_biosiegel-euroblatt.svg" alt="Biosiegel 2"
-              /></a>
-            </li>
-            <li>
-              <a href=""
-                ><img src="./img/ohne-gentechnik-logo.svg" alt="Biosiegel 3"
-              /></a>
-            </li>
-          </ul>
-        </section>
-        <section id="socmed">
-          <h3>MyMIXX folgen</h3>
-          <ul>
-            <li>
-              <a href=""><img src="./img/facebook.svg" alt="Facebook" /></a>
-            </li>
-            <li>
-              <a href=""><img src="./img/instagram.svg" alt="Instagram" /></a>
-            </li>
-            <li>
-              <a href=""><img src="./img/pinterest.svg" alt="Pinterest" /></a>
-            </li>
-            <li>
-              <a href=""><img src="./img/youtube.svg" alt="YouTube" /></a>
-            </li>
-            <li>
-              <a href=""><img src="./img/tiktok.svg" alt="TikTok" /></a>
-            </li>
-          </ul>
-        </section>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Startseite</a>
+          </li>
+          <li>
+            <a href="#">MyMixx</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- PRODUCT CARDS -->
+      <div class="main__Grid">
+        <div class="product__Card">
+          <div class="product__MainFlex">
+          <div class="product__Image">
+            <img src="img/logo-mymixx_2024_FI.png" alt="placeholder">
+          </div>
+          <div class="product__Name">
+            <p>Name</p>
+          </div>
+          <div class="product__Weight">
+            <p>Weight</p>
+          </div>
+          </div>
+          <div class="product__AccentFlex">
+          <div class="product__Price">
+            <p>2,50€</p>
+          </div>
+          <div class="product__AddToCartBtn">
+            <img src="icons/plus-solid-full.svg" alt="plussign">
+          </div>
+          </div>
+
+        </div>
+
+
+       
       </div>
-    </footer>
+    </main>
+  </body>
+
+  <!-- FOOTER -->
+  <footer>
+    <div id="footwrap">
+      <section id="mymixx">
+        <h3>MyMIXX</h3>
+        <ul>
+          <li><a href="">Über uns</a></li>
+          <li><a href="">Nachhaltigkeit</a></li>
+          <li><a href="">Impressum</a></li>
+          <li><a href="">Datenschutz</a></li>
+          <li><a href="">AGB</a></li>
+          <li><a href="">Jobs</a></li>
+          <li><a href="">Presse</a></li>
+        </ul>
+      </section>
+
+      <section id="ernaehrung">
+        <h3>Ernährung</h3>
+        <ul>
+          <li><a href="">Bewusste Ernährung</a></li>
+          <li><a href="">Rezepte</a></li>
+          <li><a href="">Müsli-Zutaten</a></li>
+        </ul>
+      </section>
+
+      <section id="siegel">
+        <h3>Ökologische Verantwortung</h3>
+        <ul>
+          <li>
+            <img
+              class="productImage"
+              src="./img/siegel-deutsches-bio-siegel.svg"
+              alt="Bio"
+            />
+          </li>
+          <li>
+            <img
+              class="productImage"
+              src="./img/smb_biosiegel-euroblatt.svg"
+              alt="EU Bio"
+            />
+          </li>
+          <li>
+            <img
+              class="productImage"
+              src="./img/ohne-gentechnik-logo.svg"
+              alt="Ohne Gentechnik"
+            />
+          </li>
+        </ul>
+      </section>
+
+      <section id="socmed">
+        <h3>MyMIXX folgen</h3>
+        <ul>
+          <li>
+            <img class="productImage" src="./img/facebook.svg" alt="Facebook" />
+          </li>
+          <li>
+            <img
+              class="productImage"
+              src="./img/instagram.svg"
+              alt="Instagram"
+            />
+          </li>
+          <li>
+            <img
+              class="productImage"
+              src="./img/pinterest.svg"
+              alt="Pinterest"
+            />
+          </li>
+          <li>
+            <img class="productImage" src="./img/youtube.svg" alt="YouTube" />
+          </li>
+          <li>
+            <img class="productImage" src="./img/tiktok.svg" alt="TikTok" />
+          </li>
+        </ul>
+      </section>
+    </div>
+  </footer>
 </html>
