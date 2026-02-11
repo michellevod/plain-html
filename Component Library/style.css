@@ -1,0 +1,152 @@
+/* =====================================================
+   FONTS
+===================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+/* =====================================================
+   CSS VARIABLES / ROOT
+===================================================== */
+
+:root {
+  --color1: #8c0a42;
+  --color2: #be4d0b;
+  --color3: #85a60e;
+  --color4: #1bbcce;
+  --color5: #8e4747;
+  --color6: #724c9d;
+}
+
+/* =====================================================
+   RESET & BASE
+===================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+html {
+  font-family: "Lexend", sans-serif;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+li {
+    list-style: none;
+}
+body {
+  box-sizing: content-box;
+  background-color: rgb(246, 246, 246);
+  margin: 2rem 2rem;
+
+}
+/* ------------------- */
+
+/* MENU ANCHORS */
+.menu-Anchors {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  gap: 1rem;
+  margin: 2rem 28rem;
+}
+.menu-Anchors svg {
+  width: 8rem;
+}
+
+.anchor {
+  border-radius: 30px;
+  background-color: #dcdcdc;
+  display: flex;
+  justify-content: center;
+}
+.anchor:hover {
+  background-color: #ea723b;
+}
+
+/* ICONS */
+.anchor:hover path.daniel {
+  fill: rgb(255, 255, 255);
+}
+
+/* BUTTONS */
+.btn {
+  background-color: white;
+  border: solid 3px #ea723b;
+  color: #ea723b;
+  font-weight: 600;
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #ea723b;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 8px 10px 4px rgba(183, 183, 183, 0.5);
+  transition: all 0.2s ease-in-out;
+}
+.twoBtn-Flex {
+  display: flex;
+  gap: 1rem;
+}
+
+/* popover */
+#my-popover {
+  inset: auto;
+  position: fixed;
+  background-color: #fcfcfc;
+  height: 100%;
+  width: 50%;
+  right: 0;
+  border-top-left-radius: 15px;
+}
+
+/* normal html popover backdrop */
+#my-popover::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.stickyButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+}
+.stickyButtonClick:hover {
+  background-color: rgb(244, 244, 244);
+  transition: 0.2s;
+}
+.stickyButtonClick {
+  position: sticky;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  height: 4rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.fa-basket-shopping {
+  font-size: 2rem;
+  color: var(--colorNueSam);
+  align-self: center;
+  justify-content: center;
+  padding: 1rem;
+}
