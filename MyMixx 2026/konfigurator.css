@@ -19,8 +19,7 @@ body {
   color: var(--text_color);
   box-sizing: content-box;
   font-family: "Noto_regu", sans-serif;
-  background-color: gray;
-
+  background-color: rgb(233, 233, 233);
 }
 
 /* =====================================================
@@ -44,14 +43,14 @@ body {
   --mymixx_4: #22ddf2;
   --text_color: darkslategrey;
 
-/* accent colors */
+  /* accent colors */
   --colorBasisCer: #bc155e;
   --colorGetrFrue: #d9580f;
   --colorNueSam: #9abf11;
   --colorSuperFo: #20ddf2;
   --colorExtrasuess: #bf5f5f;
   --colorFluessMuePorr: #8c5fbf;
- 
+
   /* hovers */
   --colorBasisCerHv: #8c0a42;
   --colorGetrFrueHv: #be4d0b;
@@ -95,23 +94,30 @@ body {
   --hover-color: var(--colorFluessMuePorrHv);
 }
 
-
 /* =====================================================
 mainGRID
 ===================================================== */
-
+.productCard__Grid {
+  
+}
 .main__Grid {
-  margin-top: 1rem;
-  grid-gap: 1rem;
   display: grid;
-  grid-template-columns: 90% 10%;
+  justify-content: start;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+  margin: 1rem;
+  margin-right: 1rem;
 }
 
-
+/* mobile viewport */
+@media (max-width: 767px) {
+  .main__Grid {
+    grid-template-columns: repeat(2, minmax(12rem, 1fr));
+  }
+}
 /* =====================================================
    HEADER
 ===================================================== */
-
 
 /* =====================================================
    BUTTONS
@@ -144,28 +150,54 @@ mainGRID
 /* =====================================================
    PRODUCT GRID & CARDS
 ===================================================== */
-.product__MainFlex {
-   display:flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.product__AccentFlex {
-   display:flex;
-  justify-content: space-evenly;
-  gap: 1rem;
-  align-items: center;
-}
+
 .product__Card {
-  gap: 1rem;
+  display: flex;
   background-color: white;
-  max-width: 300px;
+  max-width: 350px;
   border-radius: 20px;
   padding: 15px;
+  position: relative;
+  gap: 1rem;
 }
 
+.product__Image {
+  background-color: rgb(203, 203, 203);
+  padding: 1rem;
+  border-radius: 20px;
+}
+.product__content {
+  align-items: center;
+  display: flex;
+
+  flex: 1;
+}
+
+.product__textcontent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: 600;
+}
 .product__AddToCartBtn {
-  width: 30px;
   background-color: var(--accent-color);
+  border-radius: 50px;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+.product__AddToCartBtn img {
+  width: 30px;
+}
+.product__Price {
+  display: flex;
+  justify-content: center;
+  color: white;
+  width: 60px;
+  padding: 0.5rem;
+  background-color: var(--accent-color);
+  border-radius: 15px;
+  font-weight: 600;
 }
 
 /* =====================================================
