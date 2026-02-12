@@ -19,7 +19,7 @@ body {
   color: var(--text_color);
   box-sizing: content-box;
   font-family: "Noto_regu", sans-serif;
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(243, 243, 243);
 }
 
 /* =====================================================
@@ -97,36 +97,34 @@ body {
 /* =====================================================
 mainGRID
 ===================================================== */
-.productCard__Grid {
-  
-}
-.main__Grid {
+
+.product__Card__Grid {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 10rem;
   display: grid;
-  justify-content: start;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
-  margin: 1rem;
-  margin-right: 1rem;
-}
-
-/* mobile viewport */
-@media (max-width: 767px) {
-  .main__Grid {
-    grid-template-columns: repeat(2, minmax(12rem, 1fr));
-  }
+  justify-content: start; 
 }
 /* =====================================================
-   HEADER
+   ANCHOR
 ===================================================== */
-
-/* =====================================================
-   BUTTONS
-===================================================== */
-.btn-selected {
-  background-color: transparent;
-  border: 2px solid white; /* uses theme variable */
+.Anchor {
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 0px 15px 15px 0px;
+  width: fit-content;
 }
 
+.Headline {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+/* =====================================================
+   BUTTON
+===================================================== */
 .btn {
   background-color: var(--anchor-color);
   color: white;
@@ -139,22 +137,19 @@ mainGRID
   padding: 10px;
   margin-top: 0;
 }
-.btn-leveling {
-  margin-bottom: 3rem;
-}
+
 .btn:hover {
   background-color: var(--hover-color);
   transition: 0.2s;
 }
 
 /* =====================================================
-   PRODUCT GRID & CARDS
+   PRODUCTCARD
 ===================================================== */
 
 .product__Card {
   display: flex;
   background-color: white;
-  max-width: 350px;
   border-radius: 20px;
   padding: 15px;
   position: relative;
@@ -162,7 +157,7 @@ mainGRID
 }
 
 .product__Image {
-  background-color: rgb(203, 203, 203);
+  background-color: rgb(242, 241, 241);
   padding: 1rem;
   border-radius: 20px;
 }
