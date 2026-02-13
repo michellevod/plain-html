@@ -22,6 +22,11 @@ body {
   background-color: rgb(243, 243, 243);
 }
 
+h4 {
+  font-family: "Pally-Variable";
+  font-weight: 600;
+  letter-spacing: 2px;
+}
 /* =====================================================
    FONTS
 ===================================================== */
@@ -29,6 +34,14 @@ body {
 @font-face {
   font-family: "Noto_regu";
   src: url(fonts/NotoSans-VariableFont_wdth\wght.ttf);
+}
+
+@font-face {
+  font-family: "Pally-Variable";
+  src: url("fonts/Pally-Variable.ttf") format("truetype");
+  font-weight: 400 700;
+  font-display: swap;
+  font-style: normal;
 }
 
 /* =====================================================
@@ -47,15 +60,15 @@ body {
   --colorBasisCer: #bc155e;
   --colorGetrFrue: #d9580f;
   --colorNueSam: #9abf11;
-  --colorSuperFo: #20ddf2;
+  --colorSuperFo: #5284f1;
   --colorExtrasuess: #bf5f5f;
-  --colorFluessMuePorr: #8c5fbf;
+  --colorFluessMuePorr: #9d62ea;
 
   /* hovers */
   --colorBasisCerHv: #8c0a42;
   --colorGetrFrueHv: #be4d0b;
   --colorNueSamHv: #85a60e;
-  --colorSuperFoHv: #1bbcce;
+  --colorSuperFoHv: #3a6dda;
   --colorExtrasuessHv: #8e4747;
   --colorFluessMuePorrHv: #724c9d;
 }
@@ -95,6 +108,25 @@ body {
 }
 
 /* =====================================================
+NAVIGATION
+===================================================== */
+.nav__Container {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__icon {
+  width: 30px;
+}
+.header__logo {
+  width: 100px;
+}
+
+/* =====================================================
 mainGRID
 ===================================================== */
 
@@ -106,14 +138,14 @@ mainGRID
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
-  justify-content: start; 
+  justify-content: start;
 }
 /* =====================================================
    ANCHOR
 ===================================================== */
 .Anchor {
   background-color: var(--accent-color);
-  color: white;
+  color: rgb(255, 255, 255);
   border-radius: 0px 15px 15px 0px;
   width: fit-content;
 }

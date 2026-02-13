@@ -7,6 +7,15 @@
   font-family: "Noto_ital";
   src: url(../fonts/NotoSans-Italic-VariableFont_wdth\,wght.ttf);
 }
+@font-face {
+  font-family: "Pally-Variable";
+  src:
+    
+    url("fonts/Pally-Variable.ttf") format("truetype");
+  font-weight: 400 700;
+  font-display: swap;
+  font-style: normal;
+}
 
 :root {
   --mymixx_1: #f2bb16;
@@ -132,43 +141,28 @@ div#contentwrap {
   background-color: white;
   font-weight: 600;
   width: fit-content;
-  padding: 0.7rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 150px;
   border-radius: 15px;
+  position: absolute;
+  right: 280px;
+  bottom: 50px;
 }
 
-.btn a {
-  color: black;
+.cta-Container a {
+  font-family: "Pally-Variable";
+  color: var(--mymixx_2);
+  font-size: 20px;
+}
+.cta-Container img {
+  width: 800px;
 }
 .cta-Container {
+  margin-top: 2rem;
   position: relative;
-  border-radius: 20px;
 }
-.stoerer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: white;
-  rotate: -5deg;
-  font-weight: 600;
-  text-align: center;
-  padding: 1rem;
-  background-color: var(--mymixx_1);
-  border-radius: 50%;
-  width: 180px;
-  height: 180px;
-  box-shadow: -3px 6px 10px 2px rgba(104, 104, 104, 0.19);
-  position: absolute;
-  bottom: 40px;
-  left: 45rem;
-  z-index: 10;
-  margin: 1rem;
-}
-.stoerer p {
-    font-size: 20px;
-    text-align: center;
-}
-
 main h2,
 aside h2 {
   margin-top: 1rem;
