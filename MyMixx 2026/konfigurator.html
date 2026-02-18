@@ -6,23 +6,27 @@
     <title>MyMixx Konfigurator</title>
     <link rel="icon" type="image/x-icon" href="img/logo-mymixx_2024_FI.png" />
     <link rel="stylesheet" href="konfigurator.css" />
+    <script src="konfigurator.js" defer></script>
   </head>
 
   <body>
     <!-- HEADER -->
     <header>
       <nav class="nav__Container">
-        
-          <div class="header__icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-              <path
-                fill="#e3e3e3"
-                d="M399 384.2C376.9 345.8 335.4 320 288 320l-64 0c-47.4 0-88.9 25.8-111 64.2 35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"
-              />
-            </svg>
-          </div>
+        <div class="header__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              fill="#e3e3e3"
+              d="M399 384.2C376.9 345.8 335.4 320 288 320l-64 0c-47.4 0-88.9 25.8-111 64.2 35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"
+            />
+          </svg>
         </div>
-        <img class="header__logo" src="img/logo_mymixx_2024.png" alt="" />
+
+        <img
+          class="header__logo"
+          src="img/logo_mymixx_2024.png"
+          alt="mymixx logo"
+        />
         <div class="header__icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <path
@@ -30,949 +34,1141 @@
               d="M234.2 8.6c12.3-11.4 31.3-11.4 43.5 0L368 92.3 368 80c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32l0 101.5 37.8 35.1c9.6 9 12.8 22.9 8 35.1S493.2 272 480 272l-16 0 0 176c0 35.3-28.7 64-64 64l-288 0c-35.3 0-64-28.7-64-64l0-176-16 0c-13.2 0-25-8.1-29.8-20.3s-1.6-26.2 8-35.1l224-208zM240 320c-26.5 0-48 21.5-48 48l0 96 128 0 0-96c0-26.5-21.5-48-48-48l-32 0z"
             />
           </svg>
-        
+        </div>
       </nav>
     </header>
 
     <!-- MAIN -->
     <main>
-      <!-- PRODUCT CARDS -->
+      <!-- PRODUCT CARDS + CART  -->
+      <div class="mainGrid">
+        <div class="productCard__Grid">
+          <!-- BASIS-CEREALIEN -->
+          <div class="Basis-Cerealien theme-basis">
+            <div class="Anchor" id="Basis-Cerealien-Anchor">
+              <h4 class="Headline">Basis-Cerealien</h4>
+            </div>
+            <div class="product__Card__Grid">
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Zarte Haferflocken</p>
+                    <p>100 g</p>
+                    <p class="product__Price">0,50€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Großblättrige Haferflocken</p>
+                    <p>100 g</p>
+                    <p class="product__Price">0,70€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Dinkelflocken</p>
+                    <p>100 g</p>
+                    <p class="product__Price">1,20€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Quinoaflocken</p>
+                    <p>100 g</p>
+                    <p class="product__Price">1,50€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Buchweizenflocken</p>
+                    <p>100 g</p>
+                    <p class="product__Price">1,20€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Hirseflocken</p>
+                    <p>100 g</p>
+                    <p class="product__Price">1,80€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Vollkorn-Reisflocken</p>
+                    <p>100 g</p>
+                    <p class="product__Price">1,90€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Amaranth-Pops</p>
+                    <p>50 g</p>
+                    <p class="product__Price">1,20€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Cornflakes (zuckerfrei und mit Honig)</p>
+                    <p>50 g</p>
+                    <p class="product__Price">1,50€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Crunchy Müsli (Schoko, Nuss, Honig)</p>
+                    <p>150 g</p>
+                    <p class="product__Price">2,50€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Rice Krispies</p>
+                    <p>75 g</p>
+                    <p class="product__Price">1,80€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Weizenkleie</p>
+                    <p>50 g</p>
+                    <p class="product__Price">1,50€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Geröstete Haferflakes</p>
+                    <p>30 g</p>
+                    <p class="product__Price">1,20€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- GETROCKNETE FRÜCHTE -->
+          <div class="Getrocknete-Fruechte theme-getrfrue">
+            <div class="Anchor" id="Getrocknete-Fruechte-Anchor">
+              <h4 class="Headline">Getrocknete Früchte</h4>
+            </div>
+            <div class="product__Card__Grid">
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Cranberries</p>
+                    <p>25 g</p>
+                    <p class="product__Price">1,40€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
 
-      <!-- BASIS-CEREALIEN -->
-      <div class="Basis-Cerealien theme-basis">
-        <div class="Anchor" id="Basis-Cerealien-Anchor">
-          <h4 class="Headline">Basis-Cerealien</h4>
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Rosinen</p>
+                    <p>25 g</p>
+                    <p class="product__Price">1,10€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Goji-Beeren</p>
+                    <p>20 g</p>
+                    <p class="product__Price">1,60€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Mangostückchen</p>
+                    <p>40 g</p>
+                    <p class="product__Price">1,50€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Apfelringe</p>
+                    <p>10 g</p>
+                    <p class="product__Price">1,50€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Bananenchips</p>
+                    <p>20 g</p>
+                    <p class="product__Price">1,80€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Datteln</p>
+                    <p>20 g</p>
+                    <p class="product__Price">1,20€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Feigen</p>
+                    <p>20 g</p>
+                    <p class="product__Price">1,50€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Erdbeerscheiben</p>
+                    <p>10 g</p>
+                    <p class="product__Price">1,40€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Heidelbeeren</p>
+                    <p>15 g</p>
+                    <p class="product__Price">1,30€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- NÜSSE UND SAMEN -->
+          <div class="Nuesse-Samen theme-nueSam">
+            <div class="Anchor" id="Nuesse-Samen-Anchor">
+              <h4 class="Headline">Nüsse und Samen</h4>
+            </div>
+            <div class="product__Card__Grid">
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Mandeln (geröstet, gehackt, blättrig)</p>
+                    <p>15 g</p>
+                    <p class="product__Price">1,00€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Walnüsse</p>
+                    <p>15 g</p>
+                    <p class="product__Price">1,50€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Haselnüsse</p>
+                    <p>15 g</p>
+                    <p class="product__Price">1,20€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Cashewkerne</p>
+                    <p>15 g</p>
+                    <p class="product__Price">2,80€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Pekanüsse</p>
+                    <p>15 g</p>
+                    <p class="product__Price">1,00€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Sonnenblumenkerne</p>
+                    <p>20 g</p>
+                    <p class="product__Price">1,50€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Kürbiskerne</p>
+                    <p>15 g</p>
+                    <p class="product__Price">1,50€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Chiasamen</p>
+                    <p>10 g</p>
+                    <p class="product__Price">1,50€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Leinsamen</p>
+                    <p>20 g</p>
+                    <p class="product__Price">2,50€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Hanfsamen</p>
+                    <p>10 g</p>
+                    <p class="product__Price">1,00€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Sesamsamen</p>
+                    <p>20 g</p>
+                    <p class="product__Price">1,80€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SUPERFOODS -->
+          <div class="Superfoods theme-superFood">
+            <div class="Anchor" id="Superfoods-Anchor">
+              <h4 class="Headline">Superfoods</h4>
+            </div>
+            <div class="product__Card__Grid">
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Kakaonibs</p>
+                    <p>10 g</p>
+                    <p class="product__Price">1,50€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Matcha-Pulver</p>
+                    <p>5 g</p>
+                    <p class="product__Price">2,00€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Spirulina</p>
+                    <p>5 g</p>
+                    <p class="product__Price">2,30€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Acai-Beeren</p>
+                    <p>10 g</p>
+                    <p class="product__Price">2,50€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Gojipulver</p>
+                    <p>10 g</p>
+                    <p class="product__Price">2,50€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Kokosflocken</p>
+                    <p>20 g</p>
+                    <p class="product__Price">1,50€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- EXTRAS UND SÜSSUNGSMITTEL -->
+          <div class="ExtrasSuess theme-xtraSuess">
+            <div class="Anchor" id="ExtrasSuess-Anchor">
+              <h4 class="Headline">Extras und Süßungsmittel</h4>
+            </div>
+            <div class="product__Card__Grid">
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Dunkle Schokoladenstücke</p>
+                    <p>15 g</p>
+                    <p class="product__Price">1,80€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Weiße Schokoladenstücke</p>
+                    <p>15 g</p>
+                    <p class="product__Price">1,60€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Karamellstückchen</p>
+                    <p>15 g</p>
+                    <p class="product__Price">2,00€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Kokoschips</p>
+                    <p>150 g</p>
+                    <p class="product__Price">3,50€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Honig</p>
+                    <p>25 g</p>
+                    <p class="product__Price">2,00€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Ahornsirup</p>
+                    <p>25 ml</p>
+                    <p class="product__Price">2,00€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Agavendicksaft</p>
+                    <p>25 ml</p>
+                    <p class="product__Price">1,50€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FLÜSSIGKEITEN FÜR MÜSLI UND PORRIDGE -->
+          <div class="Fluessig theme-Fluessig">
+            <div class="Anchor" id="Fluessig-Anchor">
+              <h4 class="Headline">Flüssigkeiten für Müsli und Porridge</h4>
+            </div>
+            <div class="product__Card__Grid">
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Hafermilch</p>
+                    <p>200 ml</p>
+                    <p class="product__Price">0,85€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Mandelmilch</p>
+                    <p>200 ml</p>
+                    <p class="product__Price">1,25€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Kokosmilch</p>
+                    <p>200 ml</p>
+                    <p class="product__Price">1,25€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Sojamilch</p>
+                    <p>200 ml</p>
+                    <p class="product__Price">1,20€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Reismilch</p>
+                    <p>200 ml</p>
+                    <p class="product__Price">0,85€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Vollmilch (Bio)</p>
+                    <p>200 ml</p>
+                    <p class="product__Price">1,25€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Joghurt (natur, griechisch)</p>
+                    <p>25 ml</p>
+                    <p class="product__Price">0,95€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Wasser (sehr weich und mikrofiltriert)</p>
+                    <p>200 ml</p>
+                    <p class="product__Price">0,85€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+
+              <div class="product__Card">
+                <div class="product__Image">
+                  <img src="img/logo-mymixx_2024_FI.png" alt="" />
+                </div>
+                <div class="product__content">
+                  <div class="product__textcontent">
+                    <p>Kokoswasser</p>
+                    <p>200 ml</p>
+                    <p class="product__Price">1,05€</p>
+                  </div>
+                </div>
+                <div class="product__AddToCartBtn">
+                  <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="product__Card__Grid">
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Zarte Haferflocken</p>
-                <p>100 g</p>
-                <p class="product__Price">0,50€</p>
+        <!-- Cart -->
+        <div class="cart__Container theme-basis">
+          <h4>Produktauswahl</h4>
+          <div class="cart__Background__Top">
+            <div class="cart__item__Container">
+              <div class="cart__item">
+                  <div class="cart__item__price">
+                  <p>2,50€</p>
+                </div>
+                <div class="cart__item__image">
+                  <img
+                    src="img/haferflockenplaceholder.png"
+                    alt="haferflocken"
+                  />
+                </div>
+              
+                <div class="product__Name textcontent">
+                  <p>Zarte Haferflocken</p>
+                </div>
+                <div class="product__Weight textcontent">
+                  <p>100 g</p>
+                </div>
+                <div class="cart__item__counter">
+                  <input
+                    type="number"
+                    id="quantity"
+                    value="1"
+                    name="quantity"
+                    min="1"
+                    max="5"
+                  />
+                </div>
+
+                <div class="cart__item__remove">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      fill="rgba(213, 6, 6, 1.00)"
+                      d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zM167 167c9.4-9.4 24.6-9.4 33.9 0l55 55 55-55c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-55 55 55 55c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-55-55-55 55c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l55-55-55-55c-9.4-9.4-9.4-24.6 0-33.9z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="cart__item">
+                  <div class="cart__item__price">
+                  <p>2,50€</p>
+                </div>
+                <div class="cart__item__image">
+                  <img
+                    src="img/haferflockenplaceholder.png"
+                    alt="haferflocken"
+                  />
+                </div>
+              
+                <div class="product__Name textcontent">
+                  <p>Zarte Haferflocken</p>
+                </div>
+                <div class="product__Weight textcontent">
+                  <p>100 g</p>
+                </div>
+                <div class="cart__item__counter">
+                  <input
+                    type="number"
+                    id="quantity"
+                    value="1"
+                    name="quantity"
+                    min="1"
+                    max="5"
+                  />
+                </div>
+
+                <div class="cart__item__remove">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      fill="rgba(213, 6, 6, 1.00)"
+                      d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zM167 167c9.4-9.4 24.6-9.4 33.9 0l55 55 55-55c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-55 55 55 55c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-55-55-55 55c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l55-55-55-55c-9.4-9.4-9.4-24.6 0-33.9z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="cart__item">
+                  <div class="cart__item__price">
+                  <p>2,50€</p>
+                </div>
+                <div class="cart__item__image">
+                  <img
+                    src="img/haferflockenplaceholder.png"
+                    alt="haferflocken"
+                  />
+                </div>
+              
+                <div class="product__Name textcontent">
+                  <p>Zarte Haferflocken</p>
+                </div>
+                <div class="product__Weight textcontent">
+                  <p>100 g</p>
+                </div>
+                <div class="cart__item__counter">
+                  <input
+                    type="number"
+                    id="quantity"
+                    value="1"
+                    name="quantity"
+                    min="1"
+                    max="5"
+                  />
+                </div>
+
+                <div class="cart__item__remove">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      fill="rgba(213, 6, 6, 1.00)"
+                      d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zM167 167c9.4-9.4 24.6-9.4 33.9 0l55 55 55-55c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-55 55 55 55c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-55-55-55 55c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l55-55-55-55c-9.4-9.4-9.4-24.6 0-33.9z"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Großblättrige Haferflocken</p>
-                <p>100 g</p>
-                <p class="product__Price">0,70€</p>
+            <div class="cart__total__Container">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  fill="#9abf11"
+                  d="M288 0c6.6 0 12.9 2.7 17.4 7.5l144 152 .5 .5 78.1 0c17.7 0 32 14.3 32 32 0 14.5-9.6 26.7-22.8 30.7L491.1 429.9c-6.5 29.3-32.5 50.1-62.5 50.1l-281.3 0c-30 0-56-20.8-62.5-50.1l-46-207.2c-13.2-3.9-22.8-16.2-22.8-30.7 0-17.7 14.3-32 32-32l78.1 0 .5-.5 144-152C275.1 2.7 281.4 0 288 0zm0 58.9L192.2 160 383.8 160 288 58.9zM208 264c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112zm80-24c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm128 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112z"
+                />
+              </svg>
+              <p>Total:</p>
+              <div class="cart__total">
+                <p>0,00€</p>
               </div>
             </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
+          </div>
+          <h4>Persönliche Daten</h4>
+
+          <div class="cart__personalData__Container">
+            <div class="personalData">
+              <label for="fname">Vorname</label>
+              <input type="text" id="fname" name="fname" placeholder="Max" />
+            </div>
+
+            <div class="personalData">
+              <label for="lname">Nachname</label>
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="Mustermann"
+              />
+            </div>
+            <div class="personalData">
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="MaxMuster@email.com"
+              />
             </div>
           </div>
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Dinkelflocken</p>
-                <p>100 g</p>
-                <p class="product__Price">1,20€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
+          <!-- Shipping -->
+          <h4>Abholung</h4>
+          <div class="cart__personalData__Container">
+            <div class="filiale">
+            <label for="location"><h4>Filiale</h4></label>
+            <select name="filiale" id="location">
+              <option value="">Bitte auswählen...</option>
+              <option value="benrath">Düsseldorf - Benrath</option>
+              <option value="gerresheim">Düsseldorf - Gerresheim</option>
+              <option value="eller">Düsseldorf - Eller</option>
+            </select>
+   </div>
+<div class="input__Container">   
+    <h4>Abholungsdatum</h4> 
+
+    <div>
+        <input type="radio" id="date1" name="drone" value="11.03.2026" checked />
+        <label for="date1">11.03.2026</label>
+    </div>
+
+    <div>
+        <input type="radio" id="date2" name="drone" value="18.03.2026" />
+        <label for="date2">18.03.2026</label>
+    </div>
+
+    <div>
+        <input type="radio" id="date3" name="drone" value="23.03.2026" />
+        <label for="date3">23.03.2026</label>
+    </div>
+</div>
+
+
           </div>
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Quinoaflocken</p>
-                <p>100 g</p>
-                <p class="product__Price">1,50€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Buchweizenflocken</p>
-                <p>100 g</p>
-                <p class="product__Price">1,20€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Hirseflocken</p>
-                <p>100 g</p>
-                <p class="product__Price">1,80€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Vollkorn-Reisflocken</p>
-                <p>100 g</p>
-                <p class="product__Price">1,90€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Amaranth-Pops</p>
-                <p>50 g</p>
-                <p class="product__Price">1,20€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Cornflakes (zuckerfrei und mit Honig)</p>
-                <p>50 g</p>
-                <p class="product__Price">1,50€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Crunchy Müsli (Schoko, Nuss, Honig)</p>
-                <p>150 g</p>
-                <p class="product__Price">2,50€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Rice Krispies</p>
-                <p>75 g</p>
-                <p class="product__Price">1,80€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Weizenkleie</p>
-                <p>50 g</p>
-                <p class="product__Price">1,50€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Geröstete Haferflakes</p>
-                <p>30 g</p>
-                <p class="product__Price">1,20€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
+
+          <button class="btn theme-nueSam">Jetzt kostenpflichtig bestellen!</button>
         </div>
       </div>
 
-      <!-- GETROCKNETE FRÜCHTE -->
-      <div class="Getrocknete-Fruechte theme-getrfrue">
-        <div class="Anchor" id="Getrocknete-Fruechte-Anchor">
-          <h4 class="Headline">Getrocknete Früchte</h4>
+      <div class="checkout__Container">
+        <div class="checkout__Message">
+          
         </div>
-        <div class="product__Card__Grid">
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Cranberries</p>
-                <p>25 g</p>
-                <p class="product__Price">1,40€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Rosinen</p>
-                <p>25 g</p>
-                <p class="product__Price">1,10€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Goji-Beeren</p>
-                <p>20 g</p>
-                <p class="product__Price">1,60€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Mangostückchen</p>
-                <p>40 g</p>
-                <p class="product__Price">1,50€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Apfelringe</p>
-                <p>10 g</p>
-                <p class="product__Price">1,50€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Bananenchips</p>
-                <p>20 g</p>
-                <p class="product__Price">1,80€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Datteln</p>
-                <p>20 g</p>
-                <p class="product__Price">1,20€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Feigen</p>
-                <p>20 g</p>
-                <p class="product__Price">1,50€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Erdbeerscheiben</p>
-                <p>10 g</p>
-                <p class="product__Price">1,40€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Heidelbeeren</p>
-                <p>15 g</p>
-                <p class="product__Price">1,30€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- NÜSSE UND SAMEN -->
-      <div class="Nuesse-Samen theme-nueSam">
-        <div class="Anchor" id="Nuesse-Samen-Anchor">
-          <h4 class="Headline">Nüsse und Samen</h4>
-        </div>
-        <div class="product__Card__Grid">
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Mandeln (geröstet, gehackt, blättrig)</p>
-                <p>15 g</p>
-                <p class="product__Price">1,00€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Walnüsse</p>
-                <p>15 g</p>
-                <p class="product__Price">1,50€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Haselnüsse</p>
-                <p>15 g</p>
-                <p class="product__Price">1,20€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Cashewkerne</p>
-                <p>15 g</p>
-                <p class="product__Price">2,80€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Pekanüsse</p>
-                <p>15 g</p>
-                <p class="product__Price">1,00€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Sonnenblumenkerne</p>
-                <p>20 g</p>
-                <p class="product__Price">1,50€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Kürbiskerne</p>
-                <p>15 g</p>
-                <p class="product__Price">1,50€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Chiasamen</p>
-                <p>10 g</p>
-                <p class="product__Price">1,50€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Leinsamen</p>
-                <p>20 g</p>
-                <p class="product__Price">2,50€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Hanfsamen</p>
-                <p>10 g</p>
-                <p class="product__Price">1,00€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Sesamsamen</p>
-                <p>20 g</p>
-                <p class="product__Price">1,80€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- SUPERFOODS -->
-      <div class="Superfoods theme-superFood">
-        <div class="Anchor" id="Superfoods-Anchor">
-          <h4 class="Headline">Superfoods</h4>
-        </div>
-        <div class="product__Card__Grid">
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Kakaonibs</p>
-                <p>10 g</p>
-                <p class="product__Price">1,50€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Matcha-Pulver</p>
-                <p>5 g</p>
-                <p class="product__Price">2,00€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Spirulina</p>
-                <p>5 g</p>
-                <p class="product__Price">2,30€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Acai-Beeren</p>
-                <p>10 g</p>
-                <p class="product__Price">2,50€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Gojipulver</p>
-                <p>10 g</p>
-                <p class="product__Price">2,50€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Kokosflocken</p>
-                <p>20 g</p>
-                <p class="product__Price">1,50€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- EXTRAS UND SÜSSUNGSMITTEL -->
-      <div class="ExtrasSuess theme-xtraSuess">
-        <div class="Anchor" id="ExtrasSuess-Anchor">
-          <h4 class="Headline">Extras und Süßungsmittel</h4>
-        </div>
-        <div class="product__Card__Grid">
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Dunkle Schokoladenstücke</p>
-                <p>15 g</p>
-                <p class="product__Price">1,80€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Weiße Schokoladenstücke</p>
-                <p>15 g</p>
-                <p class="product__Price">1,60€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Karamellstückchen</p>
-                <p>15 g</p>
-                <p class="product__Price">2,00€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Kokoschips</p>
-                <p>150 g</p>
-                <p class="product__Price">3,50€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Honig</p>
-                <p>25 g</p>
-                <p class="product__Price">2,00€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Ahornsirup</p>
-                <p>25 ml</p>
-                <p class="product__Price">2,00€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Agavendicksaft</p>
-                <p>25 ml</p>
-                <p class="product__Price">1,50€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- FLÜSSIGKEITEN FÜR MÜSLI UND PORRIDGE -->
-      <div class="Fluessig theme-Fluessig">
-        <div class="Anchor" id="Fluessig-Anchor">
-          <h4 class="Headline">Flüssigkeiten für Müsli und Porridge</h4>
-        </div>
-        <div class="product__Card__Grid">
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Hafermilch</p>
-                <p>200 ml</p>
-                <p class="product__Price">0,85€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Mandelmilch</p>
-                <p>200 ml</p>
-                <p class="product__Price">1,25€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Kokosmilch</p>
-                <p>200 ml</p>
-                <p class="product__Price">1,25€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Sojamilch</p>
-                <p>200 ml</p>
-                <p class="product__Price">1,20€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Reismilch</p>
-                <p>200 ml</p>
-                <p class="product__Price">0,85€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Vollmilch (Bio)</p>
-                <p>200 ml</p>
-                <p class="product__Price">1,25€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Joghurt (natur, griechisch)</p>
-                <p>25 ml</p>
-                <p class="product__Price">0,95€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Wasser (sehr weich und mikrofiltriert)</p>
-                <p>200 ml</p>
-                <p class="product__Price">0,85€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-
-          <div class="product__Card">
-            <div class="product__Image">
-              <img src="img/logo-mymixx_2024_FI.png" alt="" />
-            </div>
-            <div class="product__content">
-              <div class="product__textcontent">
-                <p>Kokoswasser</p>
-                <p>200 ml</p>
-                <p class="product__Price">1,05€</p>
-              </div>
-            </div>
-            <div class="product__AddToCartBtn">
-              <img src="icons/plus-solid-full (1).svg" alt="plussign" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- WARENKORB -->
-      <div class="cart__Container">
-        <div class="cart__Content">Blabla</div>
       </div>
     </main>
   </body>
