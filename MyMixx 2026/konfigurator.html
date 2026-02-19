@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang=de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -970,13 +970,14 @@
             </div>
           </div>
         </div>
-        <!-- Cart -->
+
+        <!-- Cart Container -->
         <div class="cart__Container theme-basis">
           <h4>Produktauswahl</h4>
-          <div class="cart__Background__Top">
+          <div class="cart__Inner__Container">
             <div class="cart__item__Container">
               <div class="cart__item">
-                  <div class="cart__item__price">
+                <div class="cart__item__price">
                   <p>2,50€</p>
                 </div>
                 <div class="cart__item__image">
@@ -985,7 +986,7 @@
                     alt="haferflocken"
                   />
                 </div>
-              
+
                 <div class="product__Name textcontent">
                   <p>Zarte Haferflocken</p>
                 </div>
@@ -1013,7 +1014,7 @@
                 </div>
               </div>
               <div class="cart__item">
-                  <div class="cart__item__price">
+                <div class="cart__item__price">
                   <p>2,50€</p>
                 </div>
                 <div class="cart__item__image">
@@ -1022,7 +1023,7 @@
                     alt="haferflocken"
                   />
                 </div>
-              
+
                 <div class="product__Name textcontent">
                   <p>Zarte Haferflocken</p>
                 </div>
@@ -1050,7 +1051,7 @@
                 </div>
               </div>
               <div class="cart__item">
-                  <div class="cart__item__price">
+                <div class="cart__item__price">
                   <p>2,50€</p>
                 </div>
                 <div class="cart__item__image">
@@ -1059,7 +1060,7 @@
                     alt="haferflocken"
                   />
                 </div>
-              
+
                 <div class="product__Name textcontent">
                   <p>Zarte Haferflocken</p>
                 </div>
@@ -1100,77 +1101,88 @@
               </div>
             </div>
           </div>
-          <h4>Persönliche Daten</h4>
+          <!-- Form -->
+          <form class="cart__Inner__Container">
+            <!-- Personal Data -->
+            <fieldset class="personal">
+              <legend class="legend__headline">Persönliche Daten</legend>
+              <div class="personalDataRow">
+                <div class="personalData">
+                  <label for="fname">Vorname</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    placeholder="Max"
+                    required
+                  />
+                </div>
+                <div class="personalData">
+                  <label for="lname">Nachname</label>
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    placeholder="Mustermann"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="personalData">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="maxmuster@email.com"
+                  required
+                />
+              </div>
+            </fieldset>
+            <!-- Shipping -->
+            <fieldset class="abholung">
+              <legend class="legend__headline">Abholung</legend>
+              <label class="label__headline" for="location">Filiale</label>
+              <select name="abholung" id="location" required>
+                <option value="">Bitte auswählen...</option>
+                <option value="benrath">Düsseldorf - Benrath</option>
+                <option value="gerresheim">Düsseldorf - Gerresheim</option>
+                <option value="eller">Düsseldorf - Eller</option>
+              </select>
 
-          <div class="cart__personalData__Container">
-            <div class="personalData">
-              <label for="fname">Vorname</label>
-              <input type="text" id="fname" name="fname" placeholder="Max" />
-            </div>
-
-            <div class="personalData">
-              <label for="lname">Nachname</label>
-              <input
-                type="text"
-                id="lname"
-                name="lname"
-                placeholder="Mustermann"
-              />
-            </div>
-            <div class="personalData">
-              <label for="email">Email</label>
-              <input
-                type="text"
-                id="email"
-                name="email"
-                placeholder="MaxMuster@email.com"
-              />
-            </div>
-          </div>
-          <!-- Shipping -->
-          <h4>Abholung</h4>
-          <div class="cart__personalData__Container">
-            <div class="filiale">
-            <label for="location"><h4>Filiale</h4></label>
-            <select name="filiale" id="location">
-              <option value="">Bitte auswählen...</option>
-              <option value="benrath">Düsseldorf - Benrath</option>
-              <option value="gerresheim">Düsseldorf - Gerresheim</option>
-              <option value="eller">Düsseldorf - Eller</option>
-            </select>
-   </div>
-<div class="input__Container">   
-    <h4>Abholungsdatum</h4> 
-
-    <div>
-        <input type="radio" id="date1" name="drone" value="11.03.2026" checked />
-        <label for="date1">11.03.2026</label>
-    </div>
-
-    <div>
-        <input type="radio" id="date2" name="drone" value="18.03.2026" />
-        <label for="date2">18.03.2026</label>
-    </div>
-
-    <div>
-        <input type="radio" id="date3" name="drone" value="23.03.2026" />
-        <label for="date3">23.03.2026</label>
-    </div>
-</div>
-
-
-          </div>
-
-          <button class="btn theme-nueSam">Jetzt kostenpflichtig bestellen!</button>
-        </div>
-      </div>
-
-      <div class="checkout__Container">
-        <div class="checkout__Message">
-          
+              <div class="input__Container">
+                <label class="label__headline" for="pickupDate">
+                  Abholungsdatum
+                </label>
+                <input type="date" min="2026-03-01" max="2026-04-01" required id="pickupDate" name="pickupDate" />
+              </div>
+            </fieldset>
+            <!-- Checkout Button -->
+            <button class="btn theme-nueSam" type="submit">
+              Jetzt kostenpflichtig bestellen!
+            </button>
+          </form>
         </div>
       </div>
     </main>
+
+    <div class="checkout__Container">
+      <div class="checkout__Flex">
+        <img src="img/CheckoutImg.png" alt="Bestellbestätigungstruck" />
+        <h3>Ihre Bestellung war erfolgreich!</h3>
+        <p>Bestellnummer: 063548-MYX</p>
+        <p>Dein persönlicher MyMixx wird jetzt frisch für dich zubereitet.</p>
+        <p>
+          Sobald alles fertig ist, liefern wir deine Bestellung direkt in die
+          Filiale.
+        </p>
+        <p>Nenne uns bei der Abholung deine <strong>Bestellnummer.</strong></p>
+        <div class="checkout__Btn">
+          <button class="btn theme-nueSam">Startseite</button>
+          <button class="btn-secondary theme-nueSam">Neuer Mixx</button>
+        </div>
+      </div>
+    </div>
   </body>
 
   <!-- FOOTER -->
