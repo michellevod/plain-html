@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang=de">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -1013,80 +1013,7 @@
                   </svg>
                 </div>
               </div>
-              <div class="cart__item">
-                <div class="cart__item__price">
-                  <p>2,50€</p>
-                </div>
-                <div class="cart__item__image">
-                  <img
-                    src="img/haferflockenplaceholder.png"
-                    alt="haferflocken"
-                  />
-                </div>
-
-                <div class="product__Name textcontent">
-                  <p>Zarte Haferflocken</p>
-                </div>
-                <div class="product__Weight textcontent">
-                  <p>100 g</p>
-                </div>
-                <div class="cart__item__counter">
-                  <input
-                    type="number"
-                    id="quantity"
-                    value="1"
-                    name="quantity"
-                    min="1"
-                    max="5"
-                  />
-                </div>
-
-                <div class="cart__item__remove">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      fill="rgba(213, 6, 6, 1.00)"
-                      d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zM167 167c9.4-9.4 24.6-9.4 33.9 0l55 55 55-55c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-55 55 55 55c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-55-55-55 55c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l55-55-55-55c-9.4-9.4-9.4-24.6 0-33.9z"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div class="cart__item">
-                <div class="cart__item__price">
-                  <p>2,50€</p>
-                </div>
-                <div class="cart__item__image">
-                  <img
-                    src="img/haferflockenplaceholder.png"
-                    alt="haferflocken"
-                  />
-                </div>
-
-                <div class="product__Name textcontent">
-                  <p>Zarte Haferflocken</p>
-                </div>
-                <div class="product__Weight textcontent">
-                  <p>100 g</p>
-                </div>
-                <div class="cart__item__counter">
-                  <input
-                    type="number"
-                    id="quantity"
-                    value="1"
-                    name="quantity"
-                    min="1"
-                    max="5"
-                  />
-                </div>
-
-                <div class="cart__item__remove">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                      fill="rgba(213, 6, 6, 1.00)"
-                      d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zM167 167c9.4-9.4 24.6-9.4 33.9 0l55 55 55-55c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-55 55 55 55c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-55-55-55 55c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l55-55-55-55c-9.4-9.4-9.4-24.6 0-33.9z"
-                    />
-                  </svg>
-                </div>
-              </div>
+            
             </div>
             <div class="cart__total__Container">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -1102,7 +1029,7 @@
             </div>
           </div>
           <!-- Form -->
-          <form class="cart__Inner__Container">
+          <form action="#" class="cart__Inner__Container">
             <!-- Personal Data -->
             <fieldset class="personal">
               <legend class="legend__headline">Persönliche Daten</legend>
@@ -1142,7 +1069,7 @@
             <!-- Shipping -->
             <fieldset class="abholung">
               <legend class="legend__headline">Abholung</legend>
-              <label class="label__headline" for="location">Filiale</label>
+              <label for="location">Filiale</label>
               <select name="abholung" id="location" required>
                 <option value="">Bitte auswählen...</option>
                 <option value="benrath">Düsseldorf - Benrath</option>
@@ -1154,35 +1081,48 @@
                 <label class="label__headline" for="pickupDate">
                   Abholungsdatum
                 </label>
-                <input type="date" min="2026-03-01" max="2026-04-01" required id="pickupDate" name="pickupDate" />
+                <input
+                  type="date"
+                  min="2026-03-01"
+                  max="2026-03-13"
+                  required
+                  id="pickupDate"
+                  name="pickupDate"
+                />
               </div>
             </fieldset>
-            <!-- Checkout Button -->
-            <button class="btn theme-nueSam" type="submit">
+
+            <button type="submit" class="btn theme-nueSam">
               Jetzt kostenpflichtig bestellen!
             </button>
           </form>
         </div>
       </div>
-    </main>
-
-    <div class="checkout__Container">
-      <div class="checkout__Flex">
-        <img src="img/CheckoutImg.png" alt="Bestellbestätigungstruck" />
-        <h3>Ihre Bestellung war erfolgreich!</h3>
-        <p>Bestellnummer: 063548-MYX</p>
-        <p>Dein persönlicher MyMixx wird jetzt frisch für dich zubereitet.</p>
-        <p>
-          Sobald alles fertig ist, liefern wir deine Bestellung direkt in die
-          Filiale.
-        </p>
-        <p>Nenne uns bei der Abholung deine <strong>Bestellnummer.</strong></p>
-        <div class="checkout__Btn">
-          <button class="btn theme-nueSam">Startseite</button>
-          <button class="btn-secondary theme-nueSam">Neuer Mixx</button>
+      <!-- Checkout Sucess -->
+      <div
+        class="checkout__Container popover__overlay"
+        id="checkout__Success"
+        popover="auto"
+      >
+        <div class="checkout__Flex">
+          <img src="img/checkoutTruck.svg" alt="Bestellbestätigungstruck" />
+          <h3>Ihre Bestellung war erfolgreich!</h3>
+          <p>Bestellnummer: 063548-MYX</p>
+          <p>Dein persönlicher MyMixx wird jetzt frisch für dich zubereitet.</p>
+          <p>
+            Sobald alles fertig ist, liefern wir deine Bestellung direkt in die
+            Filiale.
+          </p>
+          <p>
+            Nenne uns bei der Abholung deine <strong>Bestellnummer.</strong>
+          </p>
+          <div class="checkout__Btn">
+            <a href="index.html" class="btn theme-nueSam">Startseite</a>
+            <button class="btn-secondary theme-nueSam">Neuer Mixx</button>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
   </body>
 
   <!-- FOOTER -->
