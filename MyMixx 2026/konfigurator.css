@@ -8,7 +8,6 @@
   border: none;
   text-decoration: none;
   box-sizing: border-box;
-  cursor: url("cursor.png"), auto;
 }
 
 html {
@@ -266,6 +265,7 @@ mainGRID
 ===================================================== */
 
 .product__Card {
+  border: 2px solid transparent;
   display: flex;
   background-color: white;
   border-radius: 20px;
@@ -276,9 +276,15 @@ mainGRID
 
 .product__Image {
   background-color: rgb(242, 241, 241);
-  padding: 1rem;
   border-radius: 20px;
 }
+.product__Image img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .product__content {
   align-items: center;
   display: flex;
@@ -292,9 +298,12 @@ mainGRID
   font-weight: 600;
 }
 .product__AddToCartBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--accent-color);
-  border-radius: 50px;
-  padding: 0.2rem;
+  border-radius: 50%;
+  padding: 0.5rem;
   position: absolute;
   bottom: 1rem;
   right: 1.5rem;
@@ -302,7 +311,7 @@ mainGRID
 }
 
 .product__AddToCartBtn img {
-  width: 25px;
+  width: 20px;
   cursor: pointer;
 }
 .product__AddToCartBtn:hover {
@@ -334,7 +343,7 @@ mainGRID
   justify-content: center;
   align-items: center;
   position: sticky;
-  top: 0.2rem;
+  top: 0.5rem;
 }
 
 .cart__item__Container {
@@ -343,7 +352,7 @@ mainGRID
 }
 .cart__item {
   color: white;
-  padding: 1rem;
+  padding: 2rem;
   margin: 1rem 0rem;
   height: 100%;
   max-height: 60px;
@@ -366,7 +375,6 @@ mainGRID
   width: 50px;
   height: 50px;
   margin: 0;
-  padding: 0.2rem;
   overflow: hidden;
   border-radius: 50%;
   background-color: #f4f4f4;
@@ -374,7 +382,9 @@ mainGRID
 }
 
 .cart__item__image img {
+  border-radius: 20px;
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -448,10 +458,17 @@ mainGRID
   border-radius: 20px;
   margin-bottom: 1rem;
 }
+.product__AddToCartBtn img {
+  transition: transform 0.3s ease;
+}
 
+.product__Card.selected .product__AddToCartBtn img {
+  transform: rotate(45deg);
+}
 .selected {
   border: 2px solid var(--accent-color);
 }
+
 /* =====================================================
   FORM
 ===================================================== */
