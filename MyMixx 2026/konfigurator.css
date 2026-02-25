@@ -377,7 +377,16 @@ mainGRID
   border-radius: 15px;
   font-weight: 600;
 }
+.product__AddToCartBtn img {
+  transition: transform 0.3s ease;
+}
 
+.product__Card.selected .product__AddToCartBtn img {
+  transform: rotate(45deg);
+}
+.selected {
+  border: 2px solid var(--accent-color);
+}
 /* =====================================================
    CART
 ===================================================== */
@@ -509,16 +518,25 @@ mainGRID
   border-radius: 20px;
   margin-bottom: 1rem;
 }
-.product__AddToCartBtn img {
-  transition: transform 0.3s ease;
+
+
+.cart__item__Container {
+  position: relative;
 }
 
-.product__Card.selected .product__AddToCartBtn img {
-  transform: rotate(45deg);
+.cart__item__Container::after {
+  content: "↓";
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(transparent, #f6f6f6);
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: gray;
+  pointer-events: none;
 }
-.selected {
-  border: 2px solid var(--accent-color);
-}
+
 
 /* =====================================================
   FORM
@@ -701,7 +719,11 @@ footer section ul li a img:hover {
 
 /* Mobile: alles einspaltig, Warenkorb als Overlay */
 @media (max-width: 768px) {
- 
+ .checkout__Container {
+  margin: 2rem;
+text-align: center;
+}
+
   .mainGrid {
     grid-template-columns: 100%;
   }
