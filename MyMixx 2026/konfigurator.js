@@ -156,3 +156,19 @@ document.addEventListener('DOMContentLoaded', function () {
   if (cartContainer) observer.observe(cartContainer)
 
 })
+
+
+// Nav-Bar Toggle
+const barsBtn = document.querySelector('nav > ul > li:last-child a')
+const closeBtn = document.querySelector('.sidebar__close')
+const sidebar = document.getElementById('sidebar')
+
+barsBtn.addEventListener('click', (e) => {
+  e.preventDefault()
+  sidebar.classList.toggle('sidebar--open')
+})
+
+closeBtn.addEventListener('click', (e) => {
+  e.preventDefault()
+  sidebar.classList.toggle('sidebar--open')
+})
