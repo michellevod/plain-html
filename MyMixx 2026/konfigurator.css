@@ -202,11 +202,11 @@ nav li:first-child {
   z-index: 99999;
   background-color: rgba(255, 255, 255, 0.604);
   backdrop-filter: blur(10px);
-   box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
-   display: none;
-   flex-direction: column;
-   align-items: flex-start;
-   justify-content: flex-start;
+  box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .nav__sidebar li a {
@@ -519,7 +519,6 @@ mainGRID
   margin-bottom: 1rem;
 }
 
-
 .cart__item__Container {
   position: relative;
 }
@@ -536,7 +535,6 @@ mainGRID
   color: gray;
   pointer-events: none;
 }
-
 
 /* =====================================================
   FORM
@@ -697,7 +695,112 @@ footer section ul li a img {
 footer section ul li a img:hover {
   cursor: grab;
 }
+.carousel__Container {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
 
+.carousel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border-radius: 12px;
+  scrollbar-width: none;
+}
+
+.carousel::scroll-marker-group {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel__slide {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  container-type: scroll-state;
+  container-name: slide;
+}
+
+.carousel__slide img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  opacity: 0.5;
+}
+
+@container slide scroll-state(snapped: x) {
+  .carousel__slide img {
+    opacity: 1;
+  }
+}
+
+.carousel__slide::scroll-marker {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgb(167, 10, 10);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.carousel__slide::scroll-marker:hover {
+  background-color: rgb(171, 127, 127);
+}
+
+.carousel__slide::scroll-marker:target-current {
+  background-color: rgb(154, 226, 11);
+}
+
+.carousel::scroll-button(*) {
+  content: "";
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 1.25rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+
+.carousel::scroll-button(inline-start) {
+  content: "←";
+  left: 10px;
+}
+
+.carousel::scroll-button(inline-end) {
+  content: "→";
+  right: 10px;
+}
+
+.carousel::scroll-button(*):hover:not(:disabled) {
+  background-color: #5284f1;
+  color: white;
+}
+
+.carousel::scroll-button(*):disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
 /* =====================================================
    RESPONSIVE
 ===================================================== */
@@ -719,10 +822,16 @@ footer section ul li a img:hover {
 
 /* Mobile: alles einspaltig, Warenkorb als Overlay */
 @media (max-width: 768px) {
- .checkout__Container {
-  margin: 2rem;
-text-align: center;
-}
+  nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .checkout__Container {
+    margin: 2rem;
+    text-align: center;
+  }
 
   .mainGrid {
     grid-template-columns: 100%;
@@ -739,7 +848,7 @@ text-align: center;
   .product__content {
     width: 100%;
   }
- 
+
   .product__Card__Grid {
     grid-template-columns: 1fr 1fr;
     margin: 1rem;
