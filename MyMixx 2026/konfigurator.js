@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
     total = Math.round(total * 100) / 100
 
     // ✅ Update ALL .cart__total p elements (cart + sticky button)
-    document.querySelectorAll('.cart__total p').forEach(el => {
+    document.querySelectorAll('.cart__total p, span.price').forEach(el => {
       el.innerText = total.toFixed(2).replace('.', ',') + '€'
     })
   }
