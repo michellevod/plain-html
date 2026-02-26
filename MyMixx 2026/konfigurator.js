@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
       shopItem.classList.remove('selected')
 
       document.querySelectorAll('.cart__item').forEach(cartItem => {
-        let cartTitle = cartItem.querySelector('.product__Name p').innerText
-        let cardTitle = shopItem.querySelector('.product__textcontent p').innerText
+        let cartTitle = cartItem.querySelector('.product__Name h3').innerText
+        let cardTitle = shopItem.querySelector('.product__textcontent h3').innerText
         if (cartTitle === cardTitle) cartItem.closest('div').remove()
       })
 
@@ -31,9 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
     shopItem.classList.add('selected')
 
     let imageSrc = shopItem.querySelector('.product__Image img').src
-    let textContent = shopItem.querySelectorAll('.product__textcontent p')
-    let title = textContent[0].innerText
-    let weight = textContent[1].innerText
+    let title = shopItem.querySelector('.product__textcontent h3').innerText
+    let weight = shopItem.querySelector('.product__textcontent p').innerText
     let price = shopItem.getElementsByClassName('product__Price')[0].innerText
 
     // 🎨 Theme vom übergeordneten Element holen
@@ -53,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <div class="cart__item">
         <div class="cart__item__price"><p>${price}</p></div>
         <div class="cart__item__image"><img src="${imageSrc}" alt="${title}" /></div>
-        <div class="product__Name textcontent"><p>${title}</p></div>
+        <div class="product__Name textcontent"><h3>${title}</h3></div>
         <div class="product__Weight textcontent"><p>${weight}</p></div>
         <div class="cart__item__counter">
           <input type="number" value="1" name="quantity" min="1" max="5" />
@@ -85,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // ✅ De-select the product card
         document.querySelectorAll('.product__Card.selected').forEach(card => {
-          let cardTitle = card.querySelector('.product__textcontent p').innerText
+          let cardTitle = card.querySelector('.product__textcontent h3').innerText
           if (cardTitle === title) card.classList.remove('selected')
         })
 
