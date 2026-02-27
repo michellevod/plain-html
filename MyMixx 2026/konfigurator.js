@@ -4,15 +4,26 @@ document.addEventListener('DOMContentLoaded', function () {
   // SHOPPING CART FUNCTIONALITY
   // =====================================================
   let addToCartButtons = document.getElementsByClassName('product__AddToCartBtn')
+  let productCards = document.getElementsByClassName('product__Card')
 
+  // Button clicks
   for (let i = 0; i < addToCartButtons.length; i++) {
-    let button = addToCartButtons[i]
-    button.addEventListener('click', addToCartClicked)
+    addToCartButtons[i].addEventListener('click', addToCartClicked)
+  }
+
+  // Card clicks
+  for (let i = 0; i < productCards.length; i++) {
+    productCards[i].addEventListener('click', function(event) {
+      // Don't trigger if clicking the button (to avoid double-add)
+      if (!event.target.closest('.product__AddToCartBtn')) {
+        addToCartClicked(event)
+      }
+    })
   }
 
   function addToCartClicked(event) {
     let button = event.target.closest('.product__AddToCartBtn')
-    let shopItem = button.closest('.product__Card')
+    let shopItem = button ? button.closest('.product__Card') : event.currentTarget
 
     // ✅ if already selected, deselect and remove from cart
     if (shopItem.classList.contains('selected')) {

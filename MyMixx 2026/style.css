@@ -152,8 +152,8 @@ div#contentwrap {
 }
 
 .cta-Container a {
-  font-family: "Pally-Variable";
-  color: var(--mymixx_2);
+  font-family: "Noto_regu", sans-serif;
+  color: var(--mymixx_3);
   font-size: 20px;
 }
 .cta-Container img {

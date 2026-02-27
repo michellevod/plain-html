@@ -35,7 +35,7 @@
           <!-- prettier-ignore -->
           <li>
           <a class="sidebar__close" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 50 50" fill="none">
-  <path d="M7.11506 1.23324C5.48809 -0.393726 2.84719 -0.393726 1.22023 1.23324C-0.406742 2.86021 -0.406742 5.50241 1.22023 7.12938L19.1039 25L1.23324 42.8836C-0.393726 44.5106 -0.393726 47.1528 1.23324 48.7798C2.86021 50.4067 5.50241 50.4067 7.12938 48.7798L25 30.8961L42.8836 48.7668C44.5106 50.3937 47.1528 50.3937 48.7798 48.7668C50.4067 47.1398 50.4067 44.4976 48.7798 42.8706L30.8961 25L48.7668 7.11636C50.3937 5.48939 50.3937 2.84719 48.7668 1.22023C47.1398 -0.406742 44.4976 -0.406742 42.8706 1.22023L25 19.1039L7.11506 1.23324Z" fill="#000000"/>
+  <path d="M7.11506 1.23324C5.48809 -0.393726 2.84719 -0.393726 1.22023 1.23324C-0.406742 2.86021 -0.406742 5.50241 1.22023 7.12938L19.1039 25L1.23324 42.8836C-0.393726 44.5106 -0.393726 47.1528 1.23324 48.7798C2.86021 50.4067 5.50241 50.4067 7.12938 48.7798L25 30.8961L42.8836 48.7668C44.5106 50.3937 47.1528 50.3937 48.7798 48.7668C50.4067 47.1398 50.4067 44.4976 48.7798 42.8706L30.8961 25L48.7668 7.11636C50.3937 5.48939 50.3937 2.84719 48.7668 1.22023C47.1398 -0.406742 44.4976 -0.406742 42.8706 1.22023L25 19.1039L7.11506 1.23324Z" fill="#444444"/>
 </svg></a>
         </li>
           <li>
@@ -46,6 +46,27 @@
           </li>
           <li>
             <a href="#">Kontakt</a>
+          </li>
+      <li>
+      <span class="divider-Line"></span>
+      </li>
+          <li>
+            <a href="#Basis-Cerealien-Anchor">Basis Cerealien</a>
+          </li>
+          <li>
+            <a href="#Getrocknete-Fruechte-Anchor">Getrocknete Früchte</a>
+          </li>
+          <li>
+            <a href="#Nuesse-Samen-Anchor">Nüsse und Samen</a>
+          </li>
+          <li>
+            <a href="#Superfoods-Anchor">Superfoods</a>
+          </li>
+          <li>
+            <a href="#ExtrasSuess-Anchor">Extras und Süßungsmittel</a>
+          </li>
+          <li>
+            <a href="#Fluessig-Anchor">Flüssigkeiten</a>
           </li>
         </ul>
       </nav>
@@ -1221,8 +1242,8 @@
           </section>
         </div>
         <!-- Cart Container -->
-        <div class="cart__Container theme-basis">
-          <h2>Produktauswahl</h2>
+        <section class="cart__Container theme-basis">
+          <h2>Produktübersicht</h2>
           <div class="cart__Inner__Container">
             <div class="cart__item__Container">
               
@@ -1234,7 +1255,9 @@
                   fill="#9abf11"
                   d="M288 0c6.6 0 12.9 2.7 17.4 7.5l144 152 .5 .5 78.1 0c17.7 0 32 14.3 32 32 0 14.5-9.6 26.7-22.8 30.7L491.1 429.9c-6.5 29.3-32.5 50.1-62.5 50.1l-281.3 0c-30 0-56-20.8-62.5-50.1l-46-207.2c-13.2-3.9-22.8-16.2-22.8-30.7 0-17.7 14.3-32 32-32l78.1 0 .5-.5 144-152C275.1 2.7 281.4 0 288 0zm0 58.9L192.2 160 383.8 160 288 58.9zM208 264c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112zm80-24c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm128 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112z" />
               </svg>
-              <p>Total:</p>
+              <div class="cart__total__p1">
+                <p>Total:</p>
+              </div>
               <div class="cart__total">
                 <p>0,00€</p>
               </div>
@@ -1305,7 +1328,7 @@
               Jetzt kostenpflichtig bestellen!
             </button>
           </form>
-        </div>
+        </section>
       </div>
       <!-- Checkout Success -->
       <div
@@ -1315,18 +1338,15 @@
         <div class="checkout__Flex">
           <img src="img/checkoutTruck.svg" alt="Bestellbestätigungstruck" />
           <h2>Ihre Bestellung war erfolgreich!</h2>
-          <p>Bestellnummer: 063548-MYX</p>
+          <p><strong>Bestellnummer: 063548-MYX</strong></p>
           <p>Dein persönlicher MyMixx wird jetzt frisch für dich zubereitet.</p>
+          <p>Sobald alles fertig ist, erhälst du eine E-Mail mit allen wichtigen Lieferdaten von uns,</p>
           <p>
-            Sobald alles fertig ist, liefern wir deine Bestellung direkt in die
-            Filiale.
-          </p>
-          <p>
-            Nenne uns bei der Abholung deine <strong>Bestellnummer.</strong>
+             und ob deine Bestellung in der Filiale zur Abholung bereitsteht.
           </p>
           <div class="checkout__Btn">
             <a href="index.html" class="btn theme-nueSam">Startseite</a>
-            <button class="btn-secondary theme-nueSam">Neuer Mixx</button>
+            <button class="btn-secondary theme-nueSam">Schließen</button>
           </div>
         </div>
       </div>
@@ -1337,7 +1357,7 @@
             d="M288 0c6.6 0 12.9 2.7 17.4 7.5l144 152 .5 .5 78.1 0c17.7 0 32 14.3 32 32 0 14.5-9.6 26.7-22.8 30.7L491.1 429.9c-6.5 29.3-32.5 50.1-62.5 50.1l-281.3 0c-30 0-56-20.8-62.5-50.1l-46-207.2c-13.2-3.9-22.8-16.2-22.8-30.7 0-17.7 14.3-32 32-32l78.1 0 .5-.5 144-152C275.1 2.7 281.4 0 288 0zm0 58.9L192.2 160 383.8 160 288 58.9zM208 264c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112zm80-24c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm128 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112z" />
         </svg>
 
-        <span class="btn-sticky">Produktauswahl</span>
+        <span class="btn-sticky"> Zur Produktübersicht</span>
         <span class="price btn-sticky">0,00€</span>
       </button>
     </main>
@@ -1345,7 +1365,7 @@
     <footer>
       <div id="footwrap">
         <section id="mymixx">
-          <h3>MyMIXX</h3>
+          <h5>MyMIXX</h5>
           <ul>
             <li><a href="">Über uns</a></li>
             <li><a href="">Nachhaltigkeit</a></li>
@@ -1358,7 +1378,7 @@
         </section>
 
         <section id="ernaehrung">
-          <h3>Ernährung</h3>
+          <h5>Ernährung</h5>
           <ul>
             <li><a href="">Bewusste Ernährung</a></li>
             <li><a href="">Rezepte</a></li>
@@ -1367,7 +1387,7 @@
         </section>
 
         <section id="siegel">
-          <h3>Ökologische Verantwortung</h3>
+          <h5>Ökologische Verantwortung</h5>
           <ul>
             <li>
               <img
@@ -1391,7 +1411,7 @@
         </section>
 
         <section id="socmed">
-          <h3>MyMIXX folgen</h3>
+          <h5>MyMIXX folgen</h5>
           <ul>
             <li>
               <img

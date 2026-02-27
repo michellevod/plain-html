@@ -26,7 +26,7 @@ h1 {
   font-family: "Tanker", sans-serif;
   font-weight: 600;
   color: white;
-  font-size: clamp(rem, 5vw, 3rem);
+  font-size: clamp(1rem, 5vw, 4rem);
   letter-spacing: 2px;
 }
 h2 {
@@ -78,7 +78,7 @@ select {
   /* accent colors */
   --colorBasisCer: #bc155e;
   --colorGetrFrue: #d9580f;
-  --colorNueSam: #9abf11;
+  --colorNueSam: #98b23c;
   --colorSuperFo: #5284f1;
   --colorExtrasuess: #bf5f5f;
   --colorFluessMuePorr: #9d62ea;
@@ -86,7 +86,7 @@ select {
   /* hovers */
   --colorBasisCerHv: #8c0a42;
   --colorGetrFrueHv: #be4d0b;
-  --colorNueSamHv: #85a60e;
+  --colorNueSamHv: #829834;
   --colorSuperFoHv: #3a6dda;
   --colorExtrasuessHv: #8e4747;
   --colorFluessMuePorrHv: #724c9d;
@@ -207,7 +207,7 @@ nav li:first-child {
   width: 250px;
   z-index: 99999;
   background-color: rgba(255, 255, 255, 0.604);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
   box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
   display: none;
   flex-direction: column;
@@ -220,6 +220,14 @@ nav li:first-child {
 }
 .nav__sidebar.sidebar--open {
   display: flex;
+}
+
+.divider-Line {
+  width: 1000px;
+  height: 2px;
+  margin-top: 0.5rem;
+  background-color: rgb(211, 211, 211);
+  display: block;
 }
 
 .headerImage {
@@ -441,21 +449,22 @@ mainGRID
 }
 .cart__item {
   color: white;
-  padding: 1rem;
-  margin: 0.5rem 0rem;
+  display: grid;
   height: 100%;
-  max-height: 70px;
-  border-radius: 20px;
-  display: flex;
-  gap: 1rem;
-  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 2fr 1fr 1fr 0.5fr;
   align-items: center;
-  overflow: hidden;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 1.2rem;
+  margin: 0.5rem 0rem;
+  padding: 0.5rem;
 }
 
 .cart__item__price {
+  display: flex;
   border-radius: 20px;
-  padding: 0.5rem;
+  padding: 0.2rem;
+  justify-content: center;
   font-size: 0.9rem;
   font-weight: 600;
   flex-shrink: 0;
@@ -488,7 +497,6 @@ mainGRID
 .product__Name h3 {
   font-size: 0.8rem;
   flex-shrink: 0;
-
 }
 
 .product__Weight p {
@@ -519,34 +527,36 @@ mainGRID
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .cart__item__remove svg {
   width: 25px;
+  cursor: pointer;
 }
 .cart__total__Container {
-  background-color: rgb(255, 255, 255);
-  border-radius: 20px;
+  background-color: var(--mymixx_3);
+  border-radius: 40px;
   font-weight: 700;
   max-height: 60px;
   display: flex;
-  gap: 1rem;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
   margin-top: 1rem;
 }
 .cart__total__Container svg {
-  width: 33px;
-}
-.cart__total__Container p {
-  font-size: 1.2rem;
+  width: 50px;
+  padding: 0.8rem;
+  border-radius: 50%;
+  background-color: white;
 }
 
-.cart__total {
+.cart__total, .cart__total__p1 {
+  display: flex;
   background-color: #f2f1f1;
-  color: var(--mymixx_3);
-  padding: 0.5rem;
+  color: var(--text_color);
+  padding: 0.8rem;
   margin: 1rem;
   border-radius: 50px;
 }
@@ -744,6 +754,14 @@ footer section ul li a img:hover {
   }
 }
 
+@media (max-width: 1582px) {
+  .cart__item {
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr 0.5fr;
+  }
+  .cart__item__price {
+    padding: 0.5rem;
+  }
+}
 /* Mobile: alles einspaltig, Warenkorb als Overlay */
 @media (max-width: 768px) {
   .headerImage {
@@ -774,9 +792,15 @@ footer section ul li a img:hover {
     margin: 2rem;
     text-align: center;
   }
+  .cart__item {
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr 0.5fr;
+    overflow: hidden;
+    white-space: nowrap;
+  }
 
   .mainGrid {
     grid-template-columns: 100%;
+    padding: 0rem 0.5rem 0rem 0rem;
   }
 
   .product__Card {
@@ -801,6 +825,10 @@ footer section ul li a img:hover {
   .hideOnMobile {
     display: none;
   }
+  .header__Border h1 {
+font-size: 1.1rem;
+  }
+
 }
 
 .mobile_sticky_btn {
@@ -812,6 +840,8 @@ footer section ul li a img:hover {
   background-color: rgb(255, 255, 255);
   height: 5rem;
   bottom: 0;
+  background-color: var(--mymixx_3);
+  color: white;
   cursor: pointer;
   align-items: center;
   font-weight: 700;
@@ -819,11 +849,14 @@ footer section ul li a img:hover {
   box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.12);
 }
 .mobile_sticky_btn svg {
-  width: 30px;
+  width: 60px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 50%;
 }
 .btn-sticky {
-  background-color: #f2f1f1;
   padding: 1rem 2rem;
+  background-color: white;
   color: var(--mymixx_3);
   align-items: center;
   border-radius: 40px;
