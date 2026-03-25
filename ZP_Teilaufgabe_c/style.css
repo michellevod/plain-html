@@ -1,0 +1,53 @@
+@font-face {
+  font-family: Playfair_Display;
+  src: url(fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Playfair_Display_Italic;
+  src: url(fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Great_Vibes;
+  src: url(fonts/Great_Vibes/GreatVibes-Regular.ttf);
+}
+body {
+    background-color: var(--background-color);
+}
+:root {
+  --text-color: #686868;
+  --accent-color-pink: #f7babc;
+  --accent-color-darkpink: #f28c90;
+  --background-color: #f9fcfe;
+  --text-color-gold: #f7d570;
+  --text-color-negative: white;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: var(--accent-color-darkpink);
+    height: 5rem;
+}
+
+h1 {
+  font-family: "Great_Vibes";
+  color: var(--accent-color-darkpink);
+}
+
+p {
+  font-family: "Playfair_Display";
+  color: var(--text-color);
+}
+.p_pink {
+    color: var(--accent-color-darkpink);
+    font-style: italic;
+}
+.p_white {
+    color: var(--text-color-negative);
+}
+.Gast {
+    font-family: "Great_Vibes";
+    font-size: 1.5rem;
+}
