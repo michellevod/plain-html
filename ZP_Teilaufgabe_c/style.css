@@ -12,18 +12,16 @@
 
 html {
   scroll-behavior: smooth;
+   background-color: var(--background-color);
 }
 
 body {
   box-sizing: content-box;
 }
 main {
-  background-color: var(--background-color);
+ 
 }
-img {
-  width: 100%;
-  margin: 1rem;
-}
+
 input,
 button,
 textarea,
@@ -51,7 +49,8 @@ select {
   --text-color: #686868;
   --accent-color-pink: #f7babc;
   --accent-color-darkpink: #f28c90;
-  --background-color: #deeefa;
+  --accent-color-lightpink: #FFEEEF;
+  --background-color: #f2f9ff;
   --text-color-gold: #f7d570;
   --text-color-negative: white;
 }
@@ -69,6 +68,12 @@ h1 {
   font-family: "Great_Vibes";
   color: var(--accent-color-darkpink);
   font-size: 4rem;
+}
+
+h2 {
+    font-family: "Great_Vibes";
+    color: var(--text-color-gold);
+    font-size: 3rem;
 }
 
 p {
@@ -89,8 +94,12 @@ p {
   font-size: 1.5rem;
 }
 
+/* =====================================================
+   HEADER
+===================================================== */
+
 header {
-    height: 100vh;
+  height: 100vh;
   background-image: url(img/Bild_3.jpg);
 }
 .header__Container {
@@ -112,5 +121,57 @@ header {
   background-color: rgb(255, 255, 255);
   padding: 3rem;
   text-align: center;
+}
 
+/* =====================================================
+   IMAGE GALLERY
+===================================================== */
+
+.image__Gallery__Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 2rem 0rem;
+}
+.image__Gallery__Container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    background-color: var(--accent-color-lightpink);
+    z-index: -1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.image__Gallery {
+    position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+margin: 1.5rem 0rem;
+}
+.image__Frame {
+    background-color: var(--accent-color-pink);
+    width: 450px;
+    height: 700px;
+}
+.image__Frame img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: white;
+
+}
+.gallery__Headline {
+    position: absolute;
+    bottom: 5px;
+    background-color: white;
+    text-align: center;
+    width: 28%;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: #c8c7c7 0px 10px 20px 0px;
 }
