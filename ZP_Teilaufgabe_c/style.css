@@ -1,3 +1,39 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: content-box;
+}
+main {
+  background-color: var(--background-color);
+}
+img {
+  width: 100%;
+  margin: 1rem;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* =====================================================
+   FONTS & BASE
+===================================================== */
 @font-face {
   font-family: Playfair_Display;
   src: url(fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
@@ -10,44 +46,71 @@
   font-family: Great_Vibes;
   src: url(fonts/Great_Vibes/GreatVibes-Regular.ttf);
 }
-body {
-    background-color: var(--background-color);
-}
+
 :root {
   --text-color: #686868;
   --accent-color-pink: #f7babc;
   --accent-color-darkpink: #f28c90;
-  --background-color: #f9fcfe;
+  --background-color: #deeefa;
   --text-color-gold: #f7d570;
   --text-color-negative: white;
 }
 
 footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 2rem;
-    background-color: var(--accent-color-darkpink);
-    height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: var(--accent-color-darkpink);
+  height: 5rem;
 }
 
 h1 {
   font-family: "Great_Vibes";
   color: var(--accent-color-darkpink);
+  font-size: 4rem;
 }
 
 p {
   font-family: "Playfair_Display";
   color: var(--text-color);
+  font-size: 1.2rem;
 }
 .p_pink {
-    color: var(--accent-color-darkpink);
-    font-style: italic;
+  color: var(--accent-color-darkpink);
+  font-style: italic;
+  margin-top: 1rem;
 }
 .p_white {
-    color: var(--text-color-negative);
+  color: var(--text-color-negative);
 }
 .Gast {
-    font-family: "Great_Vibes";
-    font-size: 1.5rem;
+  font-family: "Great_Vibes";
+  font-size: 1.5rem;
+}
+
+header {
+    height: 100vh;
+  background-image: url(img/Bild_3.jpg);
+}
+.header__Container {
+  background-color: rgb(255, 255, 255);
+  border-radius: 0 0 300px 300px;
+}
+
+.header__textContent {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  padding: 2rem;
+  margin: 5rem 2rem;
+}
+
+.header__InfoContainer {
+  background-color: rgb(255, 255, 255);
+  padding: 3rem;
+  text-align: center;
+
 }
