@@ -18,8 +18,6 @@ html {
 body {
   box-sizing: content-box;
 }
-main {
-}
 
 input,
 button,
@@ -59,13 +57,13 @@ footer {
   justify-content: space-around;
   align-items: center;
   margin-top: 2rem;
-  background-color: var(--accent-color-darkpink);
+  background-color: var(--accent-color-pink);
   height: 5rem;
 }
 
 h1 {
   font-family: "Great_Vibes";
-  color: var(--accent-color-darkpink);
+  color: var(--accent-color-pink);
   font-size: 4rem;
 }
 
@@ -98,10 +96,8 @@ p {
 }
 .p_white {
   color: var(--text-color-negative);
-}
-.Gast {
   font-family: "Great_Vibes";
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 /* =====================================================
@@ -114,20 +110,24 @@ header {
 }
 
 .header__Container {
-  background-color: rgb(255, 255, 255);
-  border-radius: 0 0 300px 300px;
-}
-
-.header__textContent {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0 0 300px 300px;
+  padding: 2rem 0rem;
+}
+
+.header__textContent {
   gap: 1rem;
   text-align: center;
   padding: 2rem;
-  margin: 5rem 2rem;
+  margin: 0 auto;
 }
-
+.header__Container img {
+  width: 100%;
+  height: 100%;
+}
 .header__InfoContainer {
   background-color: rgb(255, 255, 255);
   padding: 3rem;
@@ -184,7 +184,6 @@ header {
   width: 28%;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: #c8c7c7 0px 10px 20px 0px;
 }
 /* =====================================================
     MENU CARD
@@ -192,127 +191,106 @@ header {
 .menu__Card {
   position: relative;
   background-color: white;
-  width: 600px;
+  width: 100%;
   height: 900px;
-  margin-bottom: 1rem;
-  padding: 2rem;
+  padding: 3rem;
 }
 .menu__Card__Outline {
-  border: var(--accent-color-pink) solid 3px;
-  padding: 1.5rem;
+  border: var(--accent-color-pink) solid 2px;
+  padding: 2.25rem 2.25rem 8rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.menu__Image {
+  flex: 0 0 auto;
+  height: 340px;
 }
 .menu__Image img {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  padding: 1rem;
-  background-color: var(--accent-color-lightpink);
 }
 .menu__content {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  padding: 0 1.5rem;
 }
 .menu__Badge {
   position: absolute;
   background-color: var(--accent-color-pink);
   text-align: center;
-  padding: 0.5rem;
-  left: 40%;
+  padding: 0.35rem;
+  left: 50%;
+  bottom: 3rem;
+  transform: translate(-50%, 50%);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 0 1px rgba(242, 140, 144, 0.55);
 }
 .menu__Card p {
-  font-size: 1.5rem;
+  font-size: 1.15rem;
+  line-height: 1.45;
+  white-space: pre-line;
+}
+.menu__Badge h4 {
+  font-size: 2.2rem;
+  padding: 0.35rem 1.4rem;
 }
 
 /* =====================================================
-    SLIDER / CAROUSEL
+    MENU GRID
 ===================================================== */
-.carousel__Container {
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
+.menu__Container {
+  width: 100%;
+  padding: 2rem 0 3rem;
 }
-.slider__wrapper {
-  position: relative;
+.menu__Grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  width: min(1500px, 100%);
   margin: 0 auto;
-}
-.slider {
-  width: 600px;
-  height: 900px;
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-}
-.slider article {
-  flex: 1 0 100%;
-  object-fit: cover;
-  scroll-snap-align: start;
-}
-.slider__nav {
-  display: flex;
-  column-gap: 1rem;
-  position: absolute;
-  z-index: 1;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.slider__nav a {
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  background-color: rgb(7, 7, 7);
-  opacity: 0.75;
-  transform: opacity ease 250ms;
-}
-
-.slider__nav a:hover {
-  opacity: 1;
+  padding: 1rem 4rem;
 }
 
 /* =====================================================
   POST DINNER DRINKS INFO
 ===================================================== */
-
 .info__Card {
   background-color: white;
-  width: 100%;
-  height: 50%;
-  margin-bottom: 2rem;
+  width: 800px;
+  margin: 2rem auto;
   padding: 2rem;
 }
-.info__Deco {
-  border: var(--accent-color-pink) solid 3px;
+.info__Card__Outline {
   display: flex;
-  align-items: center;
-  padding: 2rem;
-}
-.info__Image img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-.info__Image {
-  width: 100%;
-  height: 100%;
-}
-.info__Badge {
-  background-color: var(--accent-color-pink);
-  padding: 2rem;
-  margin: 1rem;
-  text-align: center;
-  max-width: 50%;
-}
-.info__Badge p {
-  font-family: "Great_Vibes";
-  font-size: 2.5rem;
-}
-.text__Content {
-  display: flex;
+  justify-content: center;
   flex-direction: column;
-  gap: 1rem;
-  padding: 3rem;
-  max-width: 60%;
+  gap: 2rem;
+  align-items: center;
+  border: var(--accent-color-pink) 2px solid;
+  padding: 1rem;
 }
-.text__Content p {
-  font-size: 1.3rem;
+.info__Image__Frame {
+  width: 300px;
+  height: 300px;
+}
+.info__Image__Frame img {
+  width: 100%;
+  height: 100%;
+}
+.info__Card__Text {
+  width: 70%;
+  text-align: center;
+}
+.info__Card__Badge {
+  background-color: var(--accent-color-pink);
+  padding: 1rem;
+  width: 250px;
+  text-align: center;
 }
 
 /* =====================================================
@@ -320,20 +298,229 @@ header {
 ===================================================== */
 
 .form__Wrapper {
+  position: relative;
   background-color: white;
-  border: var(--accent-color-pink) solid 3px;
-  margin: 2rem;
-  height: 1000px;
-  width: 900px;
-  padding: 2rem;
+  margin: 7rem auto 3rem;
+  width: 1100px;
+  padding: 9rem 7rem 5rem;
   border-radius: 300px 300px 0 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
   align-items: center;
-  left: 50%;
+  overflow: visible;
+  border: var(--accent-color-pink) 2px solid;
+}
+.form__Wrapper::before,
+.form__Wrapper::after {
+  content: "";
+  position: absolute;
+  background-image: url("img/Schwan_single.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 3;
+}
+.form__Wrapper::before {
+  width: 330px;
+  height: 250px;
+  right: -5rem;
+  bottom: -3rem;
+  transform: none;
+}
+.form__Wrapper::after {
+  width: 350px;
+  height: 250px;
+  left: -5rem;
+  bottom: -3rem;
+  transform: scaleX(-1);
+  transform-origin: center;
+}
+.form__Wrapper form {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.75rem;
+  position: relative;
+  z-index: 1;
+}
+.form__Wrapper form::before {
+  content: none;
+}
+.form__Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  z-index: 1;
+}
+.form__Card:first-of-type {
+  margin-bottom: 1rem;
+}
+
+.form__Card:first-of-type .form__Card__text {
+  max-width: 660px;
+}
+.form__Card:first-of-type .form__Card__text strong,
+.form__Card:last-of-type .form__Card__text strong {
+  font-weight: 700;
 }
 .form__section {
-    margin: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.form__sectionTitle {
+  font-family: "Great_Vibes";
+  color: var(--text-color);
+  font-size: 3rem;
+  line-height: 1;
+  margin: 1rem 0rem;
+}
+.form__inputGroup,
+.form__selectWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.form__inputWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  width: 100%;
+}
+.form__label {
+  font-family: "Playfair_Display";
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.form__selectWrapper .form__label {
+  text-align: center;
+  font-size: 0;
+}
+
+.form__input,
+.form__select {
+  width: 100%;
+  height: 2.35rem;
+  border-radius: 100px;
+  background-color: var(--accent-color-lightpink);
+  padding: 0 1.25rem;
+  font-family: "Playfair_Display";
+  font-size: 1rem;
+  color: var(--text-color);
+  outline: none;
+  margin-top: 1rem;
+}
+.form__input::placeholder {
+  color: rgba(104, 104, 104, 0.45);
+}
+.form__select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 3rem;
+}
+.form__selectWrapper {
+  position: relative;
+}
+.form__selectWrapper::after {
+  content: "";
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.5rem;
+  width: 1.55rem;
+  height: 1.55rem;
+  background-image: url("img/circle-chevron-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  rotate: -90deg;
+  pointer-events: none;
+}
+.form__selectWrapper .form__select {
+  background-image: none;
+}
+.form__button {
+  margin-top: 0.5rem;
+  min-width: 260px;
+  height: 3.4rem;
+  border-radius: 999px;
+  background-color: var(--accent-color-pink);
+  color: var(--text-color-negative);
+  font-family: "Playfair_Display";
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form__Wrapper > .form__Card:last-of-type {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+.form__Wrapper > .form__Card:last-of-type .form__Card__text {
+  max-width: 620px;
+}
+.form__Wrapper > .form__Card:last-of-type .form__Card__text::after {
+  content: "";
+  display: block;
+  margin-top: 0.7rem;
+}
+
+.form__section:nth-of-type(3),
+.form__section:nth-of-type(4) {
+  gap: 0.9rem;
+}
+.form__section:nth-of-type(3) .form__sectionTitle,
+.form__section:nth-of-type(4) .form__sectionTitle {
+  margin-bottom: -0.2rem;
+}
+.form__section:nth-of-type(3) .form__select,
+.form__section:nth-of-type(4) .form__select {
+  height: 2.6rem;
+}
+
+.form__Wrapper .form__section + .form__section {
+  margin-top: 0.15rem;
+}
+.form__Wrapper .form__Card + .form__section {
+  margin-top: -0.15rem;
+}
+.form__Wrapper .form__section + .form__Card {
+  margin-top: 0.3rem;
+}
+
+.form__Wrapper::marker {
+  content: "";
+}
+
+/* =====================================================
+  BACK TO TOP
+===================================================== */
+
+.back__To__Top {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 0 2rem 2rem auto;
+  border-radius: 50%;
+  background-image: url("img/circle-chevron-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: rotate(90deg);
+  z-index: 10;
 }
