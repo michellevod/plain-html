@@ -28,18 +28,17 @@ box-shadow: 0 0 30px rgb(116, 107, 107);
 }
 
 body {
-  background-color: rgb(243, 218, 236);
+  background-color: rgb(218, 190, 250);
   color: black;
   font-family: 'Courier New', Courier, monospace;
 }
 ul {
   display: inline-flex;
-  gap: 4px;
   flex-direction: column;
 }
 li::marker {
   content: "☆ ";
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 a {
@@ -74,4 +73,6 @@ tbody {
   color: white;
   background-color: rgb(53, 47, 47);
 }
-
+.projecttitle {
+  font-size: 2rem;
+}
