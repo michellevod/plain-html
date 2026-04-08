@@ -1,0 +1,760 @@
+/* =====================================================
+   FONTS
+===================================================== */
+
+@font-face {
+  font-family: "Noto_regu";
+  src: url(fonts/NotoSans-VariableFont_wdth\wght.ttf);
+}
+
+@font-face {
+  font-family: "Noto_ital";
+  src: url(fonts/NotoSans-Italic-VariableFont_wdth\wght.ttf);
+}
+
+/* =====================================================
+   CSS VARIABLES / ROOT
+===================================================== */
+
+:root {
+  --mymixx_1: #f2bb16;
+  --mymixx_2: #d9580d;
+  --mymixx_3: #9abf11;
+  --mymixx_4: #22ddf2;
+  --text_color: darkslategrey;
+
+  --colorBasisCer: #bc155e;
+  --clrPrdCrdClrBlckBasic: #963561;
+
+  --colorGetrFrue: #d9580f;
+  --clrPrdCrdClrBlckGtFr: #c37452;
+
+  --colorNueSam: #9abf11;
+  --clrPrdCrdClrBlckNSm: #94ad7a;
+
+  --colorSuperFo: #20ddf2;
+  --clrPrdCrdClrBlckSprFds: #7aada8;
+
+  --colorExtrasuess: #bf5f5f;
+  --clrPrdCrdClrBlckXtrSss: #ad7a7a;
+
+  --colorFluessMuePorr: #8c5fbf;
+  --clrPrdCrdClrBlckFlssMPrr: #9b7aad;
+
+  --colorprdCard: #f2eee2;
+
+  /* hovers */
+  --colorBasisCerHv: #8c0a42;
+  --colorGetrFrueHv: #be4d0b;
+  --colorNueSamHv: #85a60e;
+  --colorSuperFoHv: #1bbcce;
+  --colorExtrasuessHv: #8e4747;
+  --colorFluessMuePorrHv: #724c9d;
+}
+
+/* =====================================================
+   RESET & BASE
+===================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: url("cursor.png"), auto;
+}
+
+html {
+  height: 100vh;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+}
+
+body {
+  color: var(--text_color);
+  box-sizing: content-box;
+  font-family: "Noto_regu", sans-serif;
+  background-color: #fdf4d8;
+  opacity: 1;
+  background-image:
+    radial-gradient(#ddd1ae 1.35px, transparent 1.35px),
+    radial-gradient(#ddd1ae 1.35px, #fdf4d8 1.35px);
+  background-size: 54px 54px;
+  background-position:
+    0 0,
+    27px 27px;
+}
+/* css background pattern: https://www.magicpattern.design/tools/css-backgrounds */
+/* =====================================================
+   POPOVER (HTML POPOVER API)
+===================================================== */
+
+/* A <div popover> does NOT behave like a normal element in the layout flow.
+   When opened, it becomes a top-layer element */
+
+#my-popover {
+  inset: auto;
+  position: fixed;
+  background-color: #fcfcfc;
+  height: 100%;
+  width: 40rem;
+  right: 0;
+  border-top-left-radius: 15px;
+}
+
+/* normal html popover backdrop */
+#my-popover::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.closePopOver__Flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.closePopOver {
+  color: rgb(124, 124, 124);
+  padding-right: 20px;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.yellowOverlayBadge {
+  display: flex;
+  background-color: var(--mymixx_1);
+  width: 60px;
+  height: 60px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.yellowOverlayBadge img {
+  width: 30px;
+  height: 30px;
+}
+
+.blueCounterBubble2 {
+  position: absolute;
+  top: 2px;
+  left: 50px;
+  background-color: #20ddf2;
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  color: white;
+}
+
+/* =====================================================
+   ITEM SUMMARY / CART CONTENT
+===================================================== */
+
+.itemSumCard2 {
+  background-color: #f4ead5;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  padding: 10px;
+  border-radius: 20px;
+  max-height: 18rem;
+  overflow-y: auto;
+  margin: auto;
+}
+
+.itemSumCard2ContentFlex {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  background-color: #a60c4f;
+  width: 80%;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+}
+
+.itemSumIcon img {
+  width: 2rem;
+  padding: 2px;
+  background-color: #dbcfcf5a;
+  border-radius: 50%;
+}
+
+.itemSumDelBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  padding: 16px;
+}
+
+.fa-trash-can {
+  color: black;
+}
+
+.itemSumTotal {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.itemSumTotal_Price {
+  margin-left: auto;
+  padding-right: 10px;
+  color: green;
+  font-weight: 600;
+}
+
+/* =====================================================
+   DATE SELECTION
+===================================================== */
+
+.itemSummaryDate p {
+  font-weight: 700;
+  text-align: left;
+}
+
+.dateBox {
+  background-color: #f4ead5;
+  width: 90%;
+  border-radius: 20px;
+  margin-left: 2rem;
+}
+
+.date__Flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.dateOption {
+  display: flex;
+  gap: 5px;
+}
+
+input[type="radio"] {
+  accent-color: var(--mymixx_2);
+}
+
+/* =====================================================
+   FORM / USER DATA
+===================================================== */
+
+.itemSummaryPersonField {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* centers the whole group */
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 80%;
+  max-width: 550px;
+  margin: 10px;
+}
+
+/* label stays top-left of input */
+.fieldGroup label {
+  font-size: 16px;
+  padding: 2px;
+}
+
+/* input fills the group */
+.fieldGroup input {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.itemSummaryPersonField input:focus {
+  border-color: #5f6a76;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.sectionHeading {
+  margin-left: 20px;
+  font-weight: 700;
+  text-align: left;
+}
+
+/* CSS Vorlage: https://uiverse.io/JayRamoliya/loud-rattlesnake-53 */
+.legalText {
+  font-size: 0.6rem;
+  margin-bottom: 1rem;
+  color: gray;
+}
+
+/* =====================================================
+   MOBILE POPOVER OVERRIDES
+===================================================== */
+
+@media (max-width: 768px) {
+  #my-popover {
+    width: 100%;
+    height: 95%;
+    bottom: 0;
+    right: auto;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .fieldGroup input {
+    margin: 10px;
+  }
+}
+
+/* =====================================================
+   ANCHOR JUMP SIDE TRAY
+===================================================== */
+.categoryFlex {
+   display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: end;
+
+  position: sticky;
+  top: 2rem;   /* how far from the top it sticks */
+ 
+}
+
+.Anchor {
+  background: var(--anchor-color);
+  color: white;
+  width: 10rem;
+  font-size: 16px;
+  padding: 1.5rem;
+  border-radius: 25px 0px 0px 25px;
+}
+
+
+/* =====================================================
+   HEADER / NOTIFICATION
+===================================================== */
+
+.navField {
+  background-color: white;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.headerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.headerGrid img {
+  width: 100%;
+}
+.colorBlock {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 15px 0;
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.12);
+}
+.colorBText {
+  margin: 1rem;
+  font-weight: 600;
+  font-size: clamp(8px, 1vw, 2rem);
+}
+#cerealImages {
+  transition: opacity 1s ease;
+}
+.cerealImages {
+  position: relative;
+}
+.cerealImages::before {
+  content: "";
+  position: absolute;
+
+  background-color: rgba(233, 221, 194, 0.4);
+  z-index: 1;
+}
+
+/* BUTTONS */
+.btn {
+  background-color: var(--anchor-color);
+  color: white;
+  font-weight: bold;
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 0;
+}
+.btn-leveling {
+  margin-bottom: 3rem;
+}
+.btn:hover {
+  background-color: var(--hover-color);
+  transition: 0.2s;
+}
+
+.notification {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  background-color: #ffffff;
+  border: 2px solid #f2bb16;
+  width: 76%;
+  border-radius: 15px;
+  flex-direction: column;
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+#notifText {
+  padding: 0px 20px 20px 20px;
+}
+
+.notifCircle {
+  background-color: #fff5d7;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.fa-exclamation {
+  font-size: 30px;
+}
+
+.headlineExlcamationContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 0px 20px;
+}
+
+/* =====================================================
+   PRODUCT GRID & CARDS
+===================================================== */
+
+.categoryAnchor {
+  background-color: var(--anchor-color);
+  color: white;
+  border-radius: 0px 15px 15px 0px;
+  display: inline-block;
+}
+
+.categoryHeadline {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.productCard__Margin {
+  margin: 2rem;
+}
+
+.productCard__GRID {
+  display: grid;
+  justify-content: start;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+  margin-right: 20%;
+}
+
+/* mobile viewport */
+@media (max-width: 767px) {
+  .productCard__GRID {
+    grid-template-columns: repeat(2, minmax(12rem, 1fr));
+  }
+}
+
+.section__GRID {
+  margin: 1rem 1rem 1rem 0;
+}
+/* =====================================================
+   PRODUCT CARD COMPONENT
+===================================================== */
+
+.productCard2 {
+  background-color: var(--colorprdCard);
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-width: 12rem;
+  box-sizing: border-box;
+}
+
+.productCard2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  background-color: var(--card-block);
+  z-index: 1;
+}
+
+.FlexBadges,
+.FlexImageText,
+.ButtonFlex {
+  position: relative;
+  padding-bottom: 5px;
+  z-index: 2;
+}
+
+.FlexBadges {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  height: 50px;
+}
+
+.priceBadge2 {
+  background-color: var(--accent-color);
+  color: white;
+  font-weight: 800;
+  width: 80px;
+  height: 60px;
+  border-bottom-left-radius: 5rem;
+  text-align: center;
+  align-content: center;
+  padding-left: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.weightBadge2 {
+  background-color: var(--accent-color);
+  color: white;
+  font-weight: 800;
+  width: 70px;
+  height: 40px;
+  border-top-left-radius: 15px;
+  text-align: center;
+  align-content: center;
+}
+.bowlImage2 {
+  width: 100px;
+  height: 100px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10px;
+  border: solid var(--hover-color) 5px;
+}
+
+.bowlImage2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardName {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.FlexImageText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+/* =====================================================
+   THEMES
+===================================================== */
+
+.theme-basis {
+  --anchor-color: var(--colorBasisCer);
+  --card-block: var(--clrPrdCrdClrBlckBasic);
+  --accent-color: var(--colorBasisCer);
+  --hover-color: var(--colorBasisCerHv);
+}
+
+.theme-getrfrue {
+  --anchor-color: var(--colorGetrFrue);
+  --card-block: var(--clrPrdCrdClrBlckGtFr);
+  --accent-color: var(--colorGetrFrue);
+  --hover-color: var(--colorGetrFrueHv);
+}
+
+.theme-nueSam {
+  --anchor-color: var(--colorNueSam);
+  --card-block: var(--clrPrdCrdClrBlckNSm);
+  --accent-color: var(--colorNueSam);
+  --hover-color: var(--colorNueSamHv);
+}
+
+.theme-superFood {
+  --anchor-color: var(--colorSuperFo);
+  --card-block: var(--clrPrdCrdClrBlckSprFds);
+  --accent-color: var(--colorSuperFo);
+  --hover-color: var(--colorSuperFoHv);
+}
+
+.theme-xtraSuess {
+  --anchor-color: var(--colorExtrasuess);
+  --card-block: var(--clrPrdCrdClrBlckXtrSss);
+  --accent-color: var(--colorExtrasuess);
+  --hover-color: var(--colorExtrasuessHv);
+}
+
+.theme-Fluessig {
+  --anchor-color: var(--colorFluessMuePorr);
+  --card-block: var(--clrPrdCrdClrBlckFlssMPrr);
+  --accent-color: var(--colorFluessMuePorr);
+  --hover-color: var(--colorFluessMuePorrHv);
+}
+
+/* =====================================================
+   STICKY OVERLAY BUTTON
+===================================================== */
+
+.stickyOverlayButton {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  right: 40px;
+  bottom: 80px;
+  z-index: 9999;
+}
+
+.yellowCircleSticky {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--mymixx_1);
+  border-radius: 50px;
+  height: 80px;
+  width: 80px;
+  box-shadow: 5px 5px 10px 1px rgb(55, 55, 55);
+  cursor: pointer;
+}
+
+.yellowCircleSticky img {
+  width: 50px;
+  height: 50px;
+}
+
+.blueCounterBubble {
+  position: absolute;
+  top: 2px;
+  right: -6px;
+  background-color: #20ddf2;
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =====================================================
+   ACCORDION
+===================================================== */
+
+details {
+  background-color: #22ddf2;
+  color: white;
+  border: 1px solid #ffffff;
+  padding: 10px;
+}
+
+details ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  line-height: 32px;
+  padding-bottom: 25px;
+  font-size: 18px;
+}
+
+summary {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 10px 20px 0 20px;
+}
+
+details[open] summary {
+  border-bottom: 2px solid #ffffff;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+  min-height: 10rem;
+  background-color: var(--colorNueSam);
+}
+
+footer ul,
+footer ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#footwrap {
+  width: 80%;
+  max-width: 75rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+footer section {
+  margin-top: 2rem;
+}
+
+footer section ul li a {
+  font-size: 0.8rem;
+}
+
+footer section#siegel ul,
+footer section#socmed ul {
+  display: grid;
+  grid-template-columns: 2rem 2rem 2rem;
+  grid-template-rows: 2rem 2rem 2rem;
+  gap: 2rem;
+}
+
+footer section ul li a img {
+  width: 300%;
+  padding-top: 1rem;
+}
+
+footer section ul li a img:hover {
+  cursor: grab;
+}
